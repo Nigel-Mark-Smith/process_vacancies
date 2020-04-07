@@ -16,7 +16,7 @@ reduce effort by ensuring that details of any vacancy advertised are only proces
 - Rate at which new vacancies are raised by each engine.
 - Cumulative vacancy counts per engine.
 
-The entirety of the functionality provided by these scripts relies onthe following assumptions being correct:
+The entirety of the functionality provided by these scripts relies on the following assumptions being correct:
 
 - The job alert e-mails contain unique urls relating to each job vacancy advertised on that engine.
 - That accessing these urls will result in the display of all the advertised vacancies details.
