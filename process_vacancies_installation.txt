@@ -1,0 +1,72 @@
+Process Vacancies Installation 
+==============================
+This document details the procedure required to install the 
+Python utility scripts delivered in 'process_vacancies'. The 
+procedure consists of the following four main sub-sections.
+
+a. Installation of third party software.
+b. Installation of 'process_vacancies' contents from GitHub
+c. Addition of 'PYTHONPATH' environment variable.
+d. Editting of 'connect.data' configuration file.
+
+1. Installation of third party software
+-------------------------------
+The utility scripts delivered in 'process_vacancies' require the following
+3rd party software:
+
+a. ActivePython ( version Python 3.7.4 or above )
+b. MySQL Community server ( version 8.0.19 or above  )
+c. Google Chrome ( Version 80.0.3987.163 (Official Build) (64-bit) )
+
+This software can be donwloaded from the links below:
+
+Software          | Link 
+------------------+---------------------------------------------------------
+ActivePython      | https://www.activestate.com/products/python/downloads/
+                  | + https://platform.activestate.com/sign-in
+------------------+---------------------------------------------------------
+MySQL             | https://dev.mysql.com/downloads/mysql/
+------------------+---------------------------------------------------------
+Google Chrome     | https://www.google.com/chrome/
+------------------+---------------------------------------------------------
+
+Please note the following:
+
+- To install ActivePython you must set up an ActiveState login.
+- When installing MySQL ensure that you make a note of the 'root' 
+  user password which is set as part of the installation procedure.
+
+2. Installation of 'process_vacancies' contents from GitHub
+-----------------------------------------------------------
+
+3. Addition of 'PYTHONPATH' environment variable.
+-------------------------------------------------
+To allow the python utilities to access the delivered python modules the 
+'PYTHONPATH' enviroment variable must be populated with all relevant
+directory names as follows:
+
+a.	Right Click on Windows icon ( Bottom left of screen )
+b.	Click on 'Run'
+c.	Enter 'SystemPropertiesAdvanced' in 'Open' field.
+d.	Click on 'Environment Variables' on 'System Properties' pop-up window.
+e.	Click 'New' situated under 'System Variables' pane
+f.	Click 'New' on 'Edit environment variable' pop-up window
+g.	Enter 'c:\process_vacancies\Db' 
+h.	Click 'New' on Edit environment variable' pop-up window
+i.	Enter 'c:\process_vacancies\File' 
+j.	Click 'New' on Edit environment variable' pop-up window
+k.	Enter 'c:\process_vacancies\Email' 
+l.	Click 'New' on Edit environment variable' pop-up window
+m.	Enter 'c:\process_vacancies\Interface' 
+n.	Click 'New' on Edit environment variable' pop-up window
+o.	Enter 'c:\process_vacancies\Web' 
+p.	Click 'OK' on 'Edit environment variable' pop-up windowon pop-up window
+q.	Click 'OK' on 'Environment Variables' pop-up window
+r.	Click 'Apply' on 'System Properties' pop-up window.
+s.	Click 'OK' on 'System Properties' pop-up window.
+	
+4. Editting of 'connect.data' configuration file
+---------------------------------------------
+To allow the python utility scripts to connect to the MySQL instance running on
+your PC ensure that the value 'password' in file 'connect.data' is replaced with 
+the MySQL 'root' password set when installing MySQL.
