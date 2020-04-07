@@ -1,48 +1,33 @@
 # process_vacancies
 
-This repository delivers python utility scripts 'initialize_database.py'
-'parse_mail.py' and 'update_vacancies.py'. These scripts support the
-processing of job alert e-mails which can be received from a number
-of popular CV/Job engines. The scripts both implement and rely on  
-a database called 'vacancies' implemented on a local instance of 'MySQL'. 
-They also require that the job alert e-mails received are stored in separate 
-mail folders in a local instance of 'Outlook'. 'Chrome' must also be
-installed so that details of any vacancy can be displayed using the 
-unique job url.
+This repository delivers python utility scripts 'initialize_database.py', 'parse_mail.py' and 'update_vacancies.py'. These scripts 
+support the processing of job alert e-mails which can be received from a number of popular CV/Job engines. The scripts both implement 
+and rely on a database called 'vacancies' implemented on a local instance of 'MySQL'. They also require that the job alert e-mails 
+received are stored in separate mail folders in a local instance of 'Outlook'. 'Chrome' must also be installed so that details of any 
+vacancy can be displayed using the unique job url.
 
-These scripts togther streamline the processes of reviewing job alert
-e-mails received and allow the user to track the progress of a 
-particular application by changing the state of the assocaited
-'vacancy' stored in the 'vacancies' database. The scripts will
-reduce effort by ensuring that details of any vacancy advertised
-are only processed by the user once. The implementation of the
-'vacancies' database also allows the following reports and 
-metrics to be produced using SQL queries.
+These scripts togther streamline the processes of reviewing job alert e-mails received and allow the user to track the progress of 
+a particular application by changing the state of the assocaited 'vacancy' stored in the 'vacancies' database. The scripts will
+reduce effort by ensuring that details of any vacancy advertised are only processed by the user once. The implementation of the 
+'vacancies' database also allows the following reports and metrics to be produced using SQL queries.
 
 - Vacancy history ( for vacancies applied for ).
 - Report on proportion of vacancies dropped or pursued.
 - Rate at which new vacancies are raised by each engine.
 - Cumulative vacancy counts per engine.
 
-The entirety of the functionality provided by these scripts relies on
-the following assumptions being correct:
+The entirety of the functionality provided by these scripts relies onthe following assumptions being correct:
 
-- The job alert e-mails contain unique urls relating to each
-  job vacancy advertised on that engine.
-- That accessing these urls will result in the display of
-  all the advertised vacancies details.
-- If the job alert e-mails do not contain unique job urls, that
-  these can be obtained by scraping the delivered web content
+- The job alert e-mails contain unique urls relating to each job vacancy advertised on that engine.
+- That accessing these urls will result in the display of all the advertised vacancies details.
+- If the job alert e-mails do not contain unique job urls, that these can be obtained by scraping the delivered web content
   when clicking on a link in those e-mails ( LinkedIn ).
-- The unique vacancy urls themselves contain a unique numeric 
-  identifier within the unique url.
-- The CV/Job engines continue to deliver alert e-mails 
-  in the same format.
+- The unique vacancy urls themselves contain a unique numeric identifier within the unique url.
+- The CV/Job engines continue to deliver alert e-mails in the same format.
 
 Deliverables
 ------------
-To implement the functionality discussed above the following scripts
-and configuration files are delivered:
+To implement the functionality discussed above the following scripts and configuration files are delivered:
 
 File | File Contents
 ------------- | -------------
