@@ -20,6 +20,7 @@ are only processed by the user once. The implementation of the
 metrics to be produced using SQL queries.
 
 - Vacancy history ( for vacancies applied for ).
+- Report on proportion of vacancies dropped or pursued.
 - Rate at which new vacancies are raised by each engine.
 - Cumulative vacancy counts per engine.
 
