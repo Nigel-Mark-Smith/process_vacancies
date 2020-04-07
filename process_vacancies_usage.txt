@@ -1,0 +1,23 @@
+USAGE
+=====
+
+initialize_database.py
+----------------------
+This script should be run once only as follows to define and populate the MySQL database 'vacancies'
+and it's associated tables.
+
+python initialize_database.py.
+
+This script will report information and errors to file c:\process_vacancies\log.txt
+
+parse_mail.py and update_vacancies.py
+-------------------------------------
+These scripts should be run one after the other as follows as part of an ongoing process for reviewing vacancies and
+applying for them. The 'update_vacancies.py' script will prompt the user about additions of vacancy data and or the
+changing of a vacancy's state to reflect the status of any assocaited application.
+
+python parse_mail.py 
+python update_vacancies.py
+
+Both scripts will report information and errors to file c:\process_vacancies\log.txt
+
