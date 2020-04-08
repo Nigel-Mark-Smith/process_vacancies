@@ -93,25 +93,25 @@ Where:
 
 Engine id 			Is a unique integer representing the engine.
 Engine name			Is a string representing the name of the engine. 
-Outlook details		Consists of two ':' separated field as follows:
+Outlook details			Consists of two ':' separated field as follows:
 
 					<Outlook account:Outlook sub-folder>
 
 					Where:
 
 					Outlook account 	Is the Outllook account to which
-										job alert e-mails are directed.
+								job alert e-mails are directed.
 					Outlook sub-folder	Is Outlook sub folder under which
-										job alert e-mails are stored.
+								job alert e-mails are stored.
 
 Job url format		Is the format of the unique job url expressed as a Python regular expression.
 Job url length		Is the minimum length of the job url.
 Engine priority		An integer denoting the priority with which a job vacancy for the engine should
-					be treated.
+			be treated.
 Exclusion texts		Is a ':' separated list of text strings which if included in a line of a job alert
-					e-mail will exlude that line from the search for job urls in that e-mail.
+			e-mail will exlude that line from the search for job urls in that e-mail.
 Inclusion texts		Is a ':' separated list of text strings which if included in a line of a job alert
-					e-mail will include that line in the search for job urls in that e-mail.
+			e-mail will include that line in the search for job urls in that e-mail.
 
 
 Please note that to extract the unique job urls from the text of job-alert e-mails normally requires 
