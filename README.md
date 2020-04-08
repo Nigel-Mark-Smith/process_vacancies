@@ -19,9 +19,10 @@ reduce effort by ensuring that details of any vacancy advertised are only proces
 The entirety of the functionality provided by these scripts relies on the following assumptions being correct:
 
 - The job alert e-mails contain unique urls relating to each job vacancy advertised on that engine.
-- That accessing these urls will result in the display of all the advertised vacancies details.
+- That accessing these urls will result in the display of all the advertised vacancies details ( without
+  being logged in ).
 - If the job alert e-mails do not contain unique job urls, that these can be obtained by scraping the delivered web content
-  when clicking on a link in those e-mails ( LinkedIn ).
+  when clicking on a link in those e-mails ( Reed ).
 - The unique vacancy urls themselves contain a unique numeric identifier within the unique url.
 - The CV/Job engines continue to deliver alert e-mails in the same format.
 

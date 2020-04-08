@@ -43,9 +43,9 @@ Currentdir = os.getcwd()
 Datadir = Currentdir + '\\Data'
 Errorfilename = Datadir + '\\' + 'log.txt'
 SQLfilename = Datadir + '\\' + 'definition.sql'
-Connectfilename = Datadir + '\\' + 'connect.data'
-Companyfilename = Datadir + '\\' + 'companies.data'
-Enginefilename = Datadir + '\\' + 'engines.data'
+Connectfilename = Datadir + '\\' + 'connect.csv'
+Companyfilename = Datadir + '\\' + 'companies.csv'
+Enginefilename = Datadir + '\\' + 'engines.csv'
 append = 'a'
 read = 'r'
 

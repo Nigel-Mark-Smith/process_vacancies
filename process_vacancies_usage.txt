@@ -13,11 +13,143 @@ This script will report information and errors to file c:\process_vacancies\log.
 parse_mail.py and update_vacancies.py
 -------------------------------------
 These scripts should be run one after the other as follows as part of an ongoing process for reviewing vacancies and
-applying for them. The 'update_vacancies.py' script will prompt the user about additions of vacancy data and or the
+applying for them. The 'update_vacancies.py' script will prompt the user about additions of vacancy data and/or the
 changing of a vacancy's state to reflect the status of any assocaited application.
 
 python parse_mail.py 
 python update_vacancies.py
 
 Both scripts will report information and errors to file c:\process_vacancies\log.txt
+
+CONFIGURATION FILES
+===================
+
+The following four configuration files are delivered along with the 
+utility scripts:
+
+companies.csv
+connect.csv
+definition.sql
+engines.csv
+ 
+The format of these files is a follows:
+
+companies.csv
+--------------
+This csv file contains an extract of the Companies House data available at:
+
+http://download.companieshouse.gov.uk/en_output.html
+
+The data is restricted to that relating to identifiable recruitment agencies and is limited
+to the following data fields:
+
+CompanyNumber
+CompanyName
+CompanyStatus
+SICCode.SICCode1
+URI
+
+See the following for further details.
+
+http://resources.companieshouse.gov.uk/toolsToHelp/pdf/freeDataProductDataset.pdf
+
+This data is used to populate the 'vacancies.company' table.
+
+connect.csv
+------------
+This file contains the data necessary to connect to the local instance of MySQL.
+The format of this csv file is as follows:
+
+<host>,<user>,<password>,<db>
+
+See Python documentation for 'pymysql.connect' for further details.
+
+https://pymysql.readthedocs.io/en/latest/user/examples.html
+
+Please note that for any MySQL connection started by the utility scripts
+the following is always set:
+
+autocommit=True
+
+definition.sql
+--------------
+This file contains all the sql statements necessary to define the database 'vacancies'
+and associated tables. This file could be loaded directly into MySQL unaltered but is
+loaded via utility 'initialize_database.py'. See the following for further information
+relating to MySQL. 
+
+https://dev.mysql.com/doc/refman/8.0/en/
+
+engines.csv
+------------
+This file contains data relating to the storage location of job-alert e-mails (in Outlook )
+and the format of the unique job url's supported by each individual engine. The format of this
+csv file is as follows:
+
+<Engine id>,<Engine name>,<Outlook details>,<Job url format>,<job url length>,/
+<Engine priority>,<'Exclusion texts'>,<'inclusion texts'>
+
+Where:
+
+Engine id 			Is a unique integer representing the engine.
+Engine name			Is a string representing the name of the engine. 
+Outlook details		Consists of two ':' separated field as follows:
+
+					<Outlook account:Outlook sub-folder>
+
+					Where:
+
+					Outlook account 	Is the Outllook account to which
+										job alert e-mails are directed.
+					Outlook sub-folder	Is Outlook sub folder under which
+										job alert e-mails are stored.
+
+Job url format		Is the format of the unique job url expressed as a Python regular expression.
+Job url length		Is the minimum length of the job url.
+Engine priority		An integer denoting the priority with which a job vacancy for the engine should
+					be treated.
+Exclusion texts		Is a ':' separated list of text strings which if included in a line of a job alert
+					e-mail will exlude that line from the search for job urls in that e-mail.
+Inclusion texts		Is a ':' separated list of text strings which if included in a line of a job alert
+					e-mail will include that line in the search for job urls in that e-mail.
+
+
+Please note that to extract the unique job urls from the text of job-alert e-mails normally requires 
+setting values for the following fields:
+
+Job url format
+Job url length
+
+However in some instances values must also be set in the following:
+
+Exclusion texts
+Inclusion texts
+
+For further information regarding parsing Outlook mail items see the following:
+
+https://www.codementor.io/@aliacetrefli/how-to-read-outlook-emails-by-python-jkp2ksk95
+https://docs.microsoft.com/en-gb/office/vba/api/outlook.folder
+https://docs.microsoft.com/en-gb/office/vba/api/outlook.items
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
