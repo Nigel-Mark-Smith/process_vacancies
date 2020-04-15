@@ -120,22 +120,5 @@ def IncludeLine (line,inclusions) :
             
     return value
     
-# This procedure will find the Reed Job ID and Job url.
-# It is necessary to scrape web content to find this 
-# information    
-def FindReedID (url,urlre) :
 
-    "Finds the Job ID and url for Reed engine vacancies"
-       
-    # Retrieve javascript text
-    Httpresponse = requests.get(url)
-    Httplines = Httpresponse.text.split('\n')
-
-    # Search for joburl in javascript
-    for Httpline in Httplines :
-    
-        Httpmatch = re.search(urlre,Httpline)
-        if Httpmatch : break
-      
-    return Httpmatch.group(0)
     

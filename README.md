@@ -23,7 +23,7 @@ The entirety of the functionality provided by these scripts relies on the follow
   being logged in ).
 - If the job alert e-mails do not contain unique job urls, that these can be obtained by scraping the delivered web content
   when clicking on a link in those e-mails ( Reed ).
-- The unique vacancy urls themselves contain a unique numeric identifier within the unique url.
+- The unique vacancy urls themselves contain a unique alpha/numeric identifier within the unique url.
 - The CV/Job engines continue to deliver alert e-mails in the same format.
 
 Deliverables

@@ -75,7 +75,7 @@ def Logerror (Fileobject,module,text,level):
         print ('Unable to log %s%s%s' % ('\"',message,'\"') )
         sys.exit()
     else:
-        print ('%s' % message )
+        if ( level != 'LOG' ) : print ('%s' % message )
         if ( level == 'ERROR' ) : sys.exit()
 
 # Splits a line in a CSV file into a list of

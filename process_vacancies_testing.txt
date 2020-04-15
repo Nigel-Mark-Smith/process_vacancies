@@ -1,0 +1,25 @@
+python test_email.py
+python test_email.py "Inbox"
+python test_email.py "Inbox/JobSearch"
+python test_email.py "Inbox/JobSearch/CV-Library"
+python test_email.py "Inbox/JobSearch/CV-Library" "https://\D*\d+[/?&>]"
+python test_email.py "Inbox/JobSearch/CV-Library" "https://www.cv-library.co.uk/job/\d+/"
+python test_email.py "Inbox/JobSearch/CV-Library" "https://www.cv-library.co.uk/job/\d{9}/" 42
+python test_email.py "Inbox/JobSearch/FindAJob" "https://\D*\d+[/?&>]"
+python test_email.py "Inbox/JobSearch/FindAJob" "https://findajob.dwp.gov.uk/details/\d+\?"
+python test_email.py "Inbox/JobSearch/FindAJob" "https://findajob.dwp.gov.uk/details/\d{7}\?" 43
+python test_email.py "Inbox/JobSearch/Indeed" "https://\D*\d+[/?&>]"   	! Does not work as job id is a hex value.		
+python test_email.py "Inbox/JobSearch/Indeed" "https://.*?&'			! This works but a javascript is redirecting the user to the advertising company's vacancy.
+python test_email.py "Inbox/JobSearch/Indeed" "https://www.indeed.co.uk/rc/clk/dl\?jk=.{16}&  54
+python test_email.py "Inbox/JobSearch/Reed" "https://\D*\d+[/?&>]"		! Does not work as job id is a hex value.
+python test_email.py "Inbox/JobSearch/Reed" "https://.*?>"				! Requires Exclusions and or Inclusions to pick up unique urls.
+python test_email.py "Inbox/JobSearch/Reed" "https://click.e.reed.co.uk/\?qs=.*?>"
+python test_email.py "Inbox/JobSearch/Reed" "https://click.e.reed.co.uk/\?qs=.{128}>" 159
+python test_email.py "Inbox/JobSearch/Reed" "https://click.e.reed.co.uk/\?qs=.{128}>" 159 "Sign in :Contact preferences :View more jobs"
+python test_email.py "Inbox/JobSearch/LinkedInAlerts" "https://\D*\d+[/?&>]"
+python test_email.py "Inbox/JobSearch/LinkedInAlerts" "https://www.linkedin.com/comm/jobs/view/\d+\?"
+python test_email.py "Inbox/JobSearch/LinkedInAlerts" "https://www.linkedin.com/comm/jobs/view/\d{10}\?" 50
+
+
+
+

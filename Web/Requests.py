@@ -2,6 +2,25 @@ import re
 import requests
 import Interface
 
+# This procedure will find the Reed Job ID and Job url.
+# It is necessary to scrape web content to find this 
+# information    
+def FindReedID (url,urlre) :
+
+    "Finds the Job ID and url for Reed engine vacancies"
+       
+    # Retrieve javascript text
+    Httpresponse = requests.get(url)
+    Httplines = Httpresponse.text.split('\n')
+
+    # Search for joburl in javascript
+    for Httpline in Httplines :
+    
+        Httpmatch = re.search(urlre,Httpline)
+        if Httpmatch : break
+      
+    return Httpmatch.group(0)
+
 # This procedure scrapes additional job data from the 
 # web site
 def ScrapeLinkedIn (url) :
@@ -57,7 +76,6 @@ def ScrapeLinkedIn (url) :
     ProcessedJobData['salary_min'] = 0
     ProcessedJobData['salary_max'] = 0
     
-    print(ProcessedJobData)
     return ProcessedJobData
     
 # This procedure scrapes additional job data from the 
@@ -111,7 +129,6 @@ def ScrapeCVLibrary (url) :
     ProcessedJobData['salary_min'] = int(SalaryValues[0])
     ProcessedJobData['salary_max'] = int(SalaryValues[1])
          
-    print(ProcessedJobData)
     return ProcessedJobData
     
 # This procedure scrapes additional job data from the 
@@ -172,7 +189,6 @@ def ScrapeFindAJob (url) :
     ProcessedJobData['salary_min'] = int(SalaryValues[0])
     ProcessedJobData['salary_max'] = int(SalaryValues[1])
     
-    print(ProcessedJobData)
     return ProcessedJobData
     
 # This procedure scrapes additional job data from the 
@@ -228,7 +244,6 @@ def ScrapeIndeed (url) :
     ProcessedJobData['salary_min'] = int(SalaryValues[0])
     ProcessedJobData['salary_max'] = int(SalaryValues[1])
     
-    print(ProcessedJobData)
     return ProcessedJobData
     
 # This procedure scrapes additional job data from the 
@@ -283,5 +298,4 @@ def ScrapeReed (url) :
     ProcessedJobData['salary_min'] = int(SalaryValues[0])
     ProcessedJobData['salary_max'] = int(SalaryValues[1])
     
-    print(ProcessedJobData)
     return ProcessedJobData

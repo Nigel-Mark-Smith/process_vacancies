@@ -150,7 +150,6 @@ for Vacancy in SQLresponse :
         if not 'title' in VacancyUpdate : 
             Errormessage = 'Vacancy %s for LinkedIn has expired' % JobID
             File.Logerror(ErrorfileObject,module,Errormessage,info)
-            break
             
     if ( EngineID == 3 ) : VacancyUpdate = Web.ScrapeReed(Joburl)
     if ( EngineID == 4 ) : VacancyUpdate = Web.ScrapeIndeed(Joburl)
@@ -163,6 +162,9 @@ for Vacancy in SQLresponse :
     
     # Display vacancy.
     Interface.ViewVacancy(Browser,Joburl)
+    
+    # Display standard job details.
+    Interface.DisplayDetails(VacancyUpdate)
    
     # Enter if further action is required.
     Choices = ['y','n','exit']
@@ -255,6 +257,13 @@ for Vacancy in SQLresponse :
     Joburl = Vacancy[2]
     Vacancystate = Vacancy[3]
     
+    VacancyDetails = {}
+    VacancyDetails['company'] =  Vacancy[4]
+    VacancyDetails['title'] =  Vacancy[5]
+    VacancyDetails['location'] =  Vacancy[6]
+    VacancyDetails['salary_min'] = Vacancy[7]
+    VacancyDetails['salary_max'] = Vacancy[8]
+    
     # Create the primary fields dictionary of values.
     Primary = {}
     Primary['vacancy_id'] = JobID
@@ -266,6 +275,9 @@ for Vacancy in SQLresponse :
     
     # Display vacancy.
     Interface.ViewVacancy(Browser,Joburl)
+    
+    # Display standard job details.
+    Interface.DisplayDetails(VacancyDetails)
     
     # Enter if further action is required.
     Choices = ['y','n','exit']

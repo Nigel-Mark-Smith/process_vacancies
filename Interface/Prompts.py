@@ -109,6 +109,15 @@ def KillProcess (process,delay,empty) :
         Processresult = subprocess.run(['cmd.exe','/C',Killstring],capture_output=True,text=True)  
     
         # Prevents possible interference with new instance launched by ViewVacancy.
-        time.sleep(delay)    
+        time.sleep(delay)  
+
+# Displays all standard job details detected for vacancy
+def DisplayDetails (details) :        
+
+    "Displays all standard job details detected"
+    
+    for key in details :
+        print('%s : %c %s' % (key,'\t',details[key]))
+    
     
     

@@ -276,7 +276,7 @@ while ( EngineIndex < len(MailfolderList) ) :
                         
                             # For Reed information must be scraped from vacancy
                             JobUrlRe = 'https://www.reed.co.uk/jobs/(.*?)/(\d+)'
-                            Reedurl = Email.FindReedID((MatchObj.group()[0:Urllen]),JobUrlRe)
+                            Reedurl = Web.FindReedID((MatchObj.group()[0:Urllen]),JobUrlRe)
                             JoburlList.append(Reedurl)
                             Urllen = 27
                             IDlen = 8    
