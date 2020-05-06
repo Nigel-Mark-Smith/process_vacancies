@@ -15,7 +15,7 @@ python test_email.py "Inbox/JobSearch/Reed" "https://\D*\d+[/?&>]"		! Does not w
 python test_email.py "Inbox/JobSearch/Reed" "https://.*?>"				! Requires Exclusions and or Inclusions to pick up unique urls.
 python test_email.py "Inbox/JobSearch/Reed" "https://click.e.reed.co.uk/\?qs=.*?>"
 python test_email.py "Inbox/JobSearch/Reed" "https://click.e.reed.co.uk/\?qs=.{128}>" 159
-python test_email.py "Inbox/JobSearch/Reed" "https://click.e.reed.co.uk/\?qs=.{128}>" 159 "Sign in :Contact preferences :View more jobs"
+python test_email.py "Inbox/JobSearch/Reed" "https://click.e.reed.co.uk/\?qs=.{128}>" 159 "you are registered with reed.co.uk :Contact preferences :View more jobs"
 python test_email.py "Inbox/JobSearch/LinkedInAlerts" "https://\D*\d+[/?&>]"
 python test_email.py "Inbox/JobSearch/LinkedInAlerts" "https://www.linkedin.com/comm/jobs/view/\d+\?"
 python test_email.py "Inbox/JobSearch/LinkedInAlerts" "https://www.linkedin.com/comm/jobs/view/\d{10}\?" 50

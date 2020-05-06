@@ -33,6 +33,8 @@ def ScrapeLinkedIn (url) :
     # set regular expressions
     titlere = 'class=\"topcard__title">(.+?)<'
     attributere = 'topcard__flavor(''|--bullet|--closed)\">(.*?)<'
+    companyre = 'sub-nav-cta__optional-url\"title=\"(\D+?)"'
+    locationre = '<span class=\"job-result-card__location\">(\D+?)</span><time class=\"job-result-card'
 
     # Retrieve web text
     Httpresponse = requests.get(url)
@@ -42,10 +44,16 @@ def ScrapeLinkedIn (url) :
     EngineJobData = {}
     ProcessedJobData = {}
     Attributevalues = []
+    Altcompany = ''
+    Altlocation = ''
 
     for Httpline in Httplines : 
+        Httpmatch = re.search(locationre,Httpline)
+        if Httpmatch: Altlocation = Httpmatch.group(1)
         Httpmatch = re.search(titlere,Httpline)
         if Httpmatch: EngineJobData['title'] = Httpmatch.group(1)
+        Httpmatch = re.search(companyre,Httpline)
+        if Httpmatch: Altcompany = Httpmatch.group(1)
         Httpmatch = re.findall(attributere,Httpline)
         if Httpmatch: Attributevalues = Httpmatch
      
@@ -75,6 +83,10 @@ def ScrapeLinkedIn (url) :
     # Set salary values.  
     ProcessedJobData['salary_min'] = 0
     ProcessedJobData['salary_max'] = 0
+    
+    # Fill in any blank company and location data
+    if ( len(ProcessedJobData['company']) == 0 ) : ProcessedJobData['company'] = Altcompany
+    if ( len(ProcessedJobData['location']) == 0 ) : ProcessedJobData['location'] = Altlocation
     
     return ProcessedJobData
     

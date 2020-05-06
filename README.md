@@ -1,8 +1,8 @@
 # process_vacancies
 
-This repository delivers python utility scripts 'initialize_database.py', 'parse_mail.py' and 'update_vacancies.py'. These scripts 
-support the processing of job alert e-mails which can be received from a number of popular CV/Job engines. The scripts both implement 
-and rely on a database called 'vacancies' defined on a local instance of 'MySQL'. They also require that the job alert e-mails 
+This repository delivers python utility scripts 'initialize_database.py', 'parse_mail.py', 'update_vacancies.py' and generate_report.py. 
+These scripts support the processing of job alert e-mails which can be received from a number of popular CV/Job engines. The scripts both 
+implement and rely on a database called 'vacancies' defined on a local instance of 'MySQL'. They also require that the job alert e-mails 
 received are stored in separate mail folders in a local instance of 'Outlook'. 'Chrome' must also be installed so that details of any 
 vacancy can be displayed using a unique vacancy url.
 
@@ -35,6 +35,7 @@ File | File Contents
 initialize_database.py | Configures and checks the MySQL 'vacancies' database and associated tables.
 parse_mail.py | Parses Outlook mail and adds details of new vacancies to MySQL
 update_vacancies.py | Interacts with the user allowing them to change details ( including the state ) of individual vacancies. 
+generate_report.py | Generates a report containg the history of all vacancies applied for
 companies.data | An extract of Companies House data containing known recruitment agencies.
 connect.data | Information required to connect to local MySQL instance
 definition.sql | All SQL statements required to define the 'vacancies' database and associated tables.
@@ -54,7 +55,6 @@ The following additional functionality is planned:
 
 - Detection of duplicate vacancies ( per CV/Job engine )
 - Detection/removal of vacancies raised by agencies.
-- Production of vacancy history reports.
 - Production of per CV/Job engine metrics. 
 - Automatic backup of the contents of the 'vacancies' database.
 

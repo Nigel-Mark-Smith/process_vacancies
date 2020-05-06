@@ -140,6 +140,9 @@ for Vacancy in SQLresponse :
     Primary = {}
     Primary['vacancy_id'] = JobID
     Primary['engine_id'] = EngineID
+    
+    # Display to true
+    Display = True
 
     # Populate updates. This involves scraping web content.
     VacancyUpdate = {}
@@ -148,6 +151,7 @@ for Vacancy in SQLresponse :
         VacancyUpdate = Web.ScrapeLinkedIn(Joburl)
         # Job alerts can contain expired vacancies
         if not 'title' in VacancyUpdate : 
+            Display = False
             Errormessage = 'Vacancy %s for LinkedIn has expired' % JobID
             File.Logerror(ErrorfileObject,module,Errormessage,info)
             
@@ -160,42 +164,50 @@ for Vacancy in SQLresponse :
     
     HistoryUpdate = {}
     
-    # Display vacancy.
-    Interface.ViewVacancy(Browser,Joburl)
+    if ( Display ) :
     
-    # Display standard job details.
-    Interface.DisplayDetails(VacancyUpdate)
+        # Display vacancy.
+        Interface.ViewVacancy(Browser,Joburl)
+    
+        # Display standard job details.
+        Interface.DisplayDetails(VacancyUpdate)
    
-    # Enter if further action is required.
-    Choices = ['y','n','exit']
-    Prompt = 'Do you wish to pursue vacancy %s %s : ' % ( JobID , str(Choices) )
-    Choice = Interface.GetChoice(Prompt,Choices,count = 2)  
+        # Enter if further action is required.
+        Choices = ['y','n','skip']
+        Prompt = 'Do you wish to pursue vacancy %s %s : ' % ( JobID , str(Choices) )
+        Choice = Interface.GetChoice(Prompt,Choices,count = 2)  
+
+    else:
+    
+        Choice = 'n' 
     
     # Set vacancy to correct state and fill in further details if available
     if ( Choice == 'y' ) :
+    
+        ReSelect = False
   
         while True :
         
             # Enhance database updates
             VacancyUpdate['vacancy_state'] = 'Enhanced'    
 
-            if ( len(VacancyUpdate['company']) == 0 ) :
+            if ( ( len(VacancyUpdate['company']) == 0 ) or ReSelect ) :
                 Prompt = 'Please enter the name of the company where the vacancy is : '
                 VacancyUpdate['company'] = Interface.GetStrinput(Prompt)
         
-            if ( len(VacancyUpdate['title']) == 0 ) :
+            if ( ( len(VacancyUpdate['title']) == 0 ) or ReSelect ) :
                 Prompt = 'Please enter the name of the title of the vacancy : '
                 VacancyUpdate['title'] = Interface.GetStrinput(Prompt)
                 
-            if ( len(VacancyUpdate['location']) == 0 ) :
+            if ( ( len(VacancyUpdate['location']) == 0 ) or ReSelect ) :
                 Prompt = 'Please enter the name of the location of the vacancy : '
                 VacancyUpdate['location'] = Interface.GetStrinput(Prompt)
         
-            if ( VacancyUpdate['salary_min'] == 0 ) :
+            if ( ( VacancyUpdate['salary_min'] == 0 ) or ReSelect ) :
                 Prompt = 'Please enter the minimum salary for the vacancy : '
                 VacancyUpdate['salary_min'] = str(Interface.GetIntinput(Prompt))
                 
-            if ( VacancyUpdate['salary_max'] == 0 ) :
+            if ( ( VacancyUpdate['salary_max'] == 0 ) or ReSelect ):
                 Prompt = 'Please enter the maximum salary for the vacancy : '
                 VacancyUpdate['salary_max'] = str(Interface.GetIntinput(Prompt))
 
@@ -205,7 +217,10 @@ for Vacancy in SQLresponse :
             Prompt = 'Are the values entered correct %s : ' % str(Choices)
             Choice = Interface.GetChoice(Prompt,Choices,count = 2)
             
-            if ( Choice == 'y' ) : break
+            if ( Choice == 'y' ) : 
+                break
+            else : 
+                ReSelect = True
         
         # Execute database updates
         SQLcommand = Db.GenSQLupdate(VacancyTable,VacancyUpdate,Vacanyfields,Primary)
@@ -221,7 +236,7 @@ for Vacancy in SQLresponse :
         Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
         if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
         
-    elif ( Choice == 'exit' ) : break
+    elif ( Choice == 'skip' ) : break
         
     else:
     

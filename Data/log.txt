@@ -41,3 +41,498 @@ Wed Apr 15 16:20:10 2020 LOG: test_email: CONTAINS URL ---> : https://www.linked
 Wed Apr 15 16:20:10 2020 LOG: test_email: LINE -----------> : Technical Support Engineer (Remote) - $60,000/year USD - NEW <https://www.linkedin.com/comm/jobs/view/1822019489?recommendedFlavor=HIDDEN_GEM&refId=1cb6ce57-62d2-4cb3-a53e-7d5cc6eef6dd&trk=eml-jymbii-organic-job-card&midToken=AQGnhI7lHGZHjA&trkEmail=eml-jobs_jymbii_digest-null-23-null-null-3l0q5%7Ek9156hgg%7Eu2-null-jobs%7Eview&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3Bjy%2BCzpLaRA2muicFD2rNdg%3D%3D> 	 
 Wed Apr 15 16:20:10 2020 LOG: test_email: CONTAINS URL ---> : https://www.linkedin.com/comm/jobs/view/1822019489?
 Wed Apr 15 16:20:15 2020 INFO: test_email: Completed
+Mon Apr 20 17:12:11 2020 INFO: update_vacancies: Started
+Mon Apr 20 17:12:11 2020 INFO: update_vacancies: Read database connection data
+Mon Apr 20 17:12:11 2020 INFO: update_vacancies: Connected to database
+Mon Apr 20 17:12:11 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon Apr 20 17:12:11 2020 INFO: update_vacancies: Read history table field definitions
+Mon Apr 20 17:24:37 2020 INFO: update_vacancies: Started
+Mon Apr 20 17:24:37 2020 INFO: update_vacancies: Read database connection data
+Mon Apr 20 17:24:37 2020 INFO: update_vacancies: Connected to database
+Mon Apr 20 17:24:37 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon Apr 20 17:24:37 2020 INFO: update_vacancies: Read history table field definitions
+Mon Apr 20 17:24:37 2020 INFO: update_vacancies: Vacancy 1830052770 for LinkedIn has expired
+Mon Apr 20 17:24:48 2020 INFO: update_vacancies: Vacancy 1830055689 for LinkedIn has expired
+Mon Apr 20 17:24:58 2020 INFO: update_vacancies: Vacancy 1830056983 for LinkedIn has expired
+Mon Apr 20 17:25:06 2020 INFO: update_vacancies: Vacancy 1830074923 for LinkedIn has expired
+Mon Apr 20 17:25:14 2020 INFO: update_vacancies: Vacancy 1830244177 for LinkedIn has expired
+Mon Apr 20 17:25:23 2020 INFO: update_vacancies: Vacancy 1830244439 for LinkedIn has expired
+Mon Apr 20 17:25:31 2020 INFO: update_vacancies: Vacancy 1830244440 for LinkedIn has expired
+Mon Apr 20 17:47:51 2020 INFO: update_vacancies: Completed
+Wed Apr 22 12:15:23 2020 INFO: update_vacancies: Started
+Wed Apr 22 12:15:23 2020 INFO: update_vacancies: Read database connection data
+Wed Apr 22 12:15:23 2020 INFO: update_vacancies: Connected to database
+Wed Apr 22 12:15:23 2020 INFO: update_vacancies: Read vacancy table field definitions
+Wed Apr 22 12:15:23 2020 INFO: update_vacancies: Read history table field definitions
+Wed Apr 22 12:19:07 2020 INFO: update_vacancies: Vacancy 1831859112 for LinkedIn has expired
+Wed Apr 22 12:19:16 2020 INFO: update_vacancies: Vacancy 1831866714 for LinkedIn has expired
+Wed Apr 22 12:19:25 2020 INFO: update_vacancies: Vacancy 1831870256 for LinkedIn has expired
+Wed Apr 22 12:19:32 2020 INFO: update_vacancies: Vacancy 1831883774 for LinkedIn has expired
+Wed Apr 22 12:19:41 2020 INFO: update_vacancies: Vacancy 1831891805 for LinkedIn has expired
+Wed Apr 22 12:19:50 2020 INFO: update_vacancies: Vacancy 1831896566 for LinkedIn has expired
+Wed Apr 22 12:19:59 2020 INFO: update_vacancies: Vacancy 1831901634 for LinkedIn has expired
+Wed Apr 22 12:20:06 2020 INFO: update_vacancies: Vacancy 1831903824 for LinkedIn has expired
+Wed Apr 22 12:20:13 2020 INFO: update_vacancies: Vacancy 1831982529 for LinkedIn has expired
+Wed Apr 22 12:20:19 2020 INFO: update_vacancies: Vacancy 1831983520 for LinkedIn has expired
+Wed Apr 22 12:20:38 2020 INFO: update_vacancies: Vacancy 1831983521 for LinkedIn has expired
+Wed Apr 22 12:20:46 2020 INFO: update_vacancies: Vacancy 1831983522 for LinkedIn has expired
+Wed Apr 22 12:20:56 2020 INFO: update_vacancies: Vacancy 1831983548 for LinkedIn has expired
+Wed Apr 22 12:21:06 2020 INFO: update_vacancies: Vacancy 1831983584 for LinkedIn has expired
+Wed Apr 22 12:21:16 2020 INFO: update_vacancies: Vacancy 1831984052 for LinkedIn has expired
+Wed Apr 22 12:43:29 2020 INFO: update_vacancies: Completed
+Wed Apr 22 12:43:36 2020 INFO: parse_mail: Started
+Wed Apr 22 12:43:36 2020 INFO: parse_mail: Read database connection data
+Wed Apr 22 12:43:36 2020 INFO: parse_mail: Connected to database
+Wed Apr 22 12:43:36 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Connected to Outlook
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Read vacancy table field definitions
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Read history table field definitions
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Read Counter table field definitions
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Read Outlook mail folder detail
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Built mail folder list
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Wed Apr 22 12:43:37 2020 WARNING: parse_mail: No job urls found in CV-Library
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Wed Apr 22 12:43:37 2020 WARNING: parse_mail: No job urls found in LinkedInAlerts
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Processing sub-folder Reed
+Wed Apr 22 12:43:37 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Wed Apr 22 12:43:37 2020 WARNING: parse_mail: No job urls found in Reed
+Wed Apr 22 12:43:38 2020 INFO: parse_mail: Processing sub-folder Indeed
+Wed Apr 22 12:43:38 2020 WARNING: parse_mail: No job urls found in Indeed
+Wed Apr 22 12:43:38 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Wed Apr 22 12:43:38 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Wed Apr 22 12:43:38 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Wed Apr 22 12:43:38 2020 WARNING: parse_mail: No job urls found in FindAJob
+Wed Apr 22 12:43:38 2020 INFO: parse_mail: Displayed mail folder information
+Wed Apr 22 12:43:38 2020 INFO: parse_mail: Completed
+Mon Apr 27 12:44:28 2020 INFO: parse_mail: Started
+Mon Apr 27 12:44:28 2020 INFO: parse_mail: Read database connection data
+Mon Apr 27 12:44:28 2020 INFO: parse_mail: Connected to database
+Mon Apr 27 12:44:35 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Mon Apr 27 12:44:36 2020 INFO: parse_mail: Connected to Outlook
+Mon Apr 27 12:44:37 2020 INFO: parse_mail: Read vacancy table field definitions
+Mon Apr 27 12:44:37 2020 INFO: parse_mail: Read history table field definitions
+Mon Apr 27 12:44:37 2020 INFO: parse_mail: Read Counter table field definitions
+Mon Apr 27 12:44:37 2020 INFO: parse_mail: Read Outlook mail folder detail
+Mon Apr 27 12:44:37 2020 INFO: parse_mail: Built mail folder list
+Mon Apr 27 12:44:37 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Mon Apr 27 12:44:39 2020 INFO: parse_mail: 9 job urls found in CV-Library
+Mon Apr 27 12:44:39 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Mon Apr 27 12:44:43 2020 INFO: parse_mail: 24 job urls found in LinkedInAlerts
+Mon Apr 27 12:44:43 2020 INFO: parse_mail: Processing sub-folder Reed
+Mon Apr 27 12:44:43 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Mon Apr 27 12:44:45 2020 INFO: parse_mail: 1 job urls found in Reed
+Mon Apr 27 12:44:45 2020 INFO: parse_mail: Processing sub-folder Indeed
+Mon Apr 27 12:44:46 2020 INFO: parse_mail: 4 job urls found in Indeed
+Mon Apr 27 12:44:46 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Mon Apr 27 12:44:46 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Mon Apr 27 12:44:46 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Mon Apr 27 12:44:46 2020 WARNING: parse_mail: No job urls found in FindAJob
+Mon Apr 27 12:44:46 2020 INFO: parse_mail: Displayed mail folder information
+Mon Apr 27 12:44:46 2020 INFO: parse_mail: Completed
+Mon Apr 27 12:44:59 2020 INFO: update_vacancies: Started
+Mon Apr 27 12:44:59 2020 INFO: update_vacancies: Read database connection data
+Mon Apr 27 12:44:59 2020 INFO: update_vacancies: Connected to database
+Mon Apr 27 12:44:59 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon Apr 27 12:44:59 2020 INFO: update_vacancies: Read history table field definitions
+Mon Apr 27 12:46:06 2020 INFO: update_vacancies: Vacancy 1832814467 for LinkedIn has expired
+Mon Apr 27 12:46:15 2020 INFO: update_vacancies: Vacancy 1832815356 for LinkedIn has expired
+Mon Apr 27 12:49:27 2020 INFO: update_vacancies: Vacancy 1834971262 for LinkedIn has expired
+Mon Apr 27 12:49:34 2020 INFO: update_vacancies: Vacancy 1835567945 for LinkedIn has expired
+Mon Apr 27 12:49:41 2020 INFO: update_vacancies: Vacancy 1836282538 for LinkedIn has expired
+Mon Apr 27 12:49:50 2020 INFO: update_vacancies: Vacancy 1836287306 for LinkedIn has expired
+Mon Apr 27 12:49:59 2020 INFO: update_vacancies: Vacancy 1837031067 for LinkedIn has expired
+Mon Apr 27 13:05:57 2020 INFO: update_vacancies: Completed
+Tue May  5 11:32:44 2020 INFO: parse_mail: Started
+Tue May  5 11:32:44 2020 INFO: parse_mail: Read database connection data
+Tue May  5 11:32:44 2020 INFO: parse_mail: Connected to database
+Tue May  5 11:32:52 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Tue May  5 11:32:52 2020 INFO: parse_mail: Connected to Outlook
+Tue May  5 11:32:52 2020 INFO: parse_mail: Read vacancy table field definitions
+Tue May  5 11:32:52 2020 INFO: parse_mail: Read history table field definitions
+Tue May  5 11:32:53 2020 INFO: parse_mail: Read Counter table field definitions
+Tue May  5 11:32:53 2020 INFO: parse_mail: Read Outlook mail folder detail
+Tue May  5 11:32:53 2020 INFO: parse_mail: Built mail folder list
+Tue May  5 11:32:53 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Tue May  5 11:32:56 2020 INFO: parse_mail: 14 job urls found in CV-Library
+Tue May  5 11:32:56 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Tue May  5 11:33:21 2020 INFO: parse_mail: 107 job urls found in LinkedInAlerts
+Tue May  5 11:33:21 2020 INFO: parse_mail: Processing sub-folder Reed
+Tue May  5 11:33:21 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Tue May  5 11:33:23 2020 INFO: parse_mail: 1 job urls found in Reed
+Tue May  5 11:33:23 2020 INFO: parse_mail: Processing sub-folder Indeed
+Tue May  5 11:33:25 2020 INFO: parse_mail: 11 job urls found in Indeed
+Tue May  5 11:33:25 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Tue May  5 11:33:25 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Tue May  5 11:33:25 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Tue May  5 11:33:26 2020 INFO: parse_mail: 1 job urls found in FindAJob
+Tue May  5 11:33:26 2020 INFO: parse_mail: Displayed mail folder information
+Tue May  5 11:33:26 2020 INFO: parse_mail: Completed
+Tue May  5 11:33:40 2020 INFO: update_vacancies: Started
+Tue May  5 11:33:40 2020 INFO: update_vacancies: Read database connection data
+Tue May  5 11:33:40 2020 INFO: update_vacancies: Connected to database
+Tue May  5 11:33:40 2020 INFO: update_vacancies: Read vacancy table field definitions
+Tue May  5 11:33:40 2020 INFO: update_vacancies: Read history table field definitions
+Tue May  5 11:45:20 2020 INFO: update_vacancies: Vacancy 1837556870 for LinkedIn has expired
+Tue May  5 11:50:36 2020 INFO: update_vacancies: Vacancy 1841385813 for LinkedIn has expired
+Tue May  5 11:50:46 2020 INFO: update_vacancies: Vacancy 1841387785 for LinkedIn has expired
+Tue May  5 11:52:03 2020 INFO: update_vacancies: Vacancy 1841698515 for LinkedIn has expired
+Tue May  5 11:52:09 2020 INFO: update_vacancies: Vacancy 1841698517 for LinkedIn has expired
+Tue May  5 11:52:16 2020 INFO: update_vacancies: Vacancy 1841953907 for LinkedIn has expired
+Tue May  5 11:53:02 2020 INFO: update_vacancies: Vacancy 1841961987 for LinkedIn has expired
+Tue May  5 11:53:11 2020 INFO: update_vacancies: Vacancy 1841966002 for LinkedIn has expired
+Tue May  5 11:53:26 2020 INFO: update_vacancies: Vacancy 1842316474 for LinkedIn has expired
+Tue May  5 11:53:37 2020 INFO: update_vacancies: Vacancy 1842316693 for LinkedIn has expired
+Tue May  5 11:53:45 2020 INFO: update_vacancies: Vacancy 1842316999 for LinkedIn has expired
+Tue May  5 11:53:57 2020 INFO: update_vacancies: Vacancy 1842325145 for LinkedIn has expired
+Tue May  5 11:54:36 2020 INFO: update_vacancies: Vacancy 1842477508 for LinkedIn has expired
+Tue May  5 11:55:45 2020 INFO: update_vacancies: Vacancy 1843454859 for LinkedIn has expired
+Tue May  5 11:55:52 2020 INFO: update_vacancies: Vacancy 1843458365 for LinkedIn has expired
+Tue May  5 11:56:23 2020 INFO: update_vacancies: Vacancy 1843973536 for LinkedIn has expired
+Tue May  5 11:56:32 2020 INFO: update_vacancies: Vacancy 1843987291 for LinkedIn has expired
+Tue May  5 11:56:39 2020 INFO: update_vacancies: Vacancy 1844038666 for LinkedIn has expired
+Tue May  5 11:57:23 2020 INFO: update_vacancies: Vacancy 1844087434 for LinkedIn has expired
+Tue May  5 11:57:56 2020 INFO: update_vacancies: Vacancy 1844218467 for LinkedIn has expired
+Tue May  5 11:58:36 2020 INFO: update_vacancies: Vacancy 1844317643 for LinkedIn has expired
+Tue May  5 11:59:23 2020 INFO: update_vacancies: Vacancy 1844378262 for LinkedIn has expired
+Tue May  5 11:59:40 2020 INFO: update_vacancies: Vacancy 1844767612 for LinkedIn has expired
+Tue May  5 11:59:59 2020 INFO: update_vacancies: Vacancy 1844913157 for LinkedIn has expired
+Tue May  5 12:00:06 2020 INFO: update_vacancies: Vacancy 1844914138 for LinkedIn has expired
+Tue May  5 12:03:11 2020 INFO: update_vacancies: Vacancy 1846775641 for LinkedIn has expired
+Tue May  5 12:03:21 2020 INFO: update_vacancies: Vacancy 1846828202 for LinkedIn has expired
+Tue May  5 12:03:33 2020 INFO: update_vacancies: Vacancy 1846831412 for LinkedIn has expired
+Tue May  5 12:03:41 2020 INFO: update_vacancies: Vacancy 1847419386 for LinkedIn has expired
+Tue May  5 12:03:51 2020 INFO: update_vacancies: Vacancy 1847477022 for LinkedIn has expired
+Tue May  5 12:03:56 2020 INFO: update_vacancies: Vacancy 1847480143 for LinkedIn has expired
+Tue May  5 12:04:07 2020 INFO: update_vacancies: Vacancy 1847482090 for LinkedIn has expired
+Tue May  5 12:04:19 2020 INFO: update_vacancies: Vacancy 1847482541 for LinkedIn has expired
+Tue May  5 12:04:26 2020 INFO: update_vacancies: Vacancy 1847489240 for LinkedIn has expired
+Tue May  5 12:04:33 2020 INFO: update_vacancies: Vacancy 1847540606 for LinkedIn has expired
+Tue May  5 12:09:03 2020 INFO: update_vacancies: Vacancy 1848215112 for LinkedIn has expired
+Tue May  5 12:09:10 2020 INFO: update_vacancies: Vacancy 1848364109 for LinkedIn has expired
+Tue May  5 12:09:19 2020 INFO: update_vacancies: Vacancy 1849654938 for LinkedIn has expired
+Tue May  5 12:09:29 2020 INFO: update_vacancies: Vacancy 1849656855 for LinkedIn has expired
+Tue May  5 12:09:36 2020 INFO: update_vacancies: Vacancy 1849661455 for LinkedIn has expired
+Tue May  5 12:09:44 2020 INFO: update_vacancies: Vacancy 1849662479 for LinkedIn has expired
+Tue May  5 12:09:52 2020 INFO: update_vacancies: Vacancy 1849663361 for LinkedIn has expired
+Tue May  5 12:10:02 2020 INFO: update_vacancies: Vacancy 1849664146 for LinkedIn has expired
+Tue May  5 12:10:27 2020 INFO: update_vacancies: Vacancy 1849988065 for LinkedIn has expired
+Tue May  5 12:32:31 2020 INFO: update_vacancies: Completed
+Tue May  5 16:24:44 2020 INFO: parse_mail: Started
+Tue May  5 16:24:44 2020 INFO: parse_mail: Read database connection data
+Tue May  5 16:24:44 2020 INFO: parse_mail: Connected to database
+Tue May  5 16:24:45 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Tue May  5 16:24:46 2020 INFO: parse_mail: Connected to Outlook
+Tue May  5 16:24:46 2020 INFO: parse_mail: Read vacancy table field definitions
+Tue May  5 16:24:46 2020 INFO: parse_mail: Read history table field definitions
+Tue May  5 16:24:46 2020 INFO: parse_mail: Read Counter table field definitions
+Tue May  5 16:24:46 2020 INFO: parse_mail: Read Outlook mail folder detail
+Tue May  5 16:24:46 2020 INFO: parse_mail: Built mail folder list
+Tue May  5 16:24:46 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Tue May  5 16:24:46 2020 WARNING: parse_mail: No job urls found in CV-Library
+Tue May  5 16:24:46 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Tue May  5 16:24:46 2020 WARNING: parse_mail: No job urls found in LinkedInAlerts
+Tue May  5 16:24:46 2020 INFO: parse_mail: Processing sub-folder Reed
+Tue May  5 16:24:46 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Tue May  5 16:24:46 2020 WARNING: parse_mail: No job urls found in Reed
+Tue May  5 16:24:46 2020 INFO: parse_mail: Processing sub-folder Indeed
+Tue May  5 16:24:46 2020 WARNING: parse_mail: No job urls found in Indeed
+Tue May  5 16:24:46 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Tue May  5 16:24:46 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Tue May  5 16:24:46 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Tue May  5 16:24:46 2020 WARNING: parse_mail: No job urls found in FindAJob
+Tue May  5 16:24:46 2020 INFO: parse_mail: Displayed mail folder information
+Tue May  5 16:24:46 2020 INFO: parse_mail: Completed
+Wed May  6 09:46:28 2020 INFO: parse_mail: Started
+Wed May  6 09:46:28 2020 INFO: parse_mail: Read database connection data
+Wed May  6 09:46:28 2020 INFO: parse_mail: Connected to database
+Wed May  6 09:46:35 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Wed May  6 09:46:35 2020 ERROR: parse_mail: Unable to connect to Outlook
+Wed May  6 09:46:47 2020 INFO: parse_mail: Started
+Wed May  6 09:46:47 2020 INFO: parse_mail: Read database connection data
+Wed May  6 09:46:47 2020 INFO: parse_mail: Connected to database
+Wed May  6 09:46:54 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Wed May  6 09:46:55 2020 INFO: parse_mail: Connected to Outlook
+Wed May  6 09:46:55 2020 INFO: parse_mail: Read vacancy table field definitions
+Wed May  6 09:46:55 2020 INFO: parse_mail: Read history table field definitions
+Wed May  6 09:46:55 2020 INFO: parse_mail: Read Counter table field definitions
+Wed May  6 09:46:55 2020 INFO: parse_mail: Read Outlook mail folder detail
+Wed May  6 09:46:55 2020 INFO: parse_mail: Built mail folder list
+Wed May  6 09:46:55 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Wed May  6 09:46:58 2020 INFO: parse_mail: 11 job urls found in CV-Library
+Wed May  6 09:46:58 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Wed May  6 09:46:59 2020 INFO: parse_mail: 9 job urls found in LinkedInAlerts
+Wed May  6 09:46:59 2020 INFO: parse_mail: Processing sub-folder Reed
+Wed May  6 09:46:59 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Wed May  6 09:47:01 2020 INFO: parse_mail: 1 job urls found in Reed
+Wed May  6 09:47:01 2020 INFO: parse_mail: Processing sub-folder Indeed
+Wed May  6 09:47:01 2020 INFO: parse_mail: 1 job urls found in Indeed
+Wed May  6 09:47:01 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Wed May  6 09:47:01 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Wed May  6 09:47:01 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Wed May  6 09:47:01 2020 WARNING: parse_mail: No job urls found in FindAJob
+Wed May  6 09:47:01 2020 INFO: parse_mail: Displayed mail folder information
+Wed May  6 09:47:01 2020 INFO: parse_mail: Completed
+Wed May  6 09:47:12 2020 INFO: update_vacancies: Started
+Wed May  6 09:47:12 2020 INFO: update_vacancies: Read database connection data
+Wed May  6 09:47:12 2020 INFO: update_vacancies: Connected to database
+Wed May  6 09:47:12 2020 INFO: update_vacancies: Read vacancy table field definitions
+Wed May  6 09:47:12 2020 INFO: update_vacancies: Read history table field definitions
+Wed May  6 10:09:16 2020 INFO: update_vacancies: Completed
+Wed May  6 10:53:20 2020 INFO: genrate_report: Started
+Wed May  6 10:53:20 2020 INFO: genrate_report: Read database connection data
+Wed May  6 10:53:20 2020 INFO: genrate_report: Connected to database
+Wed May  6 10:53:20 2020 INFO: genrate_report: Completed
+Wed May  6 11:02:16 2020 INFO: genrate_report: Started
+Wed May  6 11:02:16 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:02:16 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:02:16 2020 INFO: genrate_report: Completed
+Wed May  6 11:16:41 2020 INFO: genrate_report: Started
+Wed May  6 11:16:41 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:16:41 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:17:21 2020 INFO: genrate_report: Started
+Wed May  6 11:17:21 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:17:21 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:17:21 2020 INFO: genrate_report: Completed
+Wed May  6 11:17:57 2020 INFO: genrate_report: Started
+Wed May  6 11:17:57 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:17:57 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:17:57 2020 INFO: genrate_report: Completed
+Wed May  6 11:18:30 2020 INFO: genrate_report: Started
+Wed May  6 11:18:30 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:18:30 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:18:30 2020 INFO: genrate_report: Completed
+Wed May  6 11:19:00 2020 INFO: genrate_report: Started
+Wed May  6 11:19:00 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:19:00 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:19:00 2020 INFO: genrate_report: Completed
+Wed May  6 11:23:54 2020 INFO: genrate_report: Started
+Wed May  6 11:23:54 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:23:54 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:23:54 2020 INFO: genrate_report: Completed
+Wed May  6 11:25:04 2020 INFO: genrate_report: Started
+Wed May  6 11:25:04 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:25:04 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:25:04 2020 INFO: genrate_report: Completed
+Wed May  6 11:33:25 2020 INFO: genrate_report: Started
+Wed May  6 11:33:25 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:33:25 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:33:25 2020 ERROR: genrate_report: SQLresponse error for SQL command "select company,title,location from vacancies.history where engine_id = 2 and vacancy_id = '1798361270'"
+Wed May  6 11:34:18 2020 INFO: genrate_report: Started
+Wed May  6 11:34:18 2020 INFO: genrate_report: Read database connection data
+Wed May  6 11:34:18 2020 INFO: genrate_report: Connected to database
+Wed May  6 11:34:18 2020 INFO: genrate_report: Completed
+Wed May  6 12:02:42 2020 INFO: genrate_report: Started
+Wed May  6 12:02:42 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:02:42 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:02:42 2020 INFO: genrate_report: Completed
+Wed May  6 12:03:06 2020 INFO: genrate_report: Started
+Wed May  6 12:03:06 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:03:06 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:03:06 2020 INFO: genrate_report: Completed
+Wed May  6 12:06:58 2020 INFO: genrate_report: Started
+Wed May  6 12:06:58 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:06:58 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:07:32 2020 INFO: genrate_report: Started
+Wed May  6 12:07:32 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:07:32 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:09:43 2020 INFO: genrate_report: Started
+Wed May  6 12:09:43 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:09:43 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:10:12 2020 INFO: genrate_report: Started
+Wed May  6 12:10:12 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:10:12 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:10:12 2020 INFO: genrate_report: Completed
+Wed May  6 12:12:48 2020 INFO: genrate_report: Started
+Wed May  6 12:12:48 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:12:48 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:13:02 2020 INFO: genrate_report: Started
+Wed May  6 12:13:02 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:13:02 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:13:02 2020 INFO: genrate_report: Completed
+Wed May  6 12:24:32 2020 INFO: genrate_report: Started
+Wed May  6 12:26:04 2020 INFO: genrate_report: Started
+Wed May  6 12:31:36 2020 INFO: genrate_report: Started
+Wed May  6 12:32:01 2020 INFO: genrate_report: Started
+Wed May  6 12:35:29 2020 INFO: genrate_report: Started
+Wed May  6 12:38:27 2020 INFO: genrate_report: Started
+Wed May  6 12:40:16 2020 INFO: genrate_report: Started
+Wed May  6 12:40:16 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 12:40:16 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:40:16 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:40:16 2020 INFO: genrate_report: Completed
+Wed May  6 12:43:14 2020 INFO: genrate_report: Started
+Wed May  6 12:43:14 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 12:43:14 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:43:14 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:43:14 2020 INFO: genrate_report: Completed
+Wed May  6 12:50:22 2020 INFO: genrate_report: Started
+Wed May  6 12:50:22 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 12:50:22 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:50:22 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:50:37 2020 INFO: genrate_report: Started
+Wed May  6 12:50:37 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 12:50:37 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:50:37 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:50:37 2020 INFO: genrate_report: Completed
+Wed May  6 12:52:01 2020 INFO: genrate_report: Started
+Wed May  6 12:52:01 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 12:52:01 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:52:01 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:52:01 2020 INFO: genrate_report: Completed
+Wed May  6 12:53:52 2020 INFO: genrate_report: Started
+Wed May  6 12:53:52 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 12:53:52 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:53:52 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:53:52 2020 INFO: genrate_report: Completed
+Wed May  6 12:56:40 2020 INFO: genrate_report: Started
+Wed May  6 12:56:40 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 12:56:40 2020 INFO: genrate_report: Read database connection data
+Wed May  6 12:56:40 2020 INFO: genrate_report: Connected to database
+Wed May  6 12:56:40 2020 INFO: genrate_report: Completed
+Wed May  6 14:21:27 2020 INFO: genrate_report: Started
+Wed May  6 14:21:27 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 14:21:27 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:21:27 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:21:27 2020 INFO: genrate_report: Completed
+Wed May  6 14:22:46 2020 INFO: genrate_report: Started
+Wed May  6 14:22:46 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 14:22:46 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:22:46 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:22:46 2020 INFO: genrate_report: Completed
+Wed May  6 14:23:13 2020 INFO: genrate_report: Started
+Wed May  6 14:23:13 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 14:23:13 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:23:13 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:23:13 2020 INFO: genrate_report: Completed
+Wed May  6 14:23:31 2020 INFO: genrate_report: Started
+Wed May  6 14:23:31 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 14:23:31 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:23:31 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:23:31 2020 INFO: genrate_report: Completed
+Wed May  6 14:23:40 2020 INFO: genrate_report: Started
+Wed May  6 14:23:40 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 14:23:40 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:23:40 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:23:40 2020 INFO: genrate_report: Completed
+Wed May  6 14:23:52 2020 INFO: genrate_report: Started
+Wed May  6 14:23:52 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 14:23:52 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:23:52 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:23:52 2020 INFO: genrate_report: Completed
+Wed May  6 14:24:07 2020 INFO: genrate_report: Started
+Wed May  6 14:24:07 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 14:24:07 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:24:07 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:24:07 2020 INFO: genrate_report: Completed
+Wed May  6 14:36:39 2020 INFO: genrate_report: Started
+Wed May  6 14:36:39 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 14:36:39 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:36:39 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:36:39 2020 INFO: genrate_report: Completed
+Wed May  6 14:41:12 2020 INFO: genrate_report: Started
+Wed May  6 14:41:12 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:41:12 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:41:12 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:41:12 2020 INFO: genrate_report: Completed
+Wed May  6 14:42:25 2020 INFO: genrate_report: Started
+Wed May  6 14:42:25 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:42:25 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:42:25 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:42:25 2020 INFO: genrate_report: Completed
+Wed May  6 14:43:17 2020 INFO: genrate_report: Started
+Wed May  6 14:43:17 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:43:17 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:43:17 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:43:17 2020 INFO: genrate_report: Completed
+Wed May  6 14:43:34 2020 INFO: genrate_report: Started
+Wed May  6 14:43:34 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:43:34 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:43:34 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:43:34 2020 INFO: genrate_report: Completed
+Wed May  6 14:43:52 2020 INFO: genrate_report: Started
+Wed May  6 14:43:52 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:43:52 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:43:52 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:43:52 2020 INFO: genrate_report: Completed
+Wed May  6 14:44:52 2020 INFO: genrate_report: Started
+Wed May  6 14:44:52 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:44:52 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:44:52 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:44:52 2020 INFO: genrate_report: Completed
+Wed May  6 14:49:23 2020 INFO: genrate_report: Started
+Wed May  6 14:49:23 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:49:23 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:49:23 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:49:23 2020 INFO: genrate_report: Completed
+Wed May  6 14:49:23 2020 WARNING: genrate_report: Could not close X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:49:37 2020 INFO: genrate_report: Started
+Wed May  6 14:49:37 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:49:37 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:49:37 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:49:37 2020 INFO: genrate_report: Completed
+Wed May  6 14:50:49 2020 INFO: genrate_report: Started
+Wed May  6 14:50:49 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:50:49 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:50:49 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:50:49 2020 INFO: genrate_report: Completed
+Wed May  6 14:52:24 2020 INFO: genrate_report: Started
+Wed May  6 14:52:24 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:52:24 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:52:24 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:52:24 2020 INFO: genrate_report: Completed
+Wed May  6 14:54:47 2020 INFO: genrate_report: Started
+Wed May  6 14:54:47 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 14:54:47 2020 INFO: genrate_report: Read database connection data
+Wed May  6 14:54:47 2020 INFO: genrate_report: Connected to database
+Wed May  6 14:54:47 2020 INFO: genrate_report: Completed
+Wed May  6 15:03:25 2020 INFO: genrate_report: Started
+Wed May  6 15:03:25 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 15:03:25 2020 INFO: genrate_report: Read database connection data
+Wed May  6 15:03:25 2020 INFO: genrate_report: Connected to database
+Wed May  6 15:03:25 2020 INFO: genrate_report: Completed
+Wed May  6 15:30:11 2020 INFO: genrate_report: Started
+Wed May  6 15:30:11 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 15:30:11 2020 INFO: genrate_report: Read database connection data
+Wed May  6 15:30:11 2020 INFO: genrate_report: Connected to database
+Wed May  6 15:30:11 2020 INFO: genrate_report: Completed
+Wed May  6 15:37:16 2020 INFO: genrate_report: Started
+Wed May  6 15:37:16 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 15:37:16 2020 INFO: genrate_report: Read database connection data
+Wed May  6 15:37:16 2020 INFO: genrate_report: Connected to database
+Wed May  6 15:37:16 2020 INFO: genrate_report: Completed
+Wed May  6 15:37:55 2020 INFO: genrate_report: Started
+Wed May  6 15:37:55 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 15:37:55 2020 INFO: genrate_report: Read database connection data
+Wed May  6 15:37:55 2020 INFO: genrate_report: Connected to database
+Wed May  6 15:37:55 2020 INFO: genrate_report: Completed
+Wed May  6 15:40:58 2020 INFO: genrate_report: Started
+Wed May  6 15:40:58 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.doc
+Wed May  6 15:40:58 2020 INFO: genrate_report: Read database connection data
+Wed May  6 15:40:58 2020 INFO: genrate_report: Connected to database
+Wed May  6 15:40:58 2020 INFO: genrate_report: Completed
+Wed May  6 15:59:31 2020 INFO: genrate_report: Started
+Wed May  6 15:59:31 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 15:59:31 2020 INFO: genrate_report: Read database connection data
+Wed May  6 15:59:32 2020 INFO: genrate_report: Connected to database
+Wed May  6 15:59:32 2020 INFO: genrate_report: Completed
+Wed May  6 16:11:56 2020 INFO: genrate_report: Started
+Wed May  6 16:11:56 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 16:11:56 2020 INFO: genrate_report: Read database connection data
+Wed May  6 16:11:56 2020 INFO: genrate_report: Connected to database
+Wed May  6 16:11:56 2020 INFO: genrate_report: Generating report
+Wed May  6 16:11:56 2020 INFO: genrate_report: Completed
+Wed May  6 16:18:31 2020 INFO: genrate_report: Started
+Wed May  6 16:18:31 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 16:18:31 2020 INFO: genrate_report: Read database connection data
+Wed May  6 16:18:31 2020 INFO: genrate_report: Connected to database
+Wed May  6 16:18:31 2020 INFO: genrate_report: Generating report
+Wed May  6 16:18:31 2020 INFO: genrate_report: Completed
+Wed May  6 16:18:31 2020 INFO: genrate_report: Please convert X:\github\process_vacancies\Data\application_history.csv to xlsx format
+Wed May  6 16:18:57 2020 INFO: genrate_report: Started
+Wed May  6 16:18:57 2020 INFO: genrate_report: Openned export file X:\github\process_vacancies\Data\application_history.csv
+Wed May  6 16:18:57 2020 INFO: genrate_report: Read database connection data
+Wed May  6 16:18:57 2020 INFO: genrate_report: Connected to database
+Wed May  6 16:18:57 2020 INFO: genrate_report: Generating report
+Wed May  6 16:18:57 2020 INFO: genrate_report: Completed
+Wed May  6 16:18:57 2020 WARNING: genrate_report: Please convert X:\github\process_vacancies\Data\application_history.csv to xlsx format
