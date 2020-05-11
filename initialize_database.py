@@ -52,7 +52,7 @@ read = 'r'
 # Database and tables
 # DbName = 'test'
 DbName = 'vacancies'
-DbTable = ('company','engine','vacancy','history','counter')
+DbTable = ('company','engine','vacancy','history','counter','duplicate')
 
 # Function return values
 invalid = failure = 0

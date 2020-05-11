@@ -273,7 +273,37 @@ def GenSQLupdate (table,fieldvalues,fielddefinitions,primaryfieldvalues):
         
     return command       
 
+# Generate a comma seperated list of fields for inclusion in an SQL select statement
+def GenSelectList (fieldlist) :
 
+    "Generate a list of fields for inclusion in an SQL select statement"
+
+    seperator = ','
+    list = ''
+    
+    for field in fieldlist : 
+        list = list + field + seperator
+        
+    list = list.rstrip(seperator)
+   
+    return list
+    
+# Generate a list of where conditions for inclusion in an SQL select statement
+def GenWhereList (fieldlist,fieldvalues,fielddefinitions) :
+
+    "Generate a list of where conditions for inclusion in an SQL select statement"
+
+    seperator = ' and '
+    list = ''
+    
+    for field in fieldlist : 
+        fieldvalue = str(fieldvalues[field])
+        if ( fielddefinitions[field].find('int(') == -1 ) :  fieldvalue = '\'' + fieldvalue + '\''
+        list = list + field + ' = ' + fieldvalue + seperator
+    
+    list = list.rstrip(seperator)
+   
+    return list
 
     
     

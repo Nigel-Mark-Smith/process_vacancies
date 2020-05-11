@@ -18,15 +18,15 @@
 # The following data and configuration files are required by
 # this script:
 #
-# ./Data/connect.data               -   Contains MySQL login details. 
-# ./Data/application_history.docx   -   Document containing desciption
+# .\Data\connect.data               -   Contains MySQL login details. 
+# .\Data\application_history.docx   -   Document containing desciption
 #                                       description of contents and hyper link
 #                                       to ./Data/application_history.xlsx
 #
 # Export file
 # -----------
 #
-# This script will create an export file in the ./Data directory
+# This script will create an export file in the C:\JOBSEARCH\2019\Co-Ordination directory
 # with the following file name format:
 #
 # application_history.csv
@@ -47,7 +47,9 @@
 
 import Db
 import File
+import Interface
 import os
+import subprocess
 import sys
 
 # Function return values
@@ -66,10 +68,13 @@ Currentdir = os.getcwd()
 Datadir = Currentdir + '\\Data'
 Errorfilename = Datadir + '\\' + 'log.txt'
 Connectfilename = Datadir + '\\' + 'connect.csv'
-Historyfilename = Datadir + '\\' + 'application_history.csv'
+Historyfilename = 'C:\\JOBSEARCH\\2019\\Co-Ordination\\' + 'application_history.csv'
 append = 'a'
 read = 'r'
 overwrite = 'w'
+
+# Broswer
+Spreadsheet = 'excel.exe'
 
 # Database and tables
 DbName = 'vacancies'
@@ -180,7 +185,7 @@ for VacancyHistory in SQLresponse :
     # Print vacancy data
     OutputLine = ''
     for RowValue in CSVRow.values() :
-        OutputLine = OutputLine + str(RowValue) + ','
+        OutputLine = OutputLine + '\"' + str(RowValue) +'\"' + ','
        
     OutputLine = OutputLine.rstrip(',')
     OutputLine = OutputLine + '\n'
@@ -190,16 +195,19 @@ for VacancyHistory in SQLresponse :
 Errormessage = 'Could not disconnect from database'
 if ( Db.Disconnect(DbObject,failure) == failure ) : File.Logerror(ErrorfileObject,module,Errormessage,warning)
 
-# Log end of script
-File.Logerror(ErrorfileObject,module,'Completed',info)
-
-# Log end of script
-Errormessage = 'Please convert %s to xlsx format' % Historyfilename
-File.Logerror(ErrorfileObject,module,Errormessage,warning)
-
 # Close export file
 Errormessage = 'Could not close ' + Historyfilename
 if ( File.Close(HistoryfileObject,failure) == failure ) : File.Logerror(ErrorfileObject,module,Errormessage,warning)
+
+# Display manual step message and launch Excel
+Errormessage = 'Please convert %s to xlsx format' % Historyfilename
+File.Logerror(ErrorfileObject,module,Errormessage,warning)
+
+Interface.ViewSpeadsheet(Spreadsheet,Historyfilename) 
+
+# Log end of script
+File.Logerror(ErrorfileObject,module,'Completed',info)
+
 
 # Close error log file
 Errormessage = 'Could not close ' + Errorfilename

@@ -49,3 +49,10 @@ engine_id int,
 found int,
 primary key (id)
 );
+create table duplicate(
+id int not null auto_increment, 
+time_stamp timestamp default current_timestamp on update current_timestamp,
+engine_id int,
+found int,
+primary key (id)
+);

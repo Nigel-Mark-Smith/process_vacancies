@@ -83,6 +83,14 @@ def ViewVacancy (browser,url) :
     launch = 'start' + ' ' + browser + ' ' + url
     subprocess.run(['cmd.exe','/C',launch])
 
+# Launches spreadsheet program with file argument
+def ViewSpeadsheet (spreadsheet,file) :
+ 
+    "Launches spreadsheet program with file argument"
+    
+    launch = 'start' + ' ' + spreadsheet + ' ' + file
+    subprocess.run(['cmd.exe','/C',launch])
+
 # Kills process 'process'. 
 #
 # Note: Waits 'delay' seconds  before returning.
@@ -118,6 +126,8 @@ def DisplayDetails (details) :
     
     for key in details :
         print('%s : %c %s' % (key,'\t',details[key]))
+        
+
     
     
     
