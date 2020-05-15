@@ -42,6 +42,7 @@ companies.data | An extract of Companies House data containing known recruitment
 connect.data | Information required to connect to local MySQL instance
 definition.sql | All SQL statements required to define the 'vacancies' database and associated tables.
 engines.data | CV engine specific data including location of Outlook mail folders and format of unique vacancy urls.
+queries.sql | Generates export files containing metrics data.
 
 As well as the above scripts and data files the following supporting documentation is also provided:
 
