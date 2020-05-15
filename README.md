@@ -15,6 +15,7 @@ reduce effort by ensuring that details of any vacancy advertised are only proces
 - Report on proportion of vacancies dropped or pursued.
 - Rate at which new vacancies are raised by each engine.
 - Cumulative vacancy counts per engine.
+- Cumulative duplicate vacancy counts per engine.
 
 The entirety of the functionality provided by these scripts relies on the following assumptions being correct:
 

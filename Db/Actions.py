@@ -242,7 +242,13 @@ def GenSQLupdate (table,fieldvalues,fielddefinitions,primaryfieldvalues):
         value = fieldvalues[fieldname]  
         # Enclose value in quotation marks if the field is not an integer
         if ( fielddefinitions[fieldname].find('int(') == -1 ) : 
-            value = '\'' + value + '\'' 
+            value = '\"' + value + '\"' 
+            
+            # The following string manipulation is required to cope
+            # with company names containing a single quote e.g. ONLINE PA'S LIMITED
+            value = value.replace('\'','\\\'')
+            value = value.replace('\"','\'')
+                   
         else :
             value = str(value)
         
@@ -298,7 +304,14 @@ def GenWhereList (fieldlist,fieldvalues,fielddefinitions) :
     
     for field in fieldlist : 
         fieldvalue = str(fieldvalues[field])
-        if ( fielddefinitions[field].find('int(') == -1 ) :  fieldvalue = '\'' + fieldvalue + '\''
+        if ( fielddefinitions[field].find('int(') == -1 ) :  
+            fieldvalue = '\"' + fieldvalue + '\"'
+            
+            # The following string manipulation is required to cope
+            # with company names containing a single quote e.g. ONLINE PA'S LIMITED
+            fieldvalue = fieldvalue.replace('\'','\\\'')
+            fieldvalue = fieldvalue.replace('\"','\'')
+            
         list = list + field + ' = ' + fieldvalue + seperator
     
     list = list.rstrip(seperator)

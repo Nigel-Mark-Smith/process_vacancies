@@ -10,16 +10,45 @@ python initialize_database.py.
 
 This script will report information and errors to file c:\process_vacancies\log.txt
 
-parse_mail.py and update_vacancies.py
--------------------------------------
+parse_mail.py, detect_duplicates.py and update_vacancies.py
+--------------------------------------=--------------------
 These scripts should be run one after the other as follows as part of an ongoing process for reviewing vacancies and
 applying for them. The 'update_vacancies.py' script will prompt the user about additions of vacancy data and/or the
 changing of a vacancy's state to reflect the status of any assocaited application.
 
 python parse_mail.py 
+python detect_duplicates.py
 python update_vacancies.py
 
 Both scripts will report information and errors to file c:\process_vacancies\log.txt
+
+generate_report.py
+------------------
+This script should be run on an ad-hoc basis in order to produce a csv file
+detailing the progress of all vacancies applied for. The csv file must be 
+converted to an excel spreadsheet by hand before inclusion in a word document.
+
+python generate_report.py
+
+
+queries.sql
+-----------
+This script can be run from the MySQL prompt as follows on an ad-hoc basis in order to 
+generate export files containing metrics.
+
+mysql -u root -p 
+<Enter password>
+
+use vacancies;
+source X:/GitHub/process_vacancies/Data/queries.sql;
+
+The following files shoud be removd from the export directory prior to running this command.
+
+application_history.csv
+new_vacancies_<x>.csv
+total_duplicates.csv
+total_in_state.csv
+total_Vacancies.csv
 
 CONFIGURATION FILES
 ===================

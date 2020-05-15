@@ -35,6 +35,19 @@ Please note the following:
 - To install ActivePython you must set up an ActiveState login.
 - When installing MySQL ensure that you make a note of the 'root' 
   user password which is set as part of the installation procedure.
+- You may wish to change the export directory for MySQL by
+  changing the value assigned to 'secure_file_priv' in file 
+  C:\ProgramData\MySQL\MySQL Server 8.0\my.ini
+
+  e.g secure_file_priv="X:\GitHub\process_vacancies\Data"
+
+  Once you have made the change ensure that the files encoding
+  type is ANSI ( Notepad++ will allow you to do this ).
+  The MySQL service will need to be restarted following this
+  change. You can check the change has been taken up by entering
+  the following MySQL query:
+
+  show variables like 'secure_file_priv';
 
 2. Installation of 'process_vacancies' contents from GitHub
 -----------------------------------------------------------
