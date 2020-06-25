@@ -562,3 +562,1131 @@ Fri May 15 16:05:31 2020 INFO: genrate_report: Connected to database
 Fri May 15 16:05:31 2020 INFO: genrate_report: Generating report
 Fri May 15 16:05:31 2020 WARNING: genrate_report: Please convert C:\JOBSEARCH\2019\Co-Ordination\application_history.csv to xlsx format
 Fri May 15 16:05:31 2020 INFO: genrate_report: Completed
+Sat May 16 14:43:53 2020 INFO: parse_mail: Started
+Sat May 16 14:43:53 2020 INFO: parse_mail: Read database connection data
+Sat May 16 14:43:53 2020 INFO: parse_mail: Connected to database
+Sat May 16 14:44:00 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Sat May 16 14:44:01 2020 INFO: parse_mail: Connected to Outlook
+Sat May 16 14:44:01 2020 INFO: parse_mail: Read vacancy table field definitions
+Sat May 16 14:44:01 2020 INFO: parse_mail: Read history table field definitions
+Sat May 16 14:44:01 2020 INFO: parse_mail: Read Counter table field definitions
+Sat May 16 14:44:01 2020 INFO: parse_mail: Read Outlook mail folder detail
+Sat May 16 14:44:01 2020 INFO: parse_mail: Built mail folder list
+Sat May 16 14:44:01 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Sat May 16 14:44:02 2020 INFO: parse_mail: 6 job urls found in CV-Library
+Sat May 16 14:44:03 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Sat May 16 14:44:05 2020 INFO: parse_mail: 17 job urls found in LinkedInAlerts
+Sat May 16 14:44:05 2020 INFO: parse_mail: Processing sub-folder Reed
+Sat May 16 14:44:05 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Sat May 16 14:44:07 2020 INFO: parse_mail: 1 job urls found in Reed
+Sat May 16 14:44:07 2020 INFO: parse_mail: Processing sub-folder Indeed
+Sat May 16 14:44:09 2020 INFO: parse_mail: 6 job urls found in Indeed
+Sat May 16 14:44:09 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Sat May 16 14:44:09 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Sat May 16 14:44:09 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Sat May 16 14:44:09 2020 WARNING: parse_mail: No job urls found in FindAJob
+Sat May 16 14:44:09 2020 INFO: parse_mail: Displayed mail folder information
+Sat May 16 14:44:09 2020 INFO: parse_mail: Completed
+Sat May 16 14:44:28 2020 INFO: detect_duplicates.py: Started
+Sat May 16 14:44:28 2020 INFO: detect_duplicates.py: Read database connection data
+Sat May 16 14:44:28 2020 INFO: detect_duplicates.py: Connected to database
+Sat May 16 14:44:28 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Sat May 16 14:44:28 2020 INFO: detect_duplicates.py: Read history table field definitions
+Sat May 16 14:44:28 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Sat May 16 14:44:42 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Sat May 16 14:44:42 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Sat May 16 14:44:42 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Sat May 16 14:44:43 2020 INFO: detect_duplicates.py: Vacancy ID 212020496 Vacancy URL https://www.cv-library.co.uk/job/212020496 changed to state Dropped on 2020-05-06 09:53:40 
+Sat May 16 14:44:43 2020 INFO: detect_duplicates.py: Vacancy ID 212043657 Vacancy URL https://www.cv-library.co.uk/job/212043657 changed to state Dropped on 2020-05-15 15:12:47 
+Sat May 16 14:44:43 2020 INFO: detect_duplicates.py: Vacancy ID 212047704 Vacancy URL https://www.cv-library.co.uk/job/212047704 changed to state New on 2020-05-16 14:44:02 
+Sat May 16 14:44:43 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Sat May 16 14:44:43 2020 INFO: detect_duplicates.py: Completed
+Sat May 16 14:45:31 2020 INFO: update_vacancies: Started
+Sat May 16 14:45:31 2020 INFO: update_vacancies: Read database connection data
+Sat May 16 14:45:31 2020 INFO: update_vacancies: Connected to database
+Sat May 16 14:45:31 2020 INFO: update_vacancies: Read vacancy table field definitions
+Sat May 16 14:45:31 2020 INFO: update_vacancies: Read history table field definitions
+Sat May 16 14:56:02 2020 INFO: update_vacancies: Vacancy 1864327161 for LinkedIn has expired
+Sat May 16 15:13:15 2020 INFO: update_vacancies: Completed
+Mon May 18 09:14:45 2020 INFO: parse_mail: Started
+Mon May 18 09:14:45 2020 INFO: parse_mail: Read database connection data
+Mon May 18 09:14:45 2020 INFO: parse_mail: Connected to database
+Mon May 18 09:14:52 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Mon May 18 09:14:53 2020 INFO: parse_mail: Connected to Outlook
+Mon May 18 09:14:53 2020 INFO: parse_mail: Read vacancy table field definitions
+Mon May 18 09:14:53 2020 INFO: parse_mail: Read history table field definitions
+Mon May 18 09:14:53 2020 INFO: parse_mail: Read Counter table field definitions
+Mon May 18 09:14:53 2020 INFO: parse_mail: Read Outlook mail folder detail
+Mon May 18 09:14:53 2020 INFO: parse_mail: Built mail folder list
+Mon May 18 09:14:53 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Mon May 18 09:14:53 2020 WARNING: parse_mail: No job urls found in CV-Library
+Mon May 18 09:14:53 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Mon May 18 09:14:55 2020 INFO: parse_mail: 12 job urls found in LinkedInAlerts
+Mon May 18 09:14:55 2020 INFO: parse_mail: Processing sub-folder Reed
+Mon May 18 09:14:55 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Mon May 18 09:14:56 2020 WARNING: parse_mail: No job urls found in Reed
+Mon May 18 09:14:56 2020 INFO: parse_mail: Processing sub-folder Indeed
+Mon May 18 09:14:56 2020 WARNING: parse_mail: No job urls found in Indeed
+Mon May 18 09:14:56 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Mon May 18 09:14:56 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Mon May 18 09:14:56 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Mon May 18 09:14:56 2020 WARNING: parse_mail: No job urls found in FindAJob
+Mon May 18 09:14:56 2020 INFO: parse_mail: Displayed mail folder information
+Mon May 18 09:14:56 2020 INFO: parse_mail: Completed
+Mon May 18 09:18:11 2020 INFO: detect_duplicates.py: Started
+Mon May 18 09:18:11 2020 INFO: detect_duplicates.py: Read database connection data
+Mon May 18 09:18:11 2020 INFO: detect_duplicates.py: Connected to database
+Mon May 18 09:18:11 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Mon May 18 09:18:11 2020 INFO: detect_duplicates.py: Read history table field definitions
+Mon May 18 09:18:11 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Mon May 18 09:18:19 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Mon May 18 09:18:19 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Mon May 18 09:18:19 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Mon May 18 09:18:19 2020 INFO: detect_duplicates.py: Completed
+Mon May 18 09:18:37 2020 INFO: update_vacancies: Started
+Mon May 18 09:18:37 2020 INFO: update_vacancies: Read database connection data
+Mon May 18 09:18:37 2020 INFO: update_vacancies: Connected to database
+Mon May 18 09:18:37 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon May 18 09:18:37 2020 INFO: update_vacancies: Read history table field definitions
+Mon May 18 09:18:38 2020 INFO: update_vacancies: Vacancy 1865875706 for LinkedIn has expired
+Mon May 18 09:18:39 2020 INFO: update_vacancies: Vacancy 1865891034 for LinkedIn has expired
+Mon May 18 09:19:23 2020 INFO: update_vacancies: Vacancy 1866832369 for LinkedIn has expired
+Mon May 18 09:19:24 2020 INFO: update_vacancies: Vacancy 1866841591 for LinkedIn has expired
+Mon May 18 09:19:58 2020 INFO: update_vacancies: Vacancy 1867545397 for LinkedIn has expired
+Mon May 18 09:19:59 2020 INFO: update_vacancies: Vacancy 1867827738 for LinkedIn has expired
+Mon May 18 09:29:36 2020 INFO: update_vacancies: Completed
+Mon May 18 10:03:52 2020 INFO: genrate_report: Started
+Mon May 18 10:03:52 2020 INFO: genrate_report: Openned export file C:\JOBSEARCH\2019\Co-Ordination\application_history.csv
+Mon May 18 10:03:52 2020 INFO: genrate_report: Read database connection data
+Mon May 18 10:03:52 2020 INFO: genrate_report: Connected to database
+Mon May 18 10:03:52 2020 INFO: genrate_report: Generating report
+Mon May 18 10:03:52 2020 WARNING: genrate_report: Please convert C:\JOBSEARCH\2019\Co-Ordination\application_history.csv to xlsx format
+Mon May 18 10:03:52 2020 INFO: genrate_report: Completed
+Mon May 18 12:54:40 2020 INFO: update_vacancies: Started
+Mon May 18 12:54:40 2020 INFO: update_vacancies: Read database connection data
+Mon May 18 12:54:40 2020 INFO: update_vacancies: Connected to database
+Mon May 18 12:54:41 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon May 18 12:54:41 2020 INFO: update_vacancies: Read history table field definitions
+Mon May 18 13:04:39 2020 INFO: update_vacancies: Completed
+Mon May 18 13:07:16 2020 INFO: update_vacancies: Started
+Mon May 18 13:07:16 2020 INFO: update_vacancies: Read database connection data
+Mon May 18 13:07:16 2020 INFO: update_vacancies: Connected to database
+Mon May 18 13:07:16 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon May 18 13:07:16 2020 INFO: update_vacancies: Read history table field definitions
+Mon May 18 13:10:21 2020 INFO: update_vacancies: Completed
+Mon May 18 13:17:41 2020 INFO: update_vacancies: Started
+Mon May 18 13:17:41 2020 INFO: update_vacancies: Read database connection data
+Mon May 18 13:17:41 2020 INFO: update_vacancies: Connected to database
+Mon May 18 13:17:41 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon May 18 13:17:41 2020 INFO: update_vacancies: Read history table field definitions
+Mon May 18 13:17:52 2020 INFO: update_vacancies: Completed
+Mon May 18 13:43:31 2020 INFO: update_vacancies: Started
+Mon May 18 13:43:31 2020 INFO: update_vacancies: Read database connection data
+Mon May 18 13:43:31 2020 INFO: update_vacancies: Connected to database
+Mon May 18 13:43:31 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon May 18 13:43:31 2020 INFO: update_vacancies: Read history table field definitions
+Mon May 18 13:44:35 2020 INFO: update_vacancies: Completed
+Mon May 18 13:50:30 2020 INFO: update_vacancies: Started
+Mon May 18 13:50:30 2020 INFO: update_vacancies: Read database connection data
+Mon May 18 13:50:30 2020 INFO: update_vacancies: Connected to database
+Mon May 18 13:50:30 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon May 18 13:50:30 2020 INFO: update_vacancies: Read history table field definitions
+Mon May 18 13:50:46 2020 INFO: update_vacancies: Completed
+Tue May 19 10:33:23 2020 INFO: parse_mail: Started
+Tue May 19 10:33:23 2020 INFO: parse_mail: Read database connection data
+Tue May 19 10:33:23 2020 INFO: parse_mail: Connected to database
+Tue May 19 10:33:31 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Tue May 19 10:33:32 2020 INFO: parse_mail: Connected to Outlook
+Tue May 19 10:33:32 2020 INFO: parse_mail: Read vacancy table field definitions
+Tue May 19 10:33:32 2020 INFO: parse_mail: Read history table field definitions
+Tue May 19 10:33:32 2020 INFO: parse_mail: Read Counter table field definitions
+Tue May 19 10:33:32 2020 INFO: parse_mail: Read Outlook mail folder detail
+Tue May 19 10:33:32 2020 INFO: parse_mail: Built mail folder list
+Tue May 19 10:33:32 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Tue May 19 10:33:33 2020 INFO: parse_mail: 4 job urls found in CV-Library
+Tue May 19 10:33:33 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Tue May 19 10:33:36 2020 INFO: parse_mail: 17 job urls found in LinkedInAlerts
+Tue May 19 10:33:36 2020 INFO: parse_mail: Processing sub-folder Reed
+Tue May 19 10:33:36 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Tue May 19 10:33:37 2020 INFO: parse_mail: 1 job urls found in Reed
+Tue May 19 10:33:37 2020 INFO: parse_mail: Processing sub-folder Indeed
+Tue May 19 10:33:37 2020 INFO: parse_mail: 1 job urls found in Indeed
+Tue May 19 10:33:37 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Tue May 19 10:33:37 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Tue May 19 10:33:37 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Tue May 19 10:33:37 2020 WARNING: parse_mail: No job urls found in FindAJob
+Tue May 19 10:33:37 2020 INFO: parse_mail: Displayed mail folder information
+Tue May 19 10:33:37 2020 INFO: parse_mail: Completed
+Tue May 19 10:33:55 2020 INFO: detect_duplicates.py: Started
+Tue May 19 10:33:55 2020 INFO: detect_duplicates.py: Read database connection data
+Tue May 19 10:33:55 2020 INFO: detect_duplicates.py: Connected to database
+Tue May 19 10:33:55 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Tue May 19 10:33:55 2020 INFO: detect_duplicates.py: Read history table field definitions
+Tue May 19 10:33:55 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 1830169496 Vacancy URL https://www.linkedin.com/comm/jobs/view/1830169496 changed to state Dropped on 2020-05-05 11:40:16 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 1844611909 Vacancy URL https://www.linkedin.com/comm/jobs/view/1844611909 changed to state New on 2020-05-19 10:33:34 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 1857623075 Vacancy URL https://www.linkedin.com/comm/jobs/view/1857623075 changed to state Dropped on 2020-05-14 14:14:37 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 1864609855 Vacancy URL https://www.linkedin.com/comm/jobs/view/1864609855 changed to state New on 2020-05-19 10:33:35 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 1855727148 Vacancy URL https://www.linkedin.com/comm/jobs/view/1855727148 changed to state Dropped on 2020-05-10 16:03:37 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 1868413722 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868413722 changed to state New on 2020-05-19 10:33:36 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 1825492224 Vacancy URL https://www.linkedin.com/comm/jobs/view/1825492224 changed to state Dropped on 2020-04-15 13:24:44 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 1852300061 Vacancy URL https://www.linkedin.com/comm/jobs/view/1852300061 changed to state Dropped on 2020-05-09 15:13:15 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 1868576346 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868576346 changed to state New on 2020-05-19 10:33:34 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 212032972 Vacancy URL https://www.cv-library.co.uk/job/212032972 changed to state Dropped on 2020-05-09 16:09:03 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Vacancy ID 212052424 Vacancy URL https://www.cv-library.co.uk/job/212052424 changed to state New on 2020-05-19 10:33:33 
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Tue May 19 10:34:09 2020 INFO: detect_duplicates.py: Completed
+Tue May 19 10:35:00 2020 INFO: update_vacancies: Started
+Tue May 19 10:35:00 2020 INFO: update_vacancies: Read database connection data
+Tue May 19 10:35:00 2020 INFO: update_vacancies: Connected to database
+Tue May 19 10:35:00 2020 INFO: update_vacancies: Read vacancy table field definitions
+Tue May 19 10:35:00 2020 INFO: update_vacancies: Read history table field definitions
+Tue May 19 10:44:45 2020 INFO: update_vacancies: Vacancy 1868469792 for LinkedIn has expired
+Tue May 19 10:45:21 2020 INFO: update_vacancies: Vacancy 1868594261 for LinkedIn has expired
+Tue May 19 10:45:22 2020 INFO: update_vacancies: Vacancy 1868759092 for LinkedIn has expired
+Tue May 19 10:54:15 2020 INFO: update_vacancies: Completed
+Wed May 20 08:47:24 2020 INFO: parse_mail: Started
+Wed May 20 08:47:24 2020 INFO: parse_mail: Read database connection data
+Wed May 20 08:47:24 2020 INFO: parse_mail: Connected to database
+Wed May 20 08:47:31 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Wed May 20 08:47:32 2020 INFO: parse_mail: Connected to Outlook
+Wed May 20 08:47:32 2020 INFO: parse_mail: Read vacancy table field definitions
+Wed May 20 08:47:32 2020 INFO: parse_mail: Read history table field definitions
+Wed May 20 08:47:32 2020 INFO: parse_mail: Read Counter table field definitions
+Wed May 20 08:47:32 2020 INFO: parse_mail: Read Outlook mail folder detail
+Wed May 20 08:47:32 2020 INFO: parse_mail: Built mail folder list
+Wed May 20 08:47:32 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Wed May 20 08:47:32 2020 WARNING: parse_mail: No job urls found in CV-Library
+Wed May 20 08:47:32 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Wed May 20 08:47:32 2020 WARNING: parse_mail: No job urls found in LinkedInAlerts
+Wed May 20 08:47:32 2020 INFO: parse_mail: Processing sub-folder Reed
+Wed May 20 08:47:32 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Wed May 20 08:47:32 2020 WARNING: parse_mail: No job urls found in Reed
+Wed May 20 08:47:32 2020 INFO: parse_mail: Processing sub-folder Indeed
+Wed May 20 08:47:33 2020 INFO: parse_mail: 2 job urls found in Indeed
+Wed May 20 08:47:33 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Wed May 20 08:47:33 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Wed May 20 08:47:33 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Wed May 20 08:47:34 2020 INFO: parse_mail: 1 job urls found in FindAJob
+Wed May 20 08:47:34 2020 INFO: parse_mail: Displayed mail folder information
+Wed May 20 08:47:34 2020 INFO: parse_mail: Completed
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Started
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Read database connection data
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Connected to database
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Read history table field definitions
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Wed May 20 08:47:57 2020 INFO: detect_duplicates.py: Completed
+Wed May 20 08:48:16 2020 INFO: update_vacancies: Started
+Wed May 20 08:48:16 2020 INFO: update_vacancies: Read database connection data
+Wed May 20 08:48:16 2020 INFO: update_vacancies: Connected to database
+Wed May 20 08:48:16 2020 INFO: update_vacancies: Read vacancy table field definitions
+Wed May 20 08:48:16 2020 INFO: update_vacancies: Read history table field definitions
+Wed May 20 08:54:06 2020 INFO: update_vacancies: Completed
+Wed May 20 09:12:22 2020 INFO: parse_mail: Started
+Wed May 20 09:12:22 2020 INFO: parse_mail: Read database connection data
+Wed May 20 09:12:22 2020 INFO: parse_mail: Connected to database
+Wed May 20 09:12:29 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Wed May 20 09:12:30 2020 INFO: parse_mail: Connected to Outlook
+Wed May 20 09:12:30 2020 INFO: parse_mail: Read vacancy table field definitions
+Wed May 20 09:12:30 2020 INFO: parse_mail: Read history table field definitions
+Wed May 20 09:12:30 2020 INFO: parse_mail: Read Counter table field definitions
+Wed May 20 09:12:30 2020 INFO: parse_mail: Read Outlook mail folder detail
+Wed May 20 09:12:30 2020 INFO: parse_mail: Built mail folder list
+Wed May 20 09:12:30 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Wed May 20 09:12:32 2020 INFO: parse_mail: 9 job urls found in CV-Library
+Wed May 20 09:12:32 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Wed May 20 09:12:32 2020 INFO: parse_mail: 2 job urls found in LinkedInAlerts
+Wed May 20 09:12:32 2020 INFO: parse_mail: Processing sub-folder Reed
+Wed May 20 09:12:32 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Wed May 20 09:12:33 2020 INFO: parse_mail: 1 job urls found in Reed
+Wed May 20 09:12:33 2020 INFO: parse_mail: Processing sub-folder Indeed
+Wed May 20 09:12:33 2020 WARNING: parse_mail: No job urls found in Indeed
+Wed May 20 09:12:33 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Wed May 20 09:12:33 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Wed May 20 09:12:33 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Wed May 20 09:12:33 2020 WARNING: parse_mail: No job urls found in FindAJob
+Wed May 20 09:12:33 2020 INFO: parse_mail: Displayed mail folder information
+Wed May 20 09:12:33 2020 INFO: parse_mail: Completed
+Wed May 20 09:12:49 2020 INFO: detect_duplicates.py: Started
+Wed May 20 09:12:49 2020 INFO: detect_duplicates.py: Read database connection data
+Wed May 20 09:12:49 2020 INFO: detect_duplicates.py: Connected to database
+Wed May 20 09:12:49 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Wed May 20 09:12:49 2020 INFO: detect_duplicates.py: Read history table field definitions
+Wed May 20 09:12:49 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Wed May 20 09:12:55 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Wed May 20 09:12:55 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Wed May 20 09:12:55 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Wed May 20 09:12:55 2020 INFO: detect_duplicates.py: Completed
+Wed May 20 09:13:41 2020 INFO: update_vacancies: Started
+Wed May 20 09:13:41 2020 INFO: update_vacancies: Read database connection data
+Wed May 20 09:13:41 2020 INFO: update_vacancies: Connected to database
+Wed May 20 09:13:41 2020 INFO: update_vacancies: Read vacancy table field definitions
+Wed May 20 09:13:41 2020 INFO: update_vacancies: Read history table field definitions
+Wed May 20 09:13:42 2020 INFO: update_vacancies: Vacancy 1869612258 for LinkedIn has expired
+Wed May 20 09:21:04 2020 INFO: update_vacancies: Completed
+Thu May 21 08:30:38 2020 INFO: parse_mail: Started
+Thu May 21 08:30:38 2020 INFO: parse_mail: Read database connection data
+Thu May 21 08:30:38 2020 INFO: parse_mail: Connected to database
+Thu May 21 08:30:38 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Thu May 21 08:30:39 2020 INFO: parse_mail: Connected to Outlook
+Thu May 21 08:30:39 2020 INFO: parse_mail: Read vacancy table field definitions
+Thu May 21 08:30:39 2020 INFO: parse_mail: Read history table field definitions
+Thu May 21 08:30:39 2020 INFO: parse_mail: Read Counter table field definitions
+Thu May 21 08:30:39 2020 INFO: parse_mail: Read Outlook mail folder detail
+Thu May 21 08:30:39 2020 INFO: parse_mail: Built mail folder list
+Thu May 21 08:30:39 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Thu May 21 08:30:40 2020 INFO: parse_mail: 2 job urls found in CV-Library
+Thu May 21 08:30:40 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Thu May 21 08:30:42 2020 INFO: parse_mail: 17 job urls found in LinkedInAlerts
+Thu May 21 08:30:42 2020 INFO: parse_mail: Processing sub-folder Reed
+Thu May 21 08:30:42 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Thu May 21 08:30:43 2020 INFO: parse_mail: 1 job urls found in Reed
+Thu May 21 08:30:43 2020 INFO: parse_mail: Processing sub-folder Indeed
+Thu May 21 08:30:43 2020 INFO: parse_mail: 1 job urls found in Indeed
+Thu May 21 08:30:43 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Thu May 21 08:30:43 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Thu May 21 08:30:43 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Thu May 21 08:30:43 2020 WARNING: parse_mail: No job urls found in FindAJob
+Thu May 21 08:30:43 2020 INFO: parse_mail: Displayed mail folder information
+Thu May 21 08:30:43 2020 INFO: parse_mail: Completed
+Thu May 21 08:30:59 2020 INFO: detect_duplicates.py: Started
+Thu May 21 08:30:59 2020 INFO: detect_duplicates.py: Read database connection data
+Thu May 21 08:30:59 2020 INFO: detect_duplicates.py: Connected to database
+Thu May 21 08:30:59 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Thu May 21 08:30:59 2020 INFO: detect_duplicates.py: Read history table field definitions
+Thu May 21 08:30:59 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Thu May 21 08:31:11 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Thu May 21 08:31:11 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Thu May 21 08:31:11 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Thu May 21 08:31:11 2020 INFO: detect_duplicates.py: Completed
+Thu May 21 08:31:28 2020 INFO: update_vacancies: Started
+Thu May 21 08:31:28 2020 INFO: update_vacancies: Read database connection data
+Thu May 21 08:31:28 2020 INFO: update_vacancies: Connected to database
+Thu May 21 08:31:28 2020 INFO: update_vacancies: Read vacancy table field definitions
+Thu May 21 08:31:28 2020 INFO: update_vacancies: Read history table field definitions
+Thu May 21 08:40:00 2020 INFO: update_vacancies: Vacancy 1871128700 for LinkedIn has expired
+Thu May 21 08:40:01 2020 INFO: update_vacancies: Vacancy 1871329289 for LinkedIn has expired
+Thu May 21 08:40:02 2020 INFO: update_vacancies: Vacancy 1871872631 for LinkedIn has expired
+Thu May 21 08:40:02 2020 INFO: update_vacancies: Vacancy 1871906594 for LinkedIn has expired
+Thu May 21 08:40:03 2020 INFO: update_vacancies: Vacancy 1871926662 for LinkedIn has expired
+Thu May 21 08:40:04 2020 INFO: update_vacancies: Vacancy 1871979125 for LinkedIn has expired
+Thu May 21 08:45:06 2020 INFO: update_vacancies: Completed
+Fri May 22 13:19:21 2020 INFO: parse_mail: Started
+Fri May 22 13:19:21 2020 INFO: parse_mail: Read database connection data
+Fri May 22 13:19:22 2020 INFO: parse_mail: Connected to database
+Fri May 22 13:19:29 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Fri May 22 13:19:30 2020 INFO: parse_mail: Connected to Outlook
+Fri May 22 13:19:30 2020 INFO: parse_mail: Read vacancy table field definitions
+Fri May 22 13:19:30 2020 INFO: parse_mail: Read history table field definitions
+Fri May 22 13:19:30 2020 INFO: parse_mail: Read Counter table field definitions
+Fri May 22 13:19:30 2020 INFO: parse_mail: Read Outlook mail folder detail
+Fri May 22 13:19:30 2020 INFO: parse_mail: Built mail folder list
+Fri May 22 13:19:30 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Fri May 22 13:19:31 2020 INFO: parse_mail: 5 job urls found in CV-Library
+Fri May 22 13:19:31 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Fri May 22 13:19:36 2020 INFO: parse_mail: 23 job urls found in LinkedInAlerts
+Fri May 22 13:19:36 2020 INFO: parse_mail: Processing sub-folder Reed
+Fri May 22 13:19:36 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Fri May 22 13:19:37 2020 WARNING: parse_mail: No job urls found in Reed
+Fri May 22 13:19:37 2020 INFO: parse_mail: Processing sub-folder Indeed
+Fri May 22 13:19:37 2020 INFO: parse_mail: 3 job urls found in Indeed
+Fri May 22 13:19:38 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Fri May 22 13:19:38 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Fri May 22 13:19:38 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Fri May 22 13:19:38 2020 WARNING: parse_mail: No job urls found in FindAJob
+Fri May 22 13:19:38 2020 INFO: parse_mail: Displayed mail folder information
+Fri May 22 13:19:38 2020 INFO: parse_mail: Completed
+Fri May 22 13:19:49 2020 INFO: detect_duplicates.py: Started
+Fri May 22 13:19:49 2020 INFO: detect_duplicates.py: Read database connection data
+Fri May 22 13:19:50 2020 INFO: detect_duplicates.py: Connected to database
+Fri May 22 13:19:50 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Fri May 22 13:19:50 2020 INFO: detect_duplicates.py: Read history table field definitions
+Fri May 22 13:19:50 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Fri May 22 13:20:05 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Fri May 22 13:20:05 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Fri May 22 13:20:05 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: Vacancy ID 1868033698 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868033698 changed to state Dropped on 2020-05-18 09:22:49 
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: Vacancy ID 1873387792 Vacancy URL https://www.linkedin.com/comm/jobs/view/1873387792 changed to state New on 2020-05-22 13:19:32 
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: Vacancy ID 1850922078 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850922078 changed to state Dropped on 2020-05-05 12:15:21 
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: Vacancy ID 1873775422 Vacancy URL https://www.linkedin.com/comm/jobs/view/1873775422 changed to state New on 2020-05-22 13:19:33 
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: Vacancy ID 1818854863 Vacancy URL https://www.linkedin.com/comm/jobs/view/1818854863 changed to state Dropped on 2020-04-22 12:42:05 
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: Vacancy ID 1874344202 Vacancy URL https://www.linkedin.com/comm/jobs/view/1874344202 changed to state New on 2020-05-22 13:19:34 
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Fri May 22 13:20:06 2020 INFO: detect_duplicates.py: Completed
+Fri May 22 13:21:44 2020 INFO: update_vacancies: Started
+Fri May 22 13:21:44 2020 INFO: update_vacancies: Read database connection data
+Fri May 22 13:21:44 2020 INFO: update_vacancies: Connected to database
+Fri May 22 13:21:44 2020 INFO: update_vacancies: Read vacancy table field definitions
+Fri May 22 13:21:44 2020 INFO: update_vacancies: Read history table field definitions
+Fri May 22 13:29:43 2020 INFO: update_vacancies: Vacancy 1872636894 for LinkedIn has expired
+Fri May 22 13:29:44 2020 INFO: update_vacancies: Vacancy 1872640358 for LinkedIn has expired
+Fri May 22 13:29:45 2020 INFO: update_vacancies: Vacancy 1873117250 for LinkedIn has expired
+Fri May 22 13:29:46 2020 INFO: update_vacancies: Vacancy 1873332969 for LinkedIn has expired
+Fri May 22 13:31:42 2020 INFO: update_vacancies: Vacancy 1874642290 for LinkedIn has expired
+Fri May 22 13:31:42 2020 INFO: update_vacancies: Vacancy 1874683525 for LinkedIn has expired
+Fri May 22 13:31:43 2020 INFO: update_vacancies: Vacancy 1874737848 for LinkedIn has expired
+Fri May 22 13:40:31 2020 INFO: update_vacancies: Completed
+Sat May 23 16:41:55 2020 INFO: parse_mail: Started
+Sat May 23 16:41:55 2020 INFO: parse_mail: Read database connection data
+Sat May 23 16:41:55 2020 INFO: parse_mail: Connected to database
+Sat May 23 16:41:55 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Sat May 23 16:41:56 2020 INFO: parse_mail: Connected to Outlook
+Sat May 23 16:41:56 2020 INFO: parse_mail: Read vacancy table field definitions
+Sat May 23 16:41:56 2020 INFO: parse_mail: Read history table field definitions
+Sat May 23 16:41:56 2020 INFO: parse_mail: Read Counter table field definitions
+Sat May 23 16:41:56 2020 INFO: parse_mail: Read Outlook mail folder detail
+Sat May 23 16:41:56 2020 INFO: parse_mail: Built mail folder list
+Sat May 23 16:41:56 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Sat May 23 16:41:57 2020 INFO: parse_mail: 5 job urls found in CV-Library
+Sat May 23 16:41:57 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Sat May 23 16:41:58 2020 INFO: parse_mail: 6 job urls found in LinkedInAlerts
+Sat May 23 16:41:58 2020 INFO: parse_mail: Processing sub-folder Reed
+Sat May 23 16:41:58 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Sat May 23 16:41:59 2020 INFO: parse_mail: 1 job urls found in Reed
+Sat May 23 16:42:00 2020 INFO: parse_mail: Processing sub-folder Indeed
+Sat May 23 16:42:00 2020 INFO: parse_mail: 1 job urls found in Indeed
+Sat May 23 16:42:00 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Sat May 23 16:42:00 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Sat May 23 16:42:00 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Sat May 23 16:42:00 2020 WARNING: parse_mail: No job urls found in FindAJob
+Sat May 23 16:42:00 2020 INFO: parse_mail: Displayed mail folder information
+Sat May 23 16:42:00 2020 INFO: parse_mail: Completed
+Sat May 23 16:42:16 2020 INFO: detect_duplicates.py: Started
+Sat May 23 16:42:16 2020 INFO: detect_duplicates.py: Read database connection data
+Sat May 23 16:42:16 2020 INFO: detect_duplicates.py: Connected to database
+Sat May 23 16:42:16 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Sat May 23 16:42:16 2020 INFO: detect_duplicates.py: Read history table field definitions
+Sat May 23 16:42:16 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Vacancy ID 1818854863 Vacancy URL https://www.linkedin.com/comm/jobs/view/1818854863 changed to state Dropped on 2020-04-22 12:42:05 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Vacancy ID 1874344202 Vacancy URL https://www.linkedin.com/comm/jobs/view/1874344202 changed to state Dropped on 2020-05-22 13:31:40 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Vacancy ID 1876141147 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876141147 changed to state New on 2020-05-23 16:41:58 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Vacancy ID 211989416 Vacancy URL https://www.cv-library.co.uk/job/211989416 changed to state Dropped on 2020-04-27 12:53:57 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Vacancy ID 212002432 Vacancy URL https://www.cv-library.co.uk/job/212002432 changed to state Dropped on 2020-04-27 12:54:38 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Vacancy ID 212017669 Vacancy URL https://www.cv-library.co.uk/job/212017669 changed to state Dropped on 2020-05-05 12:18:53 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Vacancy ID 212064058 Vacancy URL https://www.cv-library.co.uk/job/212064058 changed to state New on 2020-05-23 16:41:57 
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Sat May 23 16:42:22 2020 INFO: detect_duplicates.py: Completed
+Sat May 23 16:42:44 2020 INFO: update_vacancies: Started
+Sat May 23 16:42:44 2020 INFO: update_vacancies: Read database connection data
+Sat May 23 16:42:44 2020 INFO: update_vacancies: Connected to database
+Sat May 23 16:42:44 2020 INFO: update_vacancies: Read vacancy table field definitions
+Sat May 23 16:42:44 2020 INFO: update_vacancies: Read history table field definitions
+Sat May 23 16:42:45 2020 INFO: update_vacancies: Vacancy 1873999295 for LinkedIn has expired
+Sat May 23 16:42:45 2020 INFO: update_vacancies: Vacancy 1874011115 for LinkedIn has expired
+Sat May 23 16:42:46 2020 INFO: update_vacancies: Vacancy 1874039340 for LinkedIn has expired
+Sat May 23 16:51:45 2020 INFO: update_vacancies: Completed
+Sat May 23 16:53:15 2020 INFO: genrate_report: Started
+Sat May 23 16:53:15 2020 INFO: genrate_report: Openned export file C:\JOBSEARCH\2019\Co-Ordination\application_history.csv
+Sat May 23 16:53:15 2020 INFO: genrate_report: Read database connection data
+Sat May 23 16:53:15 2020 INFO: genrate_report: Connected to database
+Sat May 23 16:53:15 2020 INFO: genrate_report: Generating report
+Sat May 23 16:53:15 2020 WARNING: genrate_report: Please convert C:\JOBSEARCH\2019\Co-Ordination\application_history.csv to xlsx format
+Sat May 23 16:53:15 2020 INFO: genrate_report: Completed
+Mon May 25 11:36:17 2020 INFO: parse_mail: Started
+Mon May 25 11:36:17 2020 INFO: parse_mail: Read database connection data
+Mon May 25 11:36:17 2020 INFO: parse_mail: Connected to database
+Mon May 25 11:36:17 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Mon May 25 11:36:18 2020 INFO: parse_mail: Connected to Outlook
+Mon May 25 11:36:18 2020 INFO: parse_mail: Read vacancy table field definitions
+Mon May 25 11:36:18 2020 INFO: parse_mail: Read history table field definitions
+Mon May 25 11:36:18 2020 INFO: parse_mail: Read Counter table field definitions
+Mon May 25 11:36:18 2020 INFO: parse_mail: Read Outlook mail folder detail
+Mon May 25 11:36:18 2020 INFO: parse_mail: Built mail folder list
+Mon May 25 11:36:18 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Mon May 25 11:36:19 2020 WARNING: parse_mail: No job urls found in CV-Library
+Mon May 25 11:36:19 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Mon May 25 11:36:21 2020 INFO: parse_mail: 15 job urls found in LinkedInAlerts
+Mon May 25 11:36:21 2020 INFO: parse_mail: Processing sub-folder Reed
+Mon May 25 11:36:21 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Mon May 25 11:36:22 2020 WARNING: parse_mail: No job urls found in Reed
+Mon May 25 11:36:22 2020 INFO: parse_mail: Processing sub-folder Indeed
+Mon May 25 11:36:23 2020 INFO: parse_mail: 3 job urls found in Indeed
+Mon May 25 11:36:23 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Mon May 25 11:36:23 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Mon May 25 11:36:23 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Mon May 25 11:36:23 2020 WARNING: parse_mail: No job urls found in FindAJob
+Mon May 25 11:36:23 2020 INFO: parse_mail: Displayed mail folder information
+Mon May 25 11:36:23 2020 INFO: parse_mail: Completed
+Mon May 25 11:36:36 2020 INFO: detect_duplicates.py: Started
+Mon May 25 11:36:36 2020 INFO: detect_duplicates.py: Read database connection data
+Mon May 25 11:36:36 2020 INFO: detect_duplicates.py: Connected to database
+Mon May 25 11:36:36 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Mon May 25 11:36:36 2020 INFO: detect_duplicates.py: Read history table field definitions
+Mon May 25 11:36:36 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1850477395 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850477395 changed to state Dropped on 2020-05-05 12:11:43 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1856442472 Vacancy URL https://www.linkedin.com/comm/jobs/view/1856442472 changed to state Dropped on 2020-05-10 16:04:02 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1876547289 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876547289 changed to state New on 2020-05-25 11:36:19 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1873568557 Vacancy URL https://www.linkedin.com/comm/jobs/view/1873568557 changed to state Dropped on 2020-05-22 13:30:27 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1876732940 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876732940 changed to state New on 2020-05-25 11:36:20 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1868407841 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868407841 changed to state Dropped on 2020-05-19 10:44:35 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1876735470 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876735470 changed to state New on 2020-05-25 11:36:20 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1837173260 Vacancy URL https://www.linkedin.com/comm/jobs/view/1837173260 changed to state Dropped on 2020-04-27 12:50:27 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1876735479 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876735479 changed to state New on 2020-05-25 11:36:20 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1861220401 Vacancy URL https://www.linkedin.com/comm/jobs/view/1861220401 changed to state Dropped on 2020-05-13 16:39:01 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1876735488 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876735488 changed to state New on 2020-05-25 11:36:21 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1855727148 Vacancy URL https://www.linkedin.com/comm/jobs/view/1855727148 changed to state Dropped on 2020-05-10 16:03:37 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1868413722 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868413722 changed to state Dropped on 2020-05-19 10:44:43 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1876737380 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876737380 changed to state New on 2020-05-25 11:36:19 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1850566119 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850566119 changed to state Dropped on 2020-05-05 12:11:56 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1876739242 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876739242 changed to state New on 2020-05-25 11:36:20 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1838705865 Vacancy URL https://www.linkedin.com/comm/jobs/view/1838705865 changed to state Dropped on 2020-04-27 12:53:25 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1850909856 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850909856 changed to state Dropped on 2020-05-06 09:52:41 
+Mon May 25 11:36:46 2020 INFO: detect_duplicates.py: Vacancy ID 1876832545 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876832545 changed to state New on 2020-05-25 11:36:21 
+Mon May 25 11:36:47 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Mon May 25 11:36:47 2020 INFO: detect_duplicates.py: Completed
+Mon May 25 11:37:15 2020 INFO: update_vacancies: Started
+Mon May 25 11:37:15 2020 INFO: update_vacancies: Read database connection data
+Mon May 25 11:37:15 2020 INFO: update_vacancies: Connected to database
+Mon May 25 11:37:15 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon May 25 11:37:15 2020 INFO: update_vacancies: Read history table field definitions
+Mon May 25 11:38:49 2020 INFO: update_vacancies: Vacancy 1875767475 for LinkedIn has expired
+Mon May 25 11:38:50 2020 INFO: update_vacancies: Vacancy 1875919937 for LinkedIn has expired
+Mon May 25 11:38:51 2020 INFO: update_vacancies: Vacancy 1875922473 for LinkedIn has expired
+Mon May 25 11:41:58 2020 INFO: update_vacancies: Vacancy 1876932908 for LinkedIn has expired
+Mon May 25 11:41:59 2020 INFO: update_vacancies: Vacancy 1877320321 for LinkedIn has expired
+Mon May 25 11:47:38 2020 INFO: update_vacancies: Completed
+Tue May 26 11:28:42 2020 INFO: parse_mail: Started
+Tue May 26 11:28:42 2020 INFO: parse_mail: Read database connection data
+Tue May 26 11:28:42 2020 INFO: parse_mail: Connected to database
+Tue May 26 11:28:49 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Tue May 26 11:28:50 2020 INFO: parse_mail: Connected to Outlook
+Tue May 26 11:28:50 2020 INFO: parse_mail: Read vacancy table field definitions
+Tue May 26 11:28:50 2020 INFO: parse_mail: Read history table field definitions
+Tue May 26 11:28:50 2020 INFO: parse_mail: Read Counter table field definitions
+Tue May 26 11:28:50 2020 INFO: parse_mail: Read Outlook mail folder detail
+Tue May 26 11:28:50 2020 INFO: parse_mail: Built mail folder list
+Tue May 26 11:28:50 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Tue May 26 11:28:50 2020 WARNING: parse_mail: No job urls found in CV-Library
+Tue May 26 11:28:50 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Tue May 26 11:28:52 2020 INFO: parse_mail: 9 job urls found in LinkedInAlerts
+Tue May 26 11:28:52 2020 INFO: parse_mail: Processing sub-folder Reed
+Tue May 26 11:28:52 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Tue May 26 11:28:52 2020 WARNING: parse_mail: No job urls found in Reed
+Tue May 26 11:28:52 2020 INFO: parse_mail: Processing sub-folder Indeed
+Tue May 26 11:28:52 2020 WARNING: parse_mail: No job urls found in Indeed
+Tue May 26 11:28:52 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Tue May 26 11:28:52 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Tue May 26 11:28:52 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Tue May 26 11:28:52 2020 WARNING: parse_mail: No job urls found in FindAJob
+Tue May 26 11:28:52 2020 INFO: parse_mail: Displayed mail folder information
+Tue May 26 11:28:52 2020 INFO: parse_mail: Completed
+Tue May 26 11:29:05 2020 INFO: detect_duplicates.py: Started
+Tue May 26 11:29:05 2020 INFO: detect_duplicates.py: Read database connection data
+Tue May 26 11:29:05 2020 INFO: detect_duplicates.py: Connected to database
+Tue May 26 11:29:05 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Tue May 26 11:29:05 2020 INFO: detect_duplicates.py: Read history table field definitions
+Tue May 26 11:29:05 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Tue May 26 11:29:11 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Tue May 26 11:29:12 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Tue May 26 11:29:12 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Tue May 26 11:29:12 2020 INFO: detect_duplicates.py: Completed
+Tue May 26 11:29:24 2020 INFO: update_vacancies: Started
+Tue May 26 11:29:24 2020 INFO: update_vacancies: Read database connection data
+Tue May 26 11:29:24 2020 INFO: update_vacancies: Connected to database
+Tue May 26 11:29:24 2020 INFO: update_vacancies: Read vacancy table field definitions
+Tue May 26 11:29:24 2020 INFO: update_vacancies: Read history table field definitions
+Tue May 26 11:39:12 2020 INFO: update_vacancies: Completed
+Wed May 27 20:23:25 2020 INFO: parse_mail: Started
+Wed May 27 20:23:25 2020 INFO: parse_mail: Read database connection data
+Wed May 27 20:23:25 2020 INFO: parse_mail: Connected to database
+Wed May 27 20:23:32 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Wed May 27 20:23:33 2020 INFO: parse_mail: Connected to Outlook
+Wed May 27 20:23:33 2020 INFO: parse_mail: Read vacancy table field definitions
+Wed May 27 20:23:33 2020 INFO: parse_mail: Read history table field definitions
+Wed May 27 20:23:33 2020 INFO: parse_mail: Read Counter table field definitions
+Wed May 27 20:23:33 2020 INFO: parse_mail: Read Outlook mail folder detail
+Wed May 27 20:23:33 2020 INFO: parse_mail: Built mail folder list
+Wed May 27 20:23:33 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Wed May 27 20:23:33 2020 INFO: parse_mail: 4 job urls found in CV-Library
+Wed May 27 20:23:34 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Wed May 27 20:23:35 2020 INFO: parse_mail: 7 job urls found in LinkedInAlerts
+Wed May 27 20:23:35 2020 INFO: parse_mail: Processing sub-folder Reed
+Wed May 27 20:23:35 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Wed May 27 20:23:36 2020 INFO: parse_mail: 1 job urls found in Reed
+Wed May 27 20:23:36 2020 INFO: parse_mail: Processing sub-folder Indeed
+Wed May 27 20:23:36 2020 INFO: parse_mail: 1 job urls found in Indeed
+Wed May 27 20:23:36 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Wed May 27 20:23:36 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Wed May 27 20:23:36 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Wed May 27 20:23:36 2020 WARNING: parse_mail: No job urls found in FindAJob
+Wed May 27 20:23:36 2020 INFO: parse_mail: Displayed mail folder information
+Wed May 27 20:23:36 2020 INFO: parse_mail: Completed
+Wed May 27 20:23:57 2020 INFO: detect_duplicates.py: Started
+Wed May 27 20:23:57 2020 INFO: detect_duplicates.py: Read database connection data
+Wed May 27 20:23:57 2020 INFO: detect_duplicates.py: Connected to database
+Wed May 27 20:23:57 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Wed May 27 20:23:57 2020 INFO: detect_duplicates.py: Read history table field definitions
+Wed May 27 20:23:57 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1857287412 Vacancy URL https://www.linkedin.com/comm/jobs/view/1857287412 changed to state New on 2020-05-27 20:23:35 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1860817082 Vacancy URL https://www.linkedin.com/comm/jobs/view/1860817082 changed to state Dropped on 2020-05-16 14:56:00 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1868178475 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868178475 changed to state Dropped on 2020-05-18 09:23:55 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1879201852 Vacancy URL https://www.linkedin.com/comm/jobs/view/1879201852 changed to state New on 2020-05-27 20:23:34 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1880717194 Vacancy URL https://www.linkedin.com/comm/jobs/view/1880717194 changed to state New on 2020-05-27 20:23:35 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1868178475 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868178475 changed to state Dropped on 2020-05-18 09:23:55 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1879201852 Vacancy URL https://www.linkedin.com/comm/jobs/view/1879201852 changed to state New on 2020-05-27 20:23:34 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1880717194 Vacancy URL https://www.linkedin.com/comm/jobs/view/1880717194 changed to state New on 2020-05-27 20:23:35 
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1879201852 Vacancy URL https://www.linkedin.com/comm/jobs/view/1879201852 has been 'Dropped'
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Vacancy ID 1879201852 Vacancy URL https://www.linkedin.com/comm/jobs/view/1879201852 has been 'Dropped'
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Wed May 27 20:24:05 2020 INFO: detect_duplicates.py: Completed
+Wed May 27 20:24:54 2020 INFO: update_vacancies: Started
+Wed May 27 20:24:54 2020 INFO: update_vacancies: Read database connection data
+Wed May 27 20:24:54 2020 INFO: update_vacancies: Connected to database
+Wed May 27 20:24:54 2020 INFO: update_vacancies: Read vacancy table field definitions
+Wed May 27 20:24:54 2020 INFO: update_vacancies: Read history table field definitions
+Wed May 27 20:27:07 2020 INFO: update_vacancies: Vacancy 1879050019 for LinkedIn has expired
+Wed May 27 20:27:08 2020 INFO: update_vacancies: Vacancy 1879061248 for LinkedIn has expired
+Wed May 27 20:34:26 2020 INFO: update_vacancies: Completed
+Thu May 28 13:04:47 2020 INFO: parse_mail: Started
+Thu May 28 13:04:47 2020 INFO: parse_mail: Read database connection data
+Thu May 28 13:04:47 2020 INFO: parse_mail: Connected to database
+Thu May 28 13:04:54 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Thu May 28 13:04:55 2020 INFO: parse_mail: Connected to Outlook
+Thu May 28 13:04:55 2020 INFO: parse_mail: Read vacancy table field definitions
+Thu May 28 13:04:55 2020 INFO: parse_mail: Read history table field definitions
+Thu May 28 13:04:55 2020 INFO: parse_mail: Read Counter table field definitions
+Thu May 28 13:04:55 2020 INFO: parse_mail: Read Outlook mail folder detail
+Thu May 28 13:04:55 2020 INFO: parse_mail: Built mail folder list
+Thu May 28 13:04:55 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Thu May 28 13:04:57 2020 INFO: parse_mail: 10 job urls found in CV-Library
+Thu May 28 13:04:57 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Thu May 28 13:04:59 2020 INFO: parse_mail: 12 job urls found in LinkedInAlerts
+Thu May 28 13:04:59 2020 INFO: parse_mail: Processing sub-folder Reed
+Thu May 28 13:04:59 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Thu May 28 13:05:01 2020 INFO: parse_mail: 1 job urls found in Reed
+Thu May 28 13:05:01 2020 INFO: parse_mail: Processing sub-folder Indeed
+Thu May 28 13:05:01 2020 INFO: parse_mail: 2 job urls found in Indeed
+Thu May 28 13:05:01 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Thu May 28 13:05:01 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Thu May 28 13:05:01 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Thu May 28 13:05:01 2020 WARNING: parse_mail: No job urls found in FindAJob
+Thu May 28 13:05:01 2020 INFO: parse_mail: Displayed mail folder information
+Thu May 28 13:05:01 2020 INFO: parse_mail: Completed
+Thu May 28 13:05:14 2020 INFO: detect_duplicates.py: Started
+Thu May 28 13:05:14 2020 INFO: detect_duplicates.py: Read database connection data
+Thu May 28 13:05:14 2020 INFO: detect_duplicates.py: Connected to database
+Thu May 28 13:05:14 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Thu May 28 13:05:14 2020 INFO: detect_duplicates.py: Read history table field definitions
+Thu May 28 13:05:14 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: Vacancy ID 1848832080 Vacancy URL https://www.linkedin.com/comm/jobs/view/1848832080 changed to state Dropped on 2020-05-26 11:30:11 
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: Vacancy ID 1848837697 Vacancy URL https://www.linkedin.com/comm/jobs/view/1848837697 changed to state New on 2020-05-28 13:04:58 
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: Vacancy ID 1850922078 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850922078 changed to state Dropped on 2020-05-05 12:15:21 
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: Vacancy ID 1873775422 Vacancy URL https://www.linkedin.com/comm/jobs/view/1873775422 changed to state Dropped on 2020-05-22 13:30:51 
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: Vacancy ID 1881221009 Vacancy URL https://www.linkedin.com/comm/jobs/view/1881221009 changed to state New on 2020-05-28 13:04:57 
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Thu May 28 13:05:28 2020 INFO: detect_duplicates.py: Completed
+Thu May 28 13:05:51 2020 INFO: update_vacancies: Started
+Thu May 28 13:05:51 2020 INFO: update_vacancies: Read database connection data
+Thu May 28 13:05:51 2020 INFO: update_vacancies: Connected to database
+Thu May 28 13:05:51 2020 INFO: update_vacancies: Read vacancy table field definitions
+Thu May 28 13:05:51 2020 INFO: update_vacancies: Read history table field definitions
+Thu May 28 13:24:55 2020 INFO: update_vacancies: Completed
+Thu May 28 13:35:11 2020 INFO: genrate_report: Started
+Thu May 28 13:35:11 2020 INFO: genrate_report: Openned export file C:\JOBSEARCH\2019\Co-Ordination\application_history.csv
+Thu May 28 13:35:11 2020 INFO: genrate_report: Read database connection data
+Thu May 28 13:35:11 2020 INFO: genrate_report: Connected to database
+Thu May 28 13:35:12 2020 INFO: genrate_report: Generating report
+Thu May 28 13:35:12 2020 WARNING: genrate_report: Please convert C:\JOBSEARCH\2019\Co-Ordination\application_history.csv to xlsx format
+Thu May 28 13:35:12 2020 INFO: genrate_report: Completed
+Fri May 29 10:34:30 2020 INFO: parse_mail: Started
+Fri May 29 10:34:30 2020 INFO: parse_mail: Read database connection data
+Fri May 29 10:34:30 2020 INFO: parse_mail: Connected to database
+Fri May 29 10:34:31 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Fri May 29 10:34:33 2020 INFO: parse_mail: Connected to Outlook
+Fri May 29 10:34:34 2020 INFO: parse_mail: Read vacancy table field definitions
+Fri May 29 10:34:34 2020 INFO: parse_mail: Read history table field definitions
+Fri May 29 10:34:34 2020 INFO: parse_mail: Read Counter table field definitions
+Fri May 29 10:34:34 2020 INFO: parse_mail: Read Outlook mail folder detail
+Fri May 29 10:34:34 2020 INFO: parse_mail: Built mail folder list
+Fri May 29 10:34:34 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Fri May 29 10:34:36 2020 INFO: parse_mail: 9 job urls found in CV-Library
+Fri May 29 10:34:36 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Fri May 29 10:34:36 2020 INFO: parse_mail: 3 job urls found in LinkedInAlerts
+Fri May 29 10:34:37 2020 INFO: parse_mail: Processing sub-folder Reed
+Fri May 29 10:34:37 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Fri May 29 10:34:38 2020 INFO: parse_mail: 1 job urls found in Reed
+Fri May 29 10:34:38 2020 INFO: parse_mail: Processing sub-folder Indeed
+Fri May 29 10:34:38 2020 WARNING: parse_mail: No job urls found in Indeed
+Fri May 29 10:34:38 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Fri May 29 10:34:38 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Fri May 29 10:34:38 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Fri May 29 10:34:38 2020 WARNING: parse_mail: No job urls found in FindAJob
+Fri May 29 10:34:38 2020 INFO: parse_mail: Displayed mail folder information
+Fri May 29 10:34:38 2020 INFO: parse_mail: Completed
+Fri May 29 10:34:54 2020 INFO: detect_duplicates.py: Started
+Fri May 29 10:34:54 2020 INFO: detect_duplicates.py: Read database connection data
+Fri May 29 10:34:54 2020 INFO: detect_duplicates.py: Connected to database
+Fri May 29 10:34:54 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Fri May 29 10:34:54 2020 INFO: detect_duplicates.py: Read history table field definitions
+Fri May 29 10:34:54 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Fri May 29 10:35:00 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Fri May 29 10:35:00 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Fri May 29 10:35:00 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Fri May 29 10:35:00 2020 INFO: detect_duplicates.py: Vacancy ID 40321143 Vacancy URL https://www.reed.co.uk/jobs/senior-java-developer-senior-java-software-engineer/40321143 changed to state Dropped on 2020-05-07 10:01:33 
+Fri May 29 10:35:00 2020 INFO: detect_duplicates.py: Vacancy ID 40430253 Vacancy URL https://www.reed.co.uk/jobs/senior-java-developer-senior-java-software-engineer/40430253 changed to state New on 2020-05-29 10:34:38 
+Fri May 29 10:35:00 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Fri May 29 10:35:00 2020 INFO: detect_duplicates.py: Completed
+Fri May 29 10:35:28 2020 INFO: update_vacancies: Started
+Fri May 29 10:35:28 2020 INFO: update_vacancies: Read database connection data
+Fri May 29 10:35:28 2020 INFO: update_vacancies: Connected to database
+Fri May 29 10:35:28 2020 INFO: update_vacancies: Read vacancy table field definitions
+Fri May 29 10:35:28 2020 INFO: update_vacancies: Read history table field definitions
+Fri May 29 10:37:00 2020 INFO: update_vacancies: Vacancy 1881370927 for LinkedIn has expired
+Fri May 29 10:37:01 2020 INFO: update_vacancies: Vacancy 1881372886 for LinkedIn has expired
+Fri May 29 10:45:10 2020 INFO: update_vacancies: Completed
+Mon Jun  1 08:55:01 2020 INFO: parse_mail: Started
+Mon Jun  1 08:55:01 2020 INFO: parse_mail: Read database connection data
+Mon Jun  1 08:55:01 2020 INFO: parse_mail: Connected to database
+Mon Jun  1 08:55:08 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Mon Jun  1 08:55:09 2020 INFO: parse_mail: Connected to Outlook
+Mon Jun  1 08:55:10 2020 INFO: parse_mail: Read vacancy table field definitions
+Mon Jun  1 08:55:10 2020 INFO: parse_mail: Read history table field definitions
+Mon Jun  1 08:55:10 2020 INFO: parse_mail: Read Counter table field definitions
+Mon Jun  1 08:55:10 2020 INFO: parse_mail: Read Outlook mail folder detail
+Mon Jun  1 08:55:10 2020 INFO: parse_mail: Built mail folder list
+Mon Jun  1 08:55:10 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Mon Jun  1 08:55:13 2020 INFO: parse_mail: 14 job urls found in CV-Library
+Mon Jun  1 08:55:13 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Mon Jun  1 08:55:19 2020 INFO: parse_mail: 30 job urls found in LinkedInAlerts
+Mon Jun  1 08:55:19 2020 INFO: parse_mail: Processing sub-folder Reed
+Mon Jun  1 08:55:19 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Mon Jun  1 08:55:21 2020 INFO: parse_mail: 1 job urls found in Reed
+Mon Jun  1 08:55:21 2020 INFO: parse_mail: Processing sub-folder Indeed
+Mon Jun  1 08:55:21 2020 INFO: parse_mail: 1 job urls found in Indeed
+Mon Jun  1 08:55:21 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Mon Jun  1 08:55:21 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Mon Jun  1 08:55:21 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Mon Jun  1 08:55:21 2020 WARNING: parse_mail: No job urls found in FindAJob
+Mon Jun  1 08:55:21 2020 INFO: parse_mail: Displayed mail folder information
+Mon Jun  1 08:55:21 2020 INFO: parse_mail: Completed
+Mon Jun  1 08:55:35 2020 INFO: detect_duplicates.py: Started
+Mon Jun  1 08:55:35 2020 INFO: detect_duplicates.py: Read database connection data
+Mon Jun  1 08:55:35 2020 INFO: detect_duplicates.py: Connected to database
+Mon Jun  1 08:55:35 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Mon Jun  1 08:55:35 2020 INFO: detect_duplicates.py: Read history table field definitions
+Mon Jun  1 08:55:35 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1867640642 Vacancy URL https://www.linkedin.com/comm/jobs/view/1867640642 changed to state Dropped on 2020-05-25 11:46:10 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1880224933 Vacancy URL https://www.linkedin.com/comm/jobs/view/1880224933 changed to state New on 2020-06-01 08:55:19 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1842420967 Vacancy URL https://www.linkedin.com/comm/jobs/view/1842420967 changed to state Dropped on 2020-05-05 11:54:26 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1883663109 Vacancy URL https://www.linkedin.com/comm/jobs/view/1883663109 changed to state New on 2020-06-01 08:55:18 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1822838877 Vacancy URL https://www.linkedin.com/comm/jobs/view/1822838877 changed to state Rejected on 2020-05-28 13:21:16 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1883854439 Vacancy URL https://www.linkedin.com/comm/jobs/view/1883854439 changed to state New on 2020-06-01 08:55:17 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1843029488 Vacancy URL https://www.linkedin.com/comm/jobs/view/1843029488 changed to state Dropped on 2020-05-16 14:49:42 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1884376908 Vacancy URL https://www.linkedin.com/comm/jobs/view/1884376908 changed to state New on 2020-06-01 08:55:18 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1886582984 Vacancy URL https://www.linkedin.com/comm/jobs/view/1886582984 changed to state New on 2020-06-01 08:55:17 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1886587271 Vacancy URL https://www.linkedin.com/comm/jobs/view/1886587271 changed to state New on 2020-06-01 08:55:16 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1886582984 Vacancy URL https://www.linkedin.com/comm/jobs/view/1886582984 changed to state New on 2020-06-01 08:55:17 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 1886587271 Vacancy URL https://www.linkedin.com/comm/jobs/view/1886587271 changed to state New on 2020-06-01 08:55:16 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 212035154 Vacancy URL https://www.cv-library.co.uk/job/212035154 changed to state Dropped on 2020-05-12 09:55:52 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 212074624 Vacancy URL https://www.cv-library.co.uk/job/212074624 changed to state New on 2020-06-01 08:55:11 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 211989416 Vacancy URL https://www.cv-library.co.uk/job/211989416 changed to state Dropped on 2020-04-27 12:53:57 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 212002432 Vacancy URL https://www.cv-library.co.uk/job/212002432 changed to state Dropped on 2020-04-27 12:54:38 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 212017669 Vacancy URL https://www.cv-library.co.uk/job/212017669 changed to state Dropped on 2020-05-05 12:18:53 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 212064058 Vacancy URL https://www.cv-library.co.uk/job/212064058 changed to state Dropped on 2020-05-23 16:46:23 
+Mon Jun  1 08:56:00 2020 INFO: detect_duplicates.py: Vacancy ID 212076240 Vacancy URL https://www.cv-library.co.uk/job/212076240 changed to state New on 2020-06-01 08:55:13 
+Mon Jun  1 08:56:01 2020 INFO: detect_duplicates.py: Vacancy ID 1886582984 Vacancy URL https://www.linkedin.com/comm/jobs/view/1886582984 has been 'Dropped'
+Mon Jun  1 08:56:01 2020 INFO: detect_duplicates.py: Vacancy ID 1886582984 Vacancy URL https://www.linkedin.com/comm/jobs/view/1886582984 has been 'Dropped'
+Mon Jun  1 08:56:01 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Mon Jun  1 08:56:01 2020 INFO: detect_duplicates.py: Completed
+Mon Jun  1 08:57:26 2020 INFO: update_vacancies: Started
+Mon Jun  1 08:57:26 2020 INFO: update_vacancies: Read database connection data
+Mon Jun  1 08:57:26 2020 INFO: update_vacancies: Connected to database
+Mon Jun  1 08:57:26 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon Jun  1 08:57:26 2020 INFO: update_vacancies: Read history table field definitions
+Mon Jun  1 09:12:39 2020 INFO: update_vacancies: Vacancy 1884189531 for LinkedIn has expired
+Mon Jun  1 09:12:40 2020 INFO: update_vacancies: Vacancy 1884201373 for LinkedIn has expired
+Mon Jun  1 09:12:41 2020 INFO: update_vacancies: Vacancy 1884204567 for LinkedIn has expired
+Mon Jun  1 09:12:42 2020 INFO: update_vacancies: Vacancy 1884208539 for LinkedIn has expired
+Mon Jun  1 09:12:43 2020 INFO: update_vacancies: Vacancy 1884233588 for LinkedIn has expired
+Mon Jun  1 09:12:53 2020 INFO: update_vacancies: Vacancy 1885397298 for LinkedIn has expired
+Mon Jun  1 09:14:41 2020 INFO: update_vacancies: Vacancy 1886617028 for LinkedIn has expired
+Mon Jun  1 09:28:12 2020 INFO: update_vacancies: Completed
+Mon Jun  1 09:36:46 2020 INFO: genrate_report: Started
+Mon Jun  1 09:36:46 2020 INFO: genrate_report: Openned export file C:\JOBSEARCH\2019\Co-Ordination\application_history.csv
+Mon Jun  1 09:36:46 2020 INFO: genrate_report: Read database connection data
+Mon Jun  1 09:36:46 2020 INFO: genrate_report: Connected to database
+Mon Jun  1 09:36:46 2020 INFO: genrate_report: Generating report
+Mon Jun  1 09:36:46 2020 WARNING: genrate_report: Please convert C:\JOBSEARCH\2019\Co-Ordination\application_history.csv to xlsx format
+Mon Jun  1 09:36:47 2020 INFO: genrate_report: Completed
+Fri Jun  5 12:45:02 2020 INFO: parse_mail: Started
+Fri Jun  5 12:45:02 2020 INFO: parse_mail: Read database connection data
+Fri Jun  5 12:45:02 2020 INFO: parse_mail: Connected to database
+Fri Jun  5 12:45:02 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Fri Jun  5 12:45:03 2020 INFO: parse_mail: Connected to Outlook
+Fri Jun  5 12:45:04 2020 INFO: parse_mail: Read vacancy table field definitions
+Fri Jun  5 12:45:04 2020 INFO: parse_mail: Read history table field definitions
+Fri Jun  5 12:45:04 2020 INFO: parse_mail: Read Counter table field definitions
+Fri Jun  5 12:45:04 2020 INFO: parse_mail: Read Outlook mail folder detail
+Fri Jun  5 12:45:04 2020 INFO: parse_mail: Built mail folder list
+Fri Jun  5 12:45:04 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Fri Jun  5 12:45:10 2020 INFO: parse_mail: 31 job urls found in CV-Library
+Fri Jun  5 12:45:10 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Fri Jun  5 12:45:20 2020 INFO: parse_mail: 48 job urls found in LinkedInAlerts
+Fri Jun  5 12:45:20 2020 INFO: parse_mail: Processing sub-folder Reed
+Fri Jun  5 12:45:20 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Fri Jun  5 12:45:24 2020 INFO: parse_mail: 1 job urls found in Reed
+Fri Jun  5 12:45:24 2020 INFO: parse_mail: Processing sub-folder Indeed
+Fri Jun  5 12:45:25 2020 INFO: parse_mail: 2 job urls found in Indeed
+Fri Jun  5 12:45:25 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Fri Jun  5 12:45:25 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Fri Jun  5 12:45:25 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Fri Jun  5 12:45:25 2020 WARNING: parse_mail: No job urls found in FindAJob
+Fri Jun  5 12:45:25 2020 INFO: parse_mail: Displayed mail folder information
+Fri Jun  5 12:45:25 2020 INFO: parse_mail: Completed
+Fri Jun  5 12:45:37 2020 INFO: detect_duplicates.py: Started
+Fri Jun  5 12:45:37 2020 INFO: detect_duplicates.py: Read database connection data
+Fri Jun  5 12:45:37 2020 INFO: detect_duplicates.py: Connected to database
+Fri Jun  5 12:45:37 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Fri Jun  5 12:45:37 2020 INFO: detect_duplicates.py: Read history table field definitions
+Fri Jun  5 12:45:37 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 1813543233 Vacancy URL https://www.linkedin.com/comm/jobs/view/1813543233 changed to state Dropped on 2020-05-11 09:41:29 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 1877027878 Vacancy URL https://www.linkedin.com/comm/jobs/view/1877027878 changed to state New on 2020-06-05 12:45:10 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 1868178475 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868178475 changed to state Dropped on 2020-05-18 09:23:55 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 1879201852 Vacancy URL https://www.linkedin.com/comm/jobs/view/1879201852 changed to state Dropped on 2020-05-27 20:24:05 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 1880717194 Vacancy URL https://www.linkedin.com/comm/jobs/view/1880717194 changed to state Dropped on 2020-05-27 20:27:41 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 1887353034 Vacancy URL https://www.linkedin.com/comm/jobs/view/1887353034 changed to state New on 2020-06-05 12:45:16 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 1874344473 Vacancy URL https://www.linkedin.com/comm/jobs/view/1874344473 changed to state Dropped on 2020-05-23 16:43:51 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 1887933405 Vacancy URL https://www.linkedin.com/comm/jobs/view/1887933405 changed to state New on 2020-06-05 12:45:12 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 212032972 Vacancy URL https://www.cv-library.co.uk/job/212032972 changed to state Dropped on 2020-05-09 16:09:03 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 212052424 Vacancy URL https://www.cv-library.co.uk/job/212052424 changed to state Dropped on 2020-05-19 10:47:21 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Vacancy ID 212080358 Vacancy URL https://www.cv-library.co.uk/job/212080358 changed to state New on 2020-06-05 12:45:08 
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Fri Jun  5 12:46:19 2020 INFO: detect_duplicates.py: Completed
+Fri Jun  5 12:48:08 2020 INFO: update_vacancies: Started
+Fri Jun  5 12:48:08 2020 INFO: update_vacancies: Read database connection data
+Fri Jun  5 12:48:08 2020 INFO: update_vacancies: Connected to database
+Fri Jun  5 12:48:08 2020 INFO: update_vacancies: Read vacancy table field definitions
+Fri Jun  5 12:48:08 2020 INFO: update_vacancies: Read history table field definitions
+Fri Jun  5 12:59:50 2020 INFO: update_vacancies: Vacancy 1887824368 for LinkedIn has expired
+Fri Jun  5 12:59:51 2020 INFO: update_vacancies: Vacancy 1887825198 for LinkedIn has expired
+Fri Jun  5 13:00:59 2020 INFO: update_vacancies: Vacancy 1888784547 for LinkedIn has expired
+Fri Jun  5 13:00:59 2020 INFO: update_vacancies: Vacancy 1890673273 for LinkedIn has expired
+Fri Jun  5 13:01:00 2020 INFO: update_vacancies: Vacancy 1890770650 for LinkedIn has expired
+Fri Jun  5 13:01:01 2020 INFO: update_vacancies: Vacancy 1890858715 for LinkedIn has expired
+Fri Jun  5 13:01:02 2020 INFO: update_vacancies: Vacancy 1890859672 for LinkedIn has expired
+Fri Jun  5 13:01:03 2020 INFO: update_vacancies: Vacancy 1890862416 for LinkedIn has expired
+Fri Jun  5 13:01:04 2020 INFO: update_vacancies: Vacancy 1890863345 for LinkedIn has expired
+Fri Jun  5 13:02:35 2020 INFO: update_vacancies: Vacancy 1891237662 for LinkedIn has expired
+Fri Jun  5 13:03:50 2020 INFO: update_vacancies: Vacancy 1891241401 for LinkedIn has expired
+Fri Jun  5 13:03:51 2020 INFO: update_vacancies: Vacancy 1891248642 for LinkedIn has expired
+Fri Jun  5 13:03:52 2020 INFO: update_vacancies: Vacancy 1891261822 for LinkedIn has expired
+Fri Jun  5 13:03:53 2020 INFO: update_vacancies: Vacancy 1891266899 for LinkedIn has expired
+Fri Jun  5 13:03:54 2020 INFO: update_vacancies: Vacancy 1891332967 for LinkedIn has expired
+Fri Jun  5 13:04:48 2020 INFO: update_vacancies: Vacancy 1892076229 for LinkedIn has expired
+Fri Jun  5 13:04:49 2020 INFO: update_vacancies: Vacancy 1892080723 for LinkedIn has expired
+Fri Jun  5 13:04:50 2020 INFO: update_vacancies: Vacancy 1892086094 for LinkedIn has expired
+Fri Jun  5 13:24:35 2020 INFO: update_vacancies: Completed
+Mon Jun  8 09:31:19 2020 INFO: parse_mail: Started
+Mon Jun  8 09:31:19 2020 INFO: parse_mail: Read database connection data
+Mon Jun  8 09:31:19 2020 INFO: parse_mail: Connected to database
+Mon Jun  8 09:31:27 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Mon Jun  8 09:31:28 2020 INFO: parse_mail: Connected to Outlook
+Mon Jun  8 09:31:28 2020 INFO: parse_mail: Read vacancy table field definitions
+Mon Jun  8 09:31:28 2020 INFO: parse_mail: Read history table field definitions
+Mon Jun  8 09:31:28 2020 INFO: parse_mail: Read Counter table field definitions
+Mon Jun  8 09:31:28 2020 INFO: parse_mail: Read Outlook mail folder detail
+Mon Jun  8 09:31:28 2020 INFO: parse_mail: Built mail folder list
+Mon Jun  8 09:31:28 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Mon Jun  8 09:31:30 2020 INFO: parse_mail: 7 job urls found in CV-Library
+Mon Jun  8 09:31:30 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Mon Jun  8 09:31:39 2020 INFO: parse_mail: 30 job urls found in LinkedInAlerts
+Mon Jun  8 09:31:39 2020 INFO: parse_mail: Processing sub-folder Reed
+Mon Jun  8 09:31:39 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Mon Jun  8 09:31:40 2020 WARNING: parse_mail: No job urls found in Reed
+Mon Jun  8 09:31:40 2020 INFO: parse_mail: Processing sub-folder Indeed
+Mon Jun  8 09:31:40 2020 INFO: parse_mail: 2 job urls found in Indeed
+Mon Jun  8 09:31:41 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Mon Jun  8 09:31:41 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Mon Jun  8 09:31:41 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Mon Jun  8 09:31:41 2020 INFO: parse_mail: 1 job urls found in FindAJob
+Mon Jun  8 09:31:41 2020 INFO: parse_mail: Displayed mail folder information
+Mon Jun  8 09:31:41 2020 INFO: parse_mail: Completed
+Mon Jun  8 09:31:52 2020 INFO: detect_duplicates.py: Started
+Mon Jun  8 09:31:52 2020 INFO: detect_duplicates.py: Read database connection data
+Mon Jun  8 09:31:52 2020 INFO: detect_duplicates.py: Connected to database
+Mon Jun  8 09:31:52 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Mon Jun  8 09:31:52 2020 INFO: detect_duplicates.py: Read history table field definitions
+Mon Jun  8 09:31:52 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Mon Jun  8 09:32:17 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Mon Jun  8 09:32:17 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Mon Jun  8 09:32:17 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1850646728 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850646728 changed to state Dropped on 2020-05-06 09:51:02 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1893049094 Vacancy URL https://www.linkedin.com/comm/jobs/view/1893049094 changed to state New on 2020-06-08 09:31:32 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1850638191 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850638191 changed to state Dropped on 2020-05-06 09:49:58 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1854179197 Vacancy URL https://www.linkedin.com/comm/jobs/view/1854179197 changed to state Dropped on 2020-05-09 16:07:20 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1894445063 Vacancy URL https://www.linkedin.com/comm/jobs/view/1894445063 changed to state New on 2020-06-08 09:31:35 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1868178475 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868178475 changed to state Dropped on 2020-05-18 09:23:55 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1879201852 Vacancy URL https://www.linkedin.com/comm/jobs/view/1879201852 changed to state Dropped on 2020-05-27 20:24:05 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1880717194 Vacancy URL https://www.linkedin.com/comm/jobs/view/1880717194 changed to state Dropped on 2020-05-27 20:27:41 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1887353034 Vacancy URL https://www.linkedin.com/comm/jobs/view/1887353034 changed to state Dropped on 2020-06-05 12:59:31 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1895876944 Vacancy URL https://www.linkedin.com/comm/jobs/view/1895876944 changed to state New on 2020-06-08 09:31:35 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1873568557 Vacancy URL https://www.linkedin.com/comm/jobs/view/1873568557 changed to state Dropped on 2020-05-22 13:30:27 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1876732940 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876732940 changed to state Dropped on 2020-05-25 11:40:11 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1896163231 Vacancy URL https://www.linkedin.com/comm/jobs/view/1896163231 changed to state New on 2020-06-08 09:31:31 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1855727148 Vacancy URL https://www.linkedin.com/comm/jobs/view/1855727148 changed to state Dropped on 2020-05-10 16:03:37 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1868413722 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868413722 changed to state Dropped on 2020-05-19 10:44:43 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1876737380 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876737380 changed to state Dropped on 2020-05-25 11:40:47 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1896164194 Vacancy URL https://www.linkedin.com/comm/jobs/view/1896164194 changed to state New on 2020-06-08 09:31:37 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1850566119 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850566119 changed to state Dropped on 2020-05-05 12:11:56 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1876739242 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876739242 changed to state Dropped on 2020-05-25 11:40:53 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1896165098 Vacancy URL https://www.linkedin.com/comm/jobs/view/1896165098 changed to state New on 2020-06-08 09:31:35 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1861220401 Vacancy URL https://www.linkedin.com/comm/jobs/view/1861220401 changed to state Dropped on 2020-05-13 16:39:01 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1876735488 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876735488 changed to state Dropped on 2020-05-25 11:40:38 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1896167050 Vacancy URL https://www.linkedin.com/comm/jobs/view/1896167050 changed to state New on 2020-06-08 09:31:38 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1868407841 Vacancy URL https://www.linkedin.com/comm/jobs/view/1868407841 changed to state Dropped on 2020-05-19 10:44:35 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1876735470 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876735470 changed to state Dropped on 2020-05-25 11:40:19 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1896168004 Vacancy URL https://www.linkedin.com/comm/jobs/view/1896168004 changed to state New on 2020-06-08 09:31:36 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1838705865 Vacancy URL https://www.linkedin.com/comm/jobs/view/1838705865 changed to state Dropped on 2020-04-27 12:53:25 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1850909856 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850909856 changed to state Dropped on 2020-05-06 09:52:41 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1876832545 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876832545 changed to state Dropped on 2020-05-25 11:41:56 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 1896432158 Vacancy URL https://www.linkedin.com/comm/jobs/view/1896432158 changed to state New on 2020-06-08 09:31:31 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 212047736 Vacancy URL https://www.cv-library.co.uk/job/212047736 changed to state Dropped on 2020-05-16 15:04:46 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 212093002 Vacancy URL https://www.cv-library.co.uk/job/212093002 changed to state New on 2020-06-08 09:31:30 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 211989416 Vacancy URL https://www.cv-library.co.uk/job/211989416 changed to state Dropped on 2020-04-27 12:53:57 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 212002432 Vacancy URL https://www.cv-library.co.uk/job/212002432 changed to state Dropped on 2020-04-27 12:54:38 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 212017669 Vacancy URL https://www.cv-library.co.uk/job/212017669 changed to state Dropped on 2020-05-05 12:18:53 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 212064058 Vacancy URL https://www.cv-library.co.uk/job/212064058 changed to state Dropped on 2020-05-23 16:46:23 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 212076240 Vacancy URL https://www.cv-library.co.uk/job/212076240 changed to state Dropped on 2020-06-01 09:19:58 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 212094518 Vacancy URL https://www.cv-library.co.uk/job/212094518 changed to state New on 2020-06-08 09:31:29 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 212087236 Vacancy URL https://www.cv-library.co.uk/job/212087236 changed to state Dropped on 2020-06-05 13:13:43 
+Mon Jun  8 09:32:18 2020 INFO: detect_duplicates.py: Vacancy ID 212096465 Vacancy URL https://www.cv-library.co.uk/job/212096465 changed to state New on 2020-06-08 09:31:29 
+Mon Jun  8 09:32:20 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Mon Jun  8 09:32:20 2020 INFO: detect_duplicates.py: Completed
+Mon Jun  8 09:32:55 2020 INFO: update_vacancies: Started
+Mon Jun  8 09:32:55 2020 INFO: update_vacancies: Read database connection data
+Mon Jun  8 09:32:55 2020 INFO: update_vacancies: Connected to database
+Mon Jun  8 09:32:55 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon Jun  8 09:32:55 2020 INFO: update_vacancies: Read history table field definitions
+Mon Jun  8 09:36:49 2020 INFO: update_vacancies: Vacancy 1892814683 for LinkedIn has expired
+Mon Jun  8 09:37:41 2020 INFO: update_vacancies: Vacancy 1893085585 for LinkedIn has expired
+Mon Jun  8 09:37:42 2020 INFO: update_vacancies: Vacancy 1893241549 for LinkedIn has expired
+Mon Jun  8 09:37:43 2020 INFO: update_vacancies: Vacancy 1893250367 for LinkedIn has expired
+Mon Jun  8 09:38:50 2020 INFO: update_vacancies: Started
+Mon Jun  8 09:38:50 2020 INFO: update_vacancies: Read database connection data
+Mon Jun  8 09:38:50 2020 INFO: update_vacancies: Connected to database
+Mon Jun  8 09:38:50 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon Jun  8 09:38:50 2020 INFO: update_vacancies: Read history table field definitions
+Mon Jun  8 09:42:19 2020 INFO: update_vacancies: Started
+Mon Jun  8 09:42:19 2020 INFO: update_vacancies: Read database connection data
+Mon Jun  8 09:42:19 2020 INFO: update_vacancies: Connected to database
+Mon Jun  8 09:42:19 2020 INFO: update_vacancies: Read vacancy table field definitions
+Mon Jun  8 09:42:19 2020 INFO: update_vacancies: Read history table field definitions
+Mon Jun  8 09:43:32 2020 INFO: update_vacancies: Vacancy 1895495541 for LinkedIn has expired
+Mon Jun  8 09:43:33 2020 INFO: update_vacancies: Vacancy 1895675960 for LinkedIn has expired
+Mon Jun  8 09:58:34 2020 INFO: update_vacancies: Completed
+Mon Jun  8 09:59:59 2020 INFO: generate_report: Started
+Mon Jun  8 09:59:59 2020 INFO: generate_report: Openned export file C:\JOBSEARCH\2019\Co-Ordination\application_history.csv
+Mon Jun  8 09:59:59 2020 INFO: generate_report: Read database connection data
+Mon Jun  8 09:59:59 2020 INFO: generate_report: Connected to database
+Mon Jun  8 09:59:59 2020 INFO: generate_report: Generating report
+Mon Jun  8 09:59:59 2020 WARNING: generate_report: Please convert C:\JOBSEARCH\2019\Co-Ordination\application_history.csv to xlsx format
+Mon Jun  8 09:59:59 2020 INFO: generate_report: Completed
+Tue Jun 23 10:14:58 2020 INFO: parse_mail: Started
+Tue Jun 23 10:14:58 2020 INFO: parse_mail: Read database connection data
+Tue Jun 23 10:14:59 2020 INFO: parse_mail: Connected to database
+Tue Jun 23 10:15:07 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Tue Jun 23 10:15:08 2020 INFO: parse_mail: Connected to Outlook
+Tue Jun 23 10:15:09 2020 INFO: parse_mail: Read vacancy table field definitions
+Tue Jun 23 10:15:09 2020 INFO: parse_mail: Read history table field definitions
+Tue Jun 23 10:15:09 2020 INFO: parse_mail: Read Counter table field definitions
+Tue Jun 23 10:15:09 2020 INFO: parse_mail: Read Outlook mail folder detail
+Tue Jun 23 10:15:09 2020 INFO: parse_mail: Built mail folder list
+Tue Jun 23 10:15:09 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Tue Jun 23 10:15:16 2020 INFO: parse_mail: 25 job urls found in CV-Library
+Tue Jun 23 10:15:16 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Tue Jun 23 10:15:24 2020 INFO: parse_mail: 33 job urls found in LinkedInAlerts
+Tue Jun 23 10:15:24 2020 INFO: parse_mail: Processing sub-folder Reed
+Tue Jun 23 10:15:24 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Tue Jun 23 10:15:26 2020 INFO: parse_mail: 1 job urls found in Reed
+Tue Jun 23 10:15:27 2020 INFO: parse_mail: Processing sub-folder Indeed
+Tue Jun 23 10:15:28 2020 INFO: parse_mail: 3 job urls found in Indeed
+Tue Jun 23 10:15:28 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Tue Jun 23 10:15:28 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Tue Jun 23 10:15:28 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Tue Jun 23 10:15:28 2020 INFO: parse_mail: 1 job urls found in FindAJob
+Tue Jun 23 10:15:28 2020 INFO: parse_mail: Displayed mail folder information
+Tue Jun 23 10:15:28 2020 INFO: parse_mail: Completed
+Tue Jun 23 10:15:47 2020 INFO: detect_duplicates.py: Started
+Tue Jun 23 10:15:47 2020 INFO: detect_duplicates.py: Read database connection data
+Tue Jun 23 10:15:47 2020 INFO: detect_duplicates.py: Connected to database
+Tue Jun 23 10:15:47 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Tue Jun 23 10:15:47 2020 INFO: detect_duplicates.py: Read history table field definitions
+Tue Jun 23 10:15:47 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1848832080 Vacancy URL https://www.linkedin.com/comm/jobs/view/1848832080 changed to state Dropped on 2020-05-26 11:30:11 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1848837697 Vacancy URL https://www.linkedin.com/comm/jobs/view/1848837697 changed to state Dropped on 2020-05-28 13:07:41 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1881808639 Vacancy URL https://www.linkedin.com/comm/jobs/view/1881808639 changed to state New on 2020-06-23 10:15:23 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1848816808 Vacancy URL https://www.linkedin.com/comm/jobs/view/1848816808 changed to state Dropped on 2020-05-22 13:27:28 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1890339460 Vacancy URL https://www.linkedin.com/comm/jobs/view/1890339460 changed to state New on 2020-06-23 10:15:20 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1844452399 Vacancy URL https://www.linkedin.com/comm/jobs/view/1844452399 changed to state Dropped on 2020-06-01 08:57:41 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1890382372 Vacancy URL https://www.linkedin.com/comm/jobs/view/1890382372 changed to state New on 2020-06-23 10:15:22 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1846502560 Vacancy URL https://www.linkedin.com/comm/jobs/view/1846502560 changed to state Dropped on 2020-05-22 13:37:30 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1909219092 Vacancy URL https://www.linkedin.com/comm/jobs/view/1909219092 changed to state New on 2020-06-23 10:15:24 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1850477395 Vacancy URL https://www.linkedin.com/comm/jobs/view/1850477395 changed to state Dropped on 2020-05-05 12:11:43 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1856442472 Vacancy URL https://www.linkedin.com/comm/jobs/view/1856442472 changed to state Dropped on 2020-05-10 16:04:02 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1876547289 Vacancy URL https://www.linkedin.com/comm/jobs/view/1876547289 changed to state Dropped on 2020-05-25 11:40:03 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 1916550385 Vacancy URL https://www.linkedin.com/comm/jobs/view/1916550385 changed to state New on 2020-06-23 10:15:19 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212077744 Vacancy URL https://www.cv-library.co.uk/job/212077744 changed to state Dropped on 2020-06-01 09:22:33 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212119813 Vacancy URL https://www.cv-library.co.uk/job/212119813 changed to state New on 2020-06-23 10:15:14 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212035154 Vacancy URL https://www.cv-library.co.uk/job/212035154 changed to state Dropped on 2020-05-12 09:55:52 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212074624 Vacancy URL https://www.cv-library.co.uk/job/212074624 changed to state Dropped on 2020-06-01 09:18:25 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212119902 Vacancy URL https://www.cv-library.co.uk/job/212119902 changed to state New on 2020-06-23 10:15:13 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212134454 Vacancy URL https://www.cv-library.co.uk/job/212134454 changed to state New on 2020-06-23 10:15:16 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212075864 Vacancy URL https://www.cv-library.co.uk/job/212075864 changed to state Dropped on 2020-06-01 09:19:50 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212124987 Vacancy URL https://www.cv-library.co.uk/job/212124987 changed to state New on 2020-06-23 10:15:12 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212075780 Vacancy URL https://www.cv-library.co.uk/job/212075780 changed to state Dropped on 2020-06-01 09:19:16 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212124991 Vacancy URL https://www.cv-library.co.uk/job/212124991 changed to state New on 2020-06-23 10:15:12 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 211989416 Vacancy URL https://www.cv-library.co.uk/job/211989416 changed to state Dropped on 2020-04-27 12:53:57 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212002432 Vacancy URL https://www.cv-library.co.uk/job/212002432 changed to state Dropped on 2020-04-27 12:54:38 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212017669 Vacancy URL https://www.cv-library.co.uk/job/212017669 changed to state Dropped on 2020-05-05 12:18:53 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212064058 Vacancy URL https://www.cv-library.co.uk/job/212064058 changed to state Dropped on 2020-05-23 16:46:23 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212076240 Vacancy URL https://www.cv-library.co.uk/job/212076240 changed to state Dropped on 2020-06-01 09:19:58 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212094518 Vacancy URL https://www.cv-library.co.uk/job/212094518 changed to state Dropped on 2020-06-08 09:50:03 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212132311 Vacancy URL https://www.cv-library.co.uk/job/212132311 changed to state New on 2020-06-23 10:15:15 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212032985 Vacancy URL https://www.cv-library.co.uk/job/212032985 changed to state Dropped on 2020-05-09 16:09:35 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212133164 Vacancy URL https://www.cv-library.co.uk/job/212133164 changed to state New on 2020-06-23 10:15:15 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212035154 Vacancy URL https://www.cv-library.co.uk/job/212035154 changed to state Dropped on 2020-05-12 09:55:52 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212074624 Vacancy URL https://www.cv-library.co.uk/job/212074624 changed to state Dropped on 2020-06-01 09:18:25 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212119902 Vacancy URL https://www.cv-library.co.uk/job/212119902 changed to state New on 2020-06-23 10:15:13 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212134454 Vacancy URL https://www.cv-library.co.uk/job/212134454 changed to state New on 2020-06-23 10:15:16 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212076877 Vacancy URL https://www.cv-library.co.uk/job/212076877 changed to state Dropped on 2020-06-01 09:21:40 
+Tue Jun 23 10:16:21 2020 INFO: detect_duplicates.py: Vacancy ID 212136590 Vacancy URL https://www.cv-library.co.uk/job/212136590 changed to state New on 2020-06-23 10:15:15 
+Tue Jun 23 10:16:22 2020 INFO: detect_duplicates.py: Vacancy ID 212119902 Vacancy URL https://www.cv-library.co.uk/job/212119902 has been 'Dropped'
+Tue Jun 23 10:16:23 2020 INFO: detect_duplicates.py: Vacancy ID 212119902 Vacancy URL https://www.cv-library.co.uk/job/212119902 has been 'Dropped'
+Tue Jun 23 10:16:23 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Tue Jun 23 10:16:23 2020 INFO: detect_duplicates.py: Completed
+Tue Jun 23 10:36:57 2020 INFO: update_vacancies: Started
+Tue Jun 23 10:36:57 2020 INFO: update_vacancies: Read database connection data
+Tue Jun 23 10:36:57 2020 INFO: update_vacancies: Connected to database
+Tue Jun 23 10:36:57 2020 INFO: update_vacancies: Read vacancy table field definitions
+Tue Jun 23 10:36:57 2020 INFO: update_vacancies: Read history table field definitions
+Tue Jun 23 10:36:57 2020 INFO: update_vacancies: Vacancy 1913821211 for LinkedIn has expired
+Tue Jun 23 11:02:38 2020 INFO: update_vacancies: Completed
+Tue Jun 23 11:03:01 2020 INFO: generate_report: Started
+Tue Jun 23 11:03:01 2020 INFO: generate_report: Openned export file C:\JOBSEARCH\2019\Co-Ordination\application_history.csv
+Tue Jun 23 11:03:01 2020 INFO: generate_report: Read database connection data
+Tue Jun 23 11:03:01 2020 INFO: generate_report: Connected to database
+Tue Jun 23 11:03:01 2020 INFO: generate_report: Generating report
+Tue Jun 23 11:03:01 2020 WARNING: generate_report: Please convert C:\JOBSEARCH\2019\Co-Ordination\application_history.csv to xlsx format
+Tue Jun 23 11:03:01 2020 INFO: generate_report: Completed
+Wed Jun 24 10:08:08 2020 INFO: parse_mail: Started
+Wed Jun 24 10:08:08 2020 INFO: parse_mail: Read database connection data
+Wed Jun 24 10:08:08 2020 INFO: parse_mail: Connected to database
+Wed Jun 24 10:08:09 2020 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Wed Jun 24 10:08:10 2020 INFO: parse_mail: Connected to Outlook
+Wed Jun 24 10:08:10 2020 INFO: parse_mail: Read vacancy table field definitions
+Wed Jun 24 10:08:10 2020 INFO: parse_mail: Read history table field definitions
+Wed Jun 24 10:08:10 2020 INFO: parse_mail: Read Counter table field definitions
+Wed Jun 24 10:08:10 2020 INFO: parse_mail: Read Outlook mail folder detail
+Wed Jun 24 10:08:10 2020 INFO: parse_mail: Built mail folder list
+Wed Jun 24 10:08:10 2020 INFO: parse_mail: Processing sub-folder CV-Library
+Wed Jun 24 10:08:11 2020 INFO: parse_mail: 5 job urls found in CV-Library
+Wed Jun 24 10:08:11 2020 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Wed Jun 24 10:08:14 2020 INFO: parse_mail: 10 job urls found in LinkedInAlerts
+Wed Jun 24 10:08:14 2020 INFO: parse_mail: Processing sub-folder Reed
+Wed Jun 24 10:08:14 2020 INFO: parse_mail: Exclusions will apply for mail in Reed
+Wed Jun 24 10:08:15 2020 INFO: parse_mail: 1 job urls found in Reed
+Wed Jun 24 10:08:15 2020 INFO: parse_mail: Processing sub-folder Indeed
+Wed Jun 24 10:08:15 2020 INFO: parse_mail: 1 job urls found in Indeed
+Wed Jun 24 10:08:15 2020 INFO: parse_mail: Processing sub-folder Totaljobs
+Wed Jun 24 10:08:15 2020 WARNING: parse_mail: No job urls found in Totaljobs
+Wed Jun 24 10:08:15 2020 INFO: parse_mail: Processing sub-folder FindAJob
+Wed Jun 24 10:08:15 2020 WARNING: parse_mail: No job urls found in FindAJob
+Wed Jun 24 10:08:15 2020 INFO: parse_mail: Displayed mail folder information
+Wed Jun 24 10:08:15 2020 INFO: parse_mail: Completed
+Wed Jun 24 10:08:31 2020 INFO: detect_duplicates.py: Started
+Wed Jun 24 10:08:31 2020 INFO: detect_duplicates.py: Read database connection data
+Wed Jun 24 10:08:31 2020 INFO: detect_duplicates.py: Connected to database
+Wed Jun 24 10:08:31 2020 INFO: detect_duplicates.py: Read vacancy table field definitions
+Wed Jun 24 10:08:31 2020 INFO: detect_duplicates.py: Read history table field definitions
+Wed Jun 24 10:08:31 2020 INFO: detect_duplicates.py: Read duplicate table field definitions
+Wed Jun 24 10:08:41 2020 INFO: detect_duplicates.py: Updated 'New' vacancies with data scraped from vacancy urls 
+Wed Jun 24 10:08:41 2020 INFO: detect_duplicates.py: Detected duplicate vacancies
+Wed Jun 24 10:08:41 2020 INFO: detect_duplicates.py: The following set of duplicates have been detected  -> 
+Wed Jun 24 10:08:41 2020 INFO: detect_duplicates.py: Vacancy ID 1892335892 Vacancy URL https://www.linkedin.com/comm/jobs/view/1892335892 changed to state Dropped on 2020-06-23 10:29:57 
+Wed Jun 24 10:08:41 2020 INFO: detect_duplicates.py: Vacancy ID 1892346493 Vacancy URL https://www.linkedin.com/comm/jobs/view/1892346493 changed to state New on 2020-06-24 10:08:12 
+Wed Jun 24 10:08:41 2020 INFO: detect_duplicates.py: Removed duplicate vacancies
+Wed Jun 24 10:08:41 2020 INFO: detect_duplicates.py: Completed
+Wed Jun 24 10:08:59 2020 INFO: update_vacancies: Started
+Wed Jun 24 10:08:59 2020 INFO: update_vacancies: Read database connection data
+Wed Jun 24 10:08:59 2020 INFO: update_vacancies: Connected to database
+Wed Jun 24 10:08:59 2020 INFO: update_vacancies: Read vacancy table field definitions
+Wed Jun 24 10:08:59 2020 INFO: update_vacancies: Read history table field definitions
+Wed Jun 24 10:18:46 2020 INFO: update_vacancies: Completed

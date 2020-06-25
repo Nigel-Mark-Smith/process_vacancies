@@ -39,7 +39,7 @@ Please note the following:
   changing the value assigned to 'secure_file_priv' in file 
   C:\ProgramData\MySQL\MySQL Server 8.0\my.ini
 
-  e.g secure_file_priv="X:\GitHub\process_vacancies\Data"
+  e.g secure_file_priv="C:\JOBSEARCH\2019\Co-Ordination\"
 
   Once you have made the change ensure that the files encoding
   type is ANSI ( Notepad++ will allow you to do this ).

@@ -61,7 +61,7 @@ success = 1
 error = 'ERROR'
 warning = 'WARNING'
 info = 'INFO'
-module = 'genrate_report'
+module = 'generate_report'
 
 # File names and modes
 Currentdir = os.getcwd()

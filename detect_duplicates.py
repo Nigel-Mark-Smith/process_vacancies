@@ -15,8 +15,6 @@
 #   title
 #   location
 #
-# - Duplicate vacancies must have been detected no more than 1 week apart.
-#
 # Prior to performing duplicate searches this script will scrape 'company'
 # 'title' and 'location' data for all 'New' vacancies from the web 
 # and update the relevant record in the 'vacancy' table.
@@ -231,7 +229,7 @@ for VacancyRow in SQLresponse :
 # Progress update
 File.Logerror(ErrorfileObject,module,'Detected duplicate vacancies',info)
 
-# Iterate through sets of duplicates logging duplicate information and createing and
+# Iterate through sets of duplicates logging duplicate information and creating an
 # ActionLists structure with latest vacancy status information.
 ActionLists = []
 

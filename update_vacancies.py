@@ -35,6 +35,7 @@ import Interface
 import Web
 import subprocess
 
+
 # Function return values
 invalid = failure = 0
 empty = ''
@@ -313,9 +314,10 @@ for Vacancy in SQLresponse :
             VacancyUpdate['vacancy_state']  = Interface.GetChoice(Prompt,Choices,count = 2)
             
             # Confirm the change
-            Choices = ['y','n','exit']
+            Choices = ['y','n']
             Prompt = 'Do you wish to change the state of vacancy %s to %s %s : ' % ( JobID ,VacancyUpdate['vacancy_state'], str(Choices) )
-            Choice = Interface.GetChoice(Prompt,Choices,count = 2)            
+            Choice = Interface.GetChoice(Prompt,Choices,count = 2)  
+            
             if ( Choice == 'y' ) : break
             
         
@@ -334,6 +336,8 @@ for Vacancy in SQLresponse :
         if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
     
     Interface.KillProcess(Browser,Killdelay,empty)
+    
+    if ( Choice == 'exit' ) : break
         
 # Disconnect from database.
 Errormessage = 'Could not disconnect from database'

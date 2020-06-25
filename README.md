@@ -13,7 +13,8 @@ reduce effort by ensuring that details of any vacancy advertised are only proces
 
 - Vacancy history ( for vacancies applied for ).
 - Report on proportion of vacancies dropped or pursued.
-- Rate at which new vacancies are raised by each engine.
+- Weekly rate at which new vacancies are raised.
+- Weekly rate at which new vacancies are raised by each engine.
 - Cumulative vacancy counts per engine.
 - Cumulative duplicate vacancy counts per engine.
 
@@ -57,7 +58,6 @@ Future Developments
 The following additional functionality is planned:
 
 - Detection/removal of vacancies raised by agencies.
-- Production of per CV/Job engine metrics. 
 - Automatic backup of the contents of the 'vacancies' database.
 
 

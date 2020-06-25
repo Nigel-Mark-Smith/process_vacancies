@@ -90,6 +90,7 @@ def ViewSpeadsheet (spreadsheet,file) :
     
     launch = 'start' + ' ' + spreadsheet + ' ' + file
     subprocess.run(['cmd.exe','/C',launch])
+    
 
 # Kills process 'process'. 
 #
