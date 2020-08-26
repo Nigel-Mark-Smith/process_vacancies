@@ -44,6 +44,8 @@ connect.data | Information required to connect to local MySQL instance
 definition.sql | All SQL statements required to define the 'vacancies' database and associated tables.
 engines.data | CV engine specific data including location of Outlook mail folders and format of unique vacancy urls.
 queries.sql | Generates export files containing metrics data.
+test_mail.py | Test utility which allows users to determine the per engine data that requires to be specified in file ..\Data\engines.csv
+test_scraping.py | Test utility which tests scraping functionality  provided in the 'Web' module
 
 As well as the above scripts and data files the following supporting documentation is also provided:
 
