@@ -143,6 +143,9 @@ SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
 Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
 if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
 
+# Progress update
+File.Logerror(ErrorfileObject,module,'Updating all new vacancies with data scraped from vacancy urls',info)
+
 # Update all 'New' vacancy records.
 for VacancyRow in SQLresponse :
 

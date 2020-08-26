@@ -91,6 +91,15 @@ def ViewSpeadsheet (spreadsheet,file) :
     launch = 'start' + ' ' + spreadsheet + ' ' + file
     subprocess.run(['cmd.exe','/C',launch])
     
+# Runs script 'script' and waits 'delay' seconds before returning
+def RunScript (script,delay) :
+ 
+    "Runs script 'script' and waits 'delay' seconds before returning"
+    
+    launch = 'start' + ' ' + script
+    subprocess.run(['cmd.exe','/C',launch])
+    
+    time.sleep(delay)  
 
 # Kills process 'process'. 
 #

@@ -130,9 +130,15 @@ SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
 Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
 if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
 
-# Iterate through the matching vacancies
+# Iterate through the new vacancies
+VacancyTotal = len(SQLresponse)
+VacancyNumber = 1
+
 for Vacancy in SQLresponse :
 
+    # Progress update
+    print('******** Processing New vacancy %s of %s ********' % ( str(VacancyNumber),str(VacancyTotal) ) )
+    
     EngineID = Vacancy[0]
     JobID = Vacancy[1]
     Joburl = Vacancy[2]
@@ -257,6 +263,7 @@ for Vacancy in SQLresponse :
         if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
     
     # Remove vacancy from view
+    VacancyNumber += 1
     Interface.KillProcess(Browser,Killdelay,empty)
     
     
@@ -266,8 +273,16 @@ SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
 Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
 if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
 
+# Iterate through the ongoing vacancies
+VacancyTotal = len(SQLresponse)
+VacancyNumber = 1
+
 for Vacancy in SQLresponse :
 
+
+    # Progress update
+    print('******** Processing On-going vacancy %s of %s ********' % ( str(VacancyNumber),str(VacancyTotal) ) )
+    
     EngineID = Vacancy[0]
     JobID = Vacancy[1]
     Joburl = Vacancy[2]
@@ -335,6 +350,7 @@ for Vacancy in SQLresponse :
         Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
         if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
     
+    VacancyNumber += 1
     Interface.KillProcess(Browser,Killdelay,empty)
     
     if ( Choice == 'exit' ) : break

@@ -48,6 +48,18 @@ def Readline (Fileobject,failure):
     else:
         return line
         
+# Writes buffer to a file      
+def Write (Fileobject,buffer,failure):
+    
+    "Writes line to a file"
+
+    try:
+        Fileobject.write(buffer)      
+    except:
+        return failure
+    else:
+        return True
+        
 # Writes a line to a file      
 def Writeline (Fileobject,line,failure):
     

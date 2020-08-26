@@ -56,6 +56,9 @@ def ScrapeLinkedIn (url) :
         if Httpmatch: Altcompany = Httpmatch.group(1)
         Httpmatch = re.findall(attributere,Httpline)
         if Httpmatch: Attributevalues = Httpmatch
+        
+    # General protection against scraping failure.
+    if ( len(Attributevalues) == 0 ) : return ProcessedJobData
      
     # Checked if job closed. The following additional attribute key/value pair will
     # be detected if it is.
@@ -65,14 +68,12 @@ def ScrapeLinkedIn (url) :
     if ( len(Attributevalues) > len(Attributekeys) ) : return ProcessedJobData
     
     # Create a distionary of job atributes
-    Attributeindex = 0
-    
+    Attributeindex = 0 
     while ( Attributeindex < len(Attributekeys) ) :
         EngineJobData[Attributekeys[Attributeindex]] = Attributevalues[Attributeindex][1]
         Attributeindex += 1
 
     # Convert raw job data to standard job data
-    
     for StandardDataKey in ConversionDict : 
         StandardDataValue = ''
         for EngineDataKey in ConversionDict[StandardDataKey] : 
@@ -269,6 +270,7 @@ def ScrapeReed (url) :
 
     # set regular expressions
     titlere = '<meta itemprop=\"title\" content=\"(.*?)\" />'
+    companyre = '<span itemprop=\"name\">(.*?)<'
     keyre = '<span\s*data-qa=\"(.*?)MobileLbl\"\s*>'
     valuere = '<span\s*data-qa=\"(.*?)MobileLbl\"\s*>(.*?)<'
 
@@ -284,6 +286,8 @@ def ScrapeReed (url) :
     for Httpline in Httplines : 
         Httpmatch = re.search(titlere,Httpline)
         if Httpmatch: EngineJobData['title'] =  Httpmatch.group(1)
+        Httpmatch = re.search(companyre,Httpline)
+        if Httpmatch: EngineJobData['company'] =  Httpmatch.group(1)
         Httpmatch = re.search(keyre,Httpline)
         if Httpmatch: Attributekeys.append(Httpmatch.group(1))
         Httpmatch = re.search(valuere,Httpline)
