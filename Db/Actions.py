@@ -120,15 +120,15 @@ def Geninsert (table,definition,data):
     for field in iteration : 
         start = start + field + ','
         value = values[datum]
-        if ( definition[field].find('int(') == -1 ) : value = '\"' + value + '\"' 
+        if ( definition[field].find('int(') == -1 ) : value = '\"' + value + '\"'   
+        # The following string manipulation is required as
+        # we may store '\' characters in the joburl for engines
+        value = value.replace('\\','\\\\')
+        
         # The following string manipulation is required to cope
         # with company names containing a single quote e.g. ONLINE PA'S LIMITED
         value = value.replace('\'','\\\'')
         value = value.replace('\"','\'')
-        
-        # The following string manipulation is required as
-        # we may store '\' characters in the joburl for engines
-        value = value.replace('\\','\\\\')
         
         end = end + value + ','
         datum =  datum + 1

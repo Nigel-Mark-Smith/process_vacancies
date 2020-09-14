@@ -11,13 +11,13 @@
 # The following data and configuration files are required by
 # this script:
 #
-# ./Data/companies.data     -   Contains company data provided by
+# ./Data/companies.csv      -   Contains company data provided by
 #                               companies house.
-# ./Data/connect.data       -   Contains MySQL login details.
+# ./Data/connect.csv        -   Contains MySQL login details.
 # ./Data/definition.sql     -   Contains SQL statements required
 #                               to definie database 'vacancies' 
 #                               and it's tables.
-# ./Data/engines.data       -   Contains information relating to
+# ./Data/engines.csv        -   Contains information relating to
 #                               ehe locations of job-alert e-mails
 #                               and the format ( using regular expressions) 
 #                               of single vacancy urls conatined in these 

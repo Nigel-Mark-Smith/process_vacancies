@@ -1,10 +1,10 @@
 # process_vacancies
 
-This repository delivers python utility scripts 'initialize_database.py', 'parse_mail.py', detect_duplictes.py, 'update_vacancies.py' and 
-generate_report.py. These scripts support the processing of job alert e-mails which can be received from a number of popular CV/Job engines. 
-The scripts both implement and rely on a database called 'vacancies' defined on a local instance of 'MySQL'. They also require that the job 
-alert e-mails received are stored in separate mail folders in a local instance of 'Outlook'. 'Chrome' must also be installed so that details 
-of any vacancy can be displayed using a unique vacancy url.
+This repository delivers python utility scripts 'initialize_database.py', 'parse_mail.py', detect_duplictes.py, 'update_vacancies.py' 
+'load_companies.py' and 'generate_report.py'. These scripts support the processing of job alert e-mails which can be received from a 
+number of popular CV/Job engines. The scripts both implement and rely on a database called 'vacancies' defined on a local instance 
+of 'MySQL'. They also require that the job alert e-mails received are stored in separate mail folders in a local instance of 'Outlook'. 
+'Chrome' must also be installed so that details of any vacancy can be displayed using a unique vacancy url.
 
 These scripts together streamline the processes of reviewing job alert e-mails received and allow the user to track the progress of 
 a particular application by changing the state of the associated 'vacancy' stored in the 'vacancies' database. The scripts will
@@ -38,6 +38,7 @@ initialize_database.py | Configures and checks the MySQL 'vacancies' database an
 parse_mail.py | Parses Outlook mail and adds details of new vacancies to MySQL
 detect_duplicates.py | Detects any duplicate vacancies in state 'New' ( per engine ) and removes all but the latest. 
 update_vacancies.py | Interacts with the user allowing them to change details ( including the state ) of individual vacancies. 
+load_companies.py | Provides bulk loading of comapny data from companies.csv file.
 generate_report.py | Generates a report containg the history of all vacancies applied for
 companies.data | An extract of Companies House data containing known recruitment agencies.
 connect.data | Information required to connect to local MySQL instance
