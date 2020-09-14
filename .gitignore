@@ -16,3 +16,4 @@ Web/__pycache__/Requests.cpython-37.pyc
 Data/log.txt
 Db/__pycache__/Actions.cpython-37.pyc
 *.pyc
+*.pyc
