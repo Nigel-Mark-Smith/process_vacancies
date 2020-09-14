@@ -15,3 +15,4 @@ Interface/__pycache__/Prompts.cpython-37.pyc
 Web/__pycache__/Requests.cpython-37.pyc
 Data/log.txt
 Db/__pycache__/Actions.cpython-37.pyc
+*.pyc
