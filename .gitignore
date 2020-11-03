@@ -17,3 +17,13 @@ Data/log.txt
 Db/__pycache__/Actions.cpython-37.pyc
 *.pyc
 *.pyc
+*.pyc
+*.pyc
+Db/__pycache__/Actions.cpython-37.pyc
+Email/__pycache__/Analyze.cpython-37.pyc
+File/__pycache__/Operations.cpython-37.pyc
+Interface/__pycache__/Prompts.cpython-37.pyc
+Interface/__pycache__/Utils.cpython-37.pyc
+Data/log.txt
+Web/__pycache__/Requests.cpython-37.pyc
+NEXT.txt

@@ -82,7 +82,32 @@ def ViewVacancy (browser,url) :
     
     launch = 'start' + ' ' + browser + ' ' + url
     subprocess.run(['cmd.exe','/C',launch])
+    
+    
+# Launches browser and displays job vacancy using temp
+# batch file. Required for use with Totaljobs vacancies 
+# who's urls contain '&' characters which trip up command 
+# line parsing
 
+def ViewVacancyByBatch (browser,url,batch='C:\\temp\\vacancy.bat') :
+ 
+    "Launches browser and displays job vacancy using temp batch file"
+    
+    # Create command strings
+    no_echo = '@echo off' + '\n'
+    command = 'start' + ' ' + browser + ' ' + '"' + url + '"' + '\n'
+    quit = 'exit' + '\n'
+    
+    # Write command strings to batch file and close
+    file = open(batch,'w')
+    file.write(no_echo)
+    file.write(command)
+    file.write(quit)
+    file.close
+    
+    # Run batch file
+    subprocess.call(['cmd.exe','/C','start','/MIN',batch])
+        
 # Launches spreadsheet program with file argument
 def ViewSpeadsheet (spreadsheet,file) :
  

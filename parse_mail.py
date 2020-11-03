@@ -233,6 +233,12 @@ while ( EngineIndex < len(MailfolderList) ) :
         ReedEngine = True
     else :
         ReedEngine = False
+        
+    # Determine if engine is 'Totaljobs'  
+    if ( EngineName == 'Totaljobs' ) : 
+        TotalEngine = True
+    else :
+        TotalEngine = False
     
     # Determine if there are exclusions and/or inclusions defined
     if ( len(ExclusionsList[EngineIndex]) != 0 ) : 
@@ -271,7 +277,10 @@ while ( EngineIndex < len(MailfolderList) ) :
                 if MatchObj : 
                     if ( len(MatchObj.group()) > Urllen ) : 
                         if not ( ReedEngine ) : 
-                            JoburlList.append(MatchObj.group()[0:Urllen])
+                            if not ( TotalEngine ) :
+                                JoburlList.append(MatchObj.group()[0:Urllen])
+                            else: 
+                                JoburlList.append(MatchObj.group())
                         else:
                         
                             # For Reed information must be scraped from vacancy
@@ -295,7 +304,11 @@ while ( EngineIndex < len(MailfolderList) ) :
         
     for Joburl in JoburlList : 
              
-        Jobid = Joburl[len(Joburl)-IDlen:]
+        if not ( TotalEngine ) :
+            Jobid = Joburl[len(Joburl)-IDlen:]
+        else :
+            MatchObj = re.search(JobUrlRe,Joburl) 
+            Jobid = MatchObj.group(1)
         
         # Determine if there is already an entry in table 'vacancy' for this job url.
         SelectCriteria = 'engine_id = %s and vacancy_id = \'%s\'' % (str(EngineIDList[EngineIndex]),Jobid)
@@ -305,7 +318,7 @@ while ( EngineIndex < len(MailfolderList) ) :
         if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
         if ( Db.GetSQLrowcount(SQLresponse) == 1 ) : continue
         
-        urlcount += 1
+        urlcount += 1 
         
         # Add entry in table 'vacancy'.
         Fieldnames = ['engine_id','vacancy_id','vacancy_url','vacancy_state']

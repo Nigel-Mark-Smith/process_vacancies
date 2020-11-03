@@ -19,6 +19,12 @@
 # 'title' and 'location' data for all 'New' vacancies from the web 
 # and update the relevant record in the 'vacancy' table.
 #
+# Usage
+# -----
+# This script requires no command line arguments and may be run as follows:
+#
+# python detect_duplicates.py
+#
 # Data and configuration files
 # ----------------------------
 # 
@@ -41,6 +47,7 @@ import os
 import re
 import requests
 import sys
+import json
 
 # Function return values
 invalid = failure = 0
@@ -152,11 +159,18 @@ for VacancyRow in SQLresponse :
     # Populate 'vacancy' values dictionary
     VacancyValues = {}
     FieldIndex = 0
+    VacancyValuesIncomplete = False
     
+    # This code includes a check to see if some vacancy values have not
+    # been defined.
     for VacancyField in VacancyFields.keys() :
+        if ((VacancyRow[FieldIndex])) is None : VacancyValuesIncomplete = True    
         VacancyValues[VacancyField] = (VacancyRow[FieldIndex])
         FieldIndex += 1
-
+   
+    # If vacancy already complete move to next one.
+    if not (VacancyValuesIncomplete) : continue
+    
     # Scrape web data.
     VacancyUpdate = {}
     Engine_Id = VacancyValues['engine_id']
@@ -167,12 +181,15 @@ for VacancyRow in SQLresponse :
     if ( Engine_Id == 3 ) : VacancyUpdate = Web.ScrapeReed(Vacancy_Url)
     # This process doesn't work for Indeed vacancies.
     if ( Engine_Id == 4 ) : continue
-    if ( Engine_Id == 5 ) : VacancyUpdate = Web.ScrapeTotaljobs(Vacancy_Url)
+    if ( Engine_Id == 5 ) : VacancyUpdate = Web.ScrapeTotalJobs(Vacancy_Url) 
     if ( Engine_Id == 6 ) : VacancyUpdate = Web.ScrapeFindAJob(Vacancy_Url)
 
     # General protection against scraping failure
-    # !!!! NOTE !!!! Needs a better solution.
-    if (len(VacancyUpdate) == 0 ) : continue
+    # !!!! NOTE !!!! Needs a better solution.    
+    if (len(VacancyUpdate) == 0 ) :     
+        if ( Engine_Id != 2 ) : continue
+        else :
+            VacancyUpdate['vacancy_state'] = 'Dropped'
     
     # Populate primary field values dictionary
     PrimaryValues = {}
@@ -221,9 +238,11 @@ for VacancyRow in SQLresponse :
     SQLcommand = SQLcommand + ( ' from %s where ' % VacancyTable )
     SQLcommand = SQLcommand + ( Db.GenWhereList(WhereFields,VacancyValues,VacancyFields) )
     
+    
     SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
     Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
     if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
+
     
     # Update the duplicates list of lists.
     DuplicatesList = SQLresponse

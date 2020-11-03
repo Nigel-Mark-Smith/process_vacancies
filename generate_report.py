@@ -12,6 +12,12 @@
 #
 # https://www.gov.uk/how-to-claim-new-style-jsa
 #
+# Usage
+# -----
+# This script requires no command line arguments and may be run as follows:
+#
+# python generate_report.py
+#
 # Data and configuration files
 # ----------------------------
 # 
@@ -22,7 +28,6 @@
 # .\Data\application_history.docx   -   Document containing desciption
 #                                       description of contents and hyper link
 #                                       to ./Data/application_history.xlsx
-#
 # Export file
 # -----------
 #

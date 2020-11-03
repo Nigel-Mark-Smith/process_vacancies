@@ -15,7 +15,7 @@ def Extractsalarydata (salary,default=0) :
     
     # Set regular expersion data for salary periods or salary units. 
     # Salary values should all be expressed as annual amounts.
-    periodres = ((r'[Aa]nnum',1),(r'[Yy](ear|r)',1),(r'[Dd](ay)',365),(r'[Hh](our|r)',1800),(r'[Kk]',1000))
+    periodres = ((r'[Kk]',1000),(r'[Aa]nnum',1),(r'[Yy](ear|r)',1),(r'[Dd](ay)',365),(r'[Hh](our|r)',1800))
     ammountmultiplier = 1
     
     # Determine salary amounts, unit multipliers and time periods.

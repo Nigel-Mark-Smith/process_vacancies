@@ -34,6 +34,7 @@ import Email
 import Interface
 import Web
 import subprocess
+import json
 
 
 # Function return values
@@ -164,9 +165,14 @@ for Vacancy in SQLresponse :
             
     if ( EngineID == 3 ) : VacancyUpdate = Web.ScrapeReed(Joburl)
     if ( EngineID == 4 ) : VacancyUpdate = Web.ScrapeIndeed(Joburl)
-    
-    # Total jobs doesn't work.
-    #if ( EngineID == 5 ) : VacancyUpdate = Web.ScrapeTotaljobs(Joburl)
+    if ( EngineID == 5 ) : 
+        VacancyUpdate = Web.ScrapeTotalJobs(Joburl)
+        # Job alerts can contain expired vacancies
+        if not 'title' in VacancyUpdate : 
+            Display = False
+            Errormessage = 'Vacancy %s for TotalJobs has expired' % JobID
+            File.Logerror(ErrorfileObject,module,Errormessage,info)
+            
     if ( EngineID == 6 ) : VacancyUpdate = Web.ScrapeFindAJob(Joburl)
     
     HistoryUpdate = {}
@@ -174,7 +180,10 @@ for Vacancy in SQLresponse :
     if ( Display ) :
     
         # Display vacancy.
-        Interface.ViewVacancy(Browser,Joburl)
+        if ( EngineID == 5 ) :
+            Interface.ViewVacancyByBatch(Browser,Joburl)
+        else:
+            Interface.ViewVacancy(Browser,Joburl)
     
         # Display standard job details.
         Interface.DisplayDetails(VacancyUpdate)
@@ -304,8 +313,63 @@ for Vacancy in SQLresponse :
     VacancyUpdate = {}
     HistoryUpdate = {}
     
+    # It may be that the LinkedIn vacancy has expired.
+    if ( EngineID == 2 ) : 
+        VacancyUpdate = Web.ScrapeLinkedIn(Joburl)
+        if not 'title' in VacancyUpdate : 
+            Errormessage = 'Vacancy %s for LinkedIn has expired and will be Dropped' % JobID
+            File.Logerror(ErrorfileObject,module,Errormessage,info)
+            
+            VacancyUpdate['vacancy_state'] = 'Dropped'
+            
+            # Create and execute database updates        
+            SQLcommand = Db.GenSQLupdate(VacancyTable,VacancyUpdate,Vacanyfields,Primary)
+            SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
+            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
+        
+            # Create and execute database inserts
+            Fieldnames = ['engine_id','vacancy_id','vacancy_state']
+            Fieldvalues = [str(EngineID),JobID,VacancyUpdate['vacancy_state']]
+            SQLcommand =  Db.GenSQLinsert(HistoryTable,Fieldnames,Historyfields,Fieldvalues)
+            SQLresponse = ( Db.SQLload(DbObject,DbCursor,SQLcommand,failure) )
+            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
+            
+            VacancyNumber += 1
+            continue
+           
+    # It may be that the TotalJobs vacancy has expired.
+    if ( EngineID == 5 ) : 
+        VacancyUpdate = Web.ScrapeTotalJobs(Joburl)
+        if not 'title' in VacancyUpdate : 
+            Errormessage = 'Vacancy %s for Totaljobs has expired and will be Dropped' % JobID
+            File.Logerror(ErrorfileObject,module,Errormessage,info)
+            
+            VacancyUpdate['vacancy_state'] = 'Dropped'
+            
+            # Create and execute database updates        
+            SQLcommand = Db.GenSQLupdate(VacancyTable,VacancyUpdate,Vacanyfields,Primary)
+            SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
+            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
+        
+            # Create and execute database inserts
+            Fieldnames = ['engine_id','vacancy_id','vacancy_state']
+            Fieldvalues = [str(EngineID),JobID,VacancyUpdate['vacancy_state']]
+            SQLcommand =  Db.GenSQLinsert(HistoryTable,Fieldnames,Historyfields,Fieldvalues)
+            SQLresponse = ( Db.SQLload(DbObject,DbCursor,SQLcommand,failure) )
+            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
+            
+            VacancyNumber += 1
+            continue
+    
     # Display vacancy.
-    Interface.ViewVacancy(Browser,Joburl)
+    if ( EngineID == 5 ) :
+        Interface.ViewVacancyByBatch(Browser,Joburl)
+    else:
+        Interface.ViewVacancy(Browser,Joburl)
     
     # Display standard job details.
     Interface.DisplayDetails(VacancyDetails)

@@ -1,3 +1,8 @@
+# test_email.py
+#
+# Description
+# -----------
+#
 # This test utility will allow users to determine the following per engine
 # data that requires to be specified in file ..\Data\engines.csv
 #
@@ -8,11 +13,12 @@
 # Exclusions
 # Inclusions
 # 
-# The script accepts a number of command line arguments 
-# though none are compulsory. The n'th command line argument
-# is always interpreted in the same way so if a user requires
-# to specify argument n + 1 then values must be entered for all 
-# arguments 1 -> n+1. Command line syntax is as follows:
+# Usage
+# -----
+# The script accepts a number of command line arguments though none are compulsory. 
+# The n'th command line argument is always interpreted in the same way so if a user 
+# requires to specify argument n + 1 then values must be entered for all  arguments 1 -> n+1. 
+# Command line syntax is as follows:
 #
 # python test_email.py <mail folder> <Job url regular expression> <url length> <exclusion strings> <inclusion strings>
 #
@@ -30,7 +36,17 @@
 #   jump to these url's to see if a vacancy is displayed.
 #
 # - If a 'url length' is specified then any urls detected will be truncated to/by the length specified
-#   before use.
+#
+# Data and configuration files
+# ----------------------------
+# 
+# This script does not require a configuration file.
+#
+# Logging
+# -------
+# This script logs progress and error information in:
+#
+# ./Data/log.txt
 
 import win32com.client
 import win32com

@@ -9,7 +9,7 @@ data relating to the following:
 - The number of new vacancies detected per week on a per engine basis.
 - The total number of vacancies detected on a per engine basis.
 - The total number of duplicate vacancies detected on a per engine basis.
-- The number of vacancies current in each possible state.
+- The number of vacancies currently in each possible state.
 
 This script file is executed from the MySQL prompt using:
 

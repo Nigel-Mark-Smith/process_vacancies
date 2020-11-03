@@ -4,6 +4,12 @@
 # into the 'company' table of database 'vacancies'. This script has been
 # written to allow bulk updates.
 #
+# Usage
+# -----
+# This script requires no command line arguments and may be run as follows:
+#
+# python load_companies.py
+#
 # Data and configuration files
 # ----------------------------
 # 
@@ -110,7 +116,7 @@ Errormessage = 'No data in ' + Companyfilename
 if ( CompanyfileData == empty ) : File.Logerror(ErrorfileObject,module,Errormessage,error)
 
 # Progress update
-Errormessage = 'Loading data from file $s' % Companyfilename
+Errormessage = 'Loading data from file %s' % Companyfilename
 File.Logerror(ErrorfileObject,module,Errormessage,info)
 
 DataCount = 0

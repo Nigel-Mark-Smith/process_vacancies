@@ -5,6 +5,12 @@
 # that all the requisite database tables have been defined but does not verify 
 # the definition of individual table fields.
 #
+# Usage
+# -----
+# This script requires no command line arguments and may be run as follows:
+#
+# python initialize_database.py
+#
 # Data and configuration files
 # ----------------------------
 # 
