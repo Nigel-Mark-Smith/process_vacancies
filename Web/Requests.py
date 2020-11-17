@@ -22,6 +22,33 @@ def FindReedID (url,urlre) :
       
     return Httpmatch.group(0)
     
+# This procedure scrapes additional json encoded job data from the 
+# web site
+def ScrapeLinkedInJson (url) :
+
+    "scrapes additional json encoded job data from the web site"
+    
+    # Dictionary to hold standard job data.
+    StandardData = {}
+    StandardDataKeys = ['company','title','location','salary_min','salary_max']
+    
+    # Request http content and convert to character stream 
+    Httpresponse = requests.get(url)
+    Httpcontent = Httpresponse.text.replace('\n','')
+        
+    # Extract JSON encoded data
+    Httpmatch = re.search('<script type=\"application\/ld\+json\">(.*?)</script>',Httpcontent)
+    if Httpmatch : JobData = json.loads(Httpmatch.group(1))
+      
+    # Populate standard data dictionary
+    StandardData['company'] = JobData['hiringOrganization']['name']
+    StandardData['title'] = JobData['title']
+    StandardData['location'] = JobData['jobLocation']['address']['addressLocality']
+    StandardData['salary_min'] = 0
+    StandardData['salary_max'] = 0
+    
+    return StandardData
+    
 # This procedure scrapes additional job data from the 
 # web site
 def ScrapeLinkedIn (url) :
@@ -34,13 +61,13 @@ def ScrapeLinkedIn (url) :
     # set regular expressions
     titlere = 'class=\"topcard__title">(.+?)<'
     attributere = 'topcard__flavor(''|--bullet|--closed)\">(.*?)<'
-    companyre = 'sub-nav-cta__optional-url\"title=\"(\D+?)"'
+    companyre = 'sub-nav-cta__optional-url\"title=\"(.*?)\"'
     locationre = '<span class=\"job-result-card__location\">(\D+?)</span><time class=\"job-result-card'
-
+    
     # Retrieve web text
     Httpresponse = requests.get(url)
     Httplines = Httpresponse.text.split('\n')
-
+       
     # Search for job title and other job attributes
     EngineJobData = {}
     ProcessedJobData = {}
@@ -49,6 +76,7 @@ def ScrapeLinkedIn (url) :
     Altlocation = ''
 
     for Httpline in Httplines : 
+        #print(Httpline)
         Httpmatch = re.search(locationre,Httpline)
         if Httpmatch: Altlocation = Httpmatch.group(1)
         Httpmatch = re.search(titlere,Httpline)
@@ -339,7 +367,10 @@ def ScrapeTotalJobs (url) :
         LocationParts = re.findall('class=\"engagement-metric\">(.*?)<',WebData['location'])
     else: 
         LocationParts = re.findall('class=\"engagement-metric\">(.*?)<',WebData['commute'])
-    
+        if not LocationParts :
+            LocationParts = WebData['commute'].split(',')
+            
+    # Create location string.
     if LocationParts :
         for LocationPart in LocationParts :
             Location = Location + ',' + LocationPart

@@ -9,13 +9,14 @@ def Extractsalarydata (salary,default=0) :
     
     # Initialize salary data
     salarydata = [default,default]
+
     
     # Set regular expression for salary values
     ammountre = '[^.]£?([1-9]{1}[0-9]*,?[0-9]+)'
     
     # Set regular expersion data for salary periods or salary units. 
     # Salary values should all be expressed as annual amounts.
-    periodres = ((r'[Kk]',1000),(r'[Aa]nnum',1),(r'[Yy](ear|r)',1),(r'[Dd](ay)',365),(r'[Hh](our|r)',1800))
+    periodres = ((r'[\d ][Kk][ $]',1000),(r'[Aa]nnum',1),(r'[Yy](ear|r)',1),(r'[Dd](ay)',365),(r'[Hh](our|r)',1800))
     ammountmultiplier = 1
     
     # Determine salary amounts, unit multipliers and time periods.

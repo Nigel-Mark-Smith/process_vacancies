@@ -36,7 +36,8 @@ File | File Contents
 ------------- | -------------
 initialize_database.py | Configures and checks the MySQL 'vacancies' database and associated tables.
 parse_mail.py | Parses Outlook mail and adds details of new vacancies to MySQL
-detect_duplicates.py | Detects any duplicate vacancies in state 'New' ( per engine ) and removes all but the latest. 
+remove_duplicates_per_engine.py | Detects any duplicate vacancies in state 'New' ( per engine ) and removes all but the latest. 
+remove_duplicates_using_priority.py | Detects any duplicate vacancies in state 'New' and removes all but one based on age and engine priority.
 update_vacancies.py | Interacts with the user allowing them to change details ( including the state ) of individual vacancies. 
 load_companies.py | Provides bulk loading of comapny data from companies.csv file.
 generate_report.py | Generates a report containg the history of all vacancies applied for

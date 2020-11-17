@@ -301,7 +301,7 @@ def GenWhereList (fieldlist,fieldvalues,fielddefinitions) :
 
     seperator = ' and '
     list = ''
-    
+       
     for field in fieldlist : 
         fieldvalue = str(fieldvalues[field])
         if ( fielddefinitions[field].find('int(') == -1 ) :  
