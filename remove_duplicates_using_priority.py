@@ -9,12 +9,13 @@
 # duplicate vacancy is done using the following criteria:
 #
 # - Duplicate vacancy's 'state' is either 'New' of 'Enhanced'.
-# - Duplicate vacancy's has the same value for 'title' as new vacancy.
-# - The first 6 characters of duplicate vacancy's 'company' match new vacancy.  
-# - The first part of duplicate vacancy's 'location' ( up to first comma )
-#   new vacancy.
+# - Duplicate vacancy has the same value for 'title' as new vacancy.
+# - The first first part of duplicate vacancy's 'company' value matches the first 
+#   word of the new vacancy's 'company' value.  
+# - The duplicate vacancy's 'location' conatins the first word of the the new vacancy's
+#   'location' value
 # - Any non 0 values of duplicate vacancy's 'salary_min' and 'salary_max'
-#   new vacancy.
+#   match those of the new vacancy.
 #
 # As duplicates vacancies are detected across engines the vacancy or
 # vacancies selected for removal are selected based on the age of the vacancy 
@@ -258,9 +259,19 @@ for VacancyRow in SQLresponse :
     if ( Engine_Id == 4 ) : continue
     
     Vacancy_Id = VacancyValues['vacancy_id']
+    
+    # Use first part of company name
     Company = VacancyValues['company']
+    CompanyMatch = re.search('(\A\w*)',Company)
+    if CompanyMatch : Company = CompanyMatch.group(1)
+    
     Title = VacancyValues['title']
-    Location = VacancyValues['location'].split(',')[0]
+    
+    # Use first part of location
+    Location = VacancyValues['location']
+    LocationMatch = re.search('(\A\w*)',Location)
+    if LocationMatch : Location = LocationMatch.group(1)
+    
     MinSalary = VacancyValues['salary_min']
     MaxSalary = VacancyValues['salary_max']
   
@@ -285,10 +296,11 @@ for VacancyRow in SQLresponse :
             FieldIndex += 1
         
         # Filter out non 'duplicates'       
-        if not ( SelectValues['location'].startswith(Location) ) : continue 
+        # if not ( SelectValues['location'].startswith(Location) ) : continue 
+        if not ( SelectValues['location'].find(Location) >= 0 ) : continue
         if ( MinSalary > 0 ) and ( SelectValues['salary_min'] > 0 ) and ( SelectValues['salary_min'] != MinSalary ) : continue
         if ( MaxSalary > 0 ) and ( SelectValues['salary_max'] > 0 ) and ( SelectValues['salary_max'] != MaxSalary ) : continue
-        if not ( SelectValues['company'].startswith(Company[:6]) ) : continue
+        if not ( SelectValues['company'].startswith(Company) ) : continue
         
         # Add 'duplicate' to duplicates action list
         DuplicatesList.append(Selection)
@@ -342,6 +354,9 @@ for DuplicateList in DuplicateLists :
     if (len(ActionList) > 1) : ActionLists.append(ActionList) 
     
 # Determine which duplicate(s) need(s) to be removed
+RemoveList = []
+RemoveIDs = []
+    
 for ActionList in ActionLists :
     
     # Determine index of highest priority vacancy to save  
@@ -360,40 +375,65 @@ for ActionList in ActionLists :
             SavedPriority = Priority
             SavedIndex = DuplicateIndex
                   
-    # Mark duplicate for saving and drop duplicates
+    # Mark duplicate for saving.
     ActionList[SavedIndex][12] = True
     
+    # Create a list of duplicates to remove.       
     for DuplicateIndex in range(0,len(ActionList)) :
     
         if not ( ActionList[DuplicateIndex][12] ) :
 
+            # Populate remove lists
             Engine_Id = str(ActionList[DuplicateIndex][0])
             Vacancy_Id = str(ActionList[DuplicateIndex][1])
             Vacancy_Url = str(ActionList[DuplicateIndex][2])
-    
-            # Change state of duplicate vacancy to 'Dropped'
-            PrimaryValues = {}
-            VacancyUpdate = {}
-            PrimaryValues['engine_id'] = Engine_Id
-            PrimaryValues['vacancy_id'] = Vacancy_Id
+            
+            if not ( Vacancy_Id in RemoveIDs ) : 
+                RemoveIDs.append(Vacancy_Id)
+                RemoveDuplicate = {'engine_id':Engine_Id,'vacancy_id':Vacancy_Id,'vacancy_url':Vacancy_Url}
+                RemoveList.append(RemoveDuplicate)
+            
+# Remove duplicates
+for Duplicate in RemoveList : 
 
-            VacancyUpdate['vacancy_state'] = 'Dropped' 
-            SQLcommand = Db.GenSQLupdate(VacancyTable,VacancyUpdate,VacancyFields,PrimaryValues)
-            SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
-            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
-            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
+    # DEBUG #
+    print(Duplicate)
+    # DEBUG #   
+    
+    # Change state of duplicate vacancy to 'Dropped'
+    PrimaryValues = {}
+    VacancyUpdate = {}
+    PrimaryValues['engine_id'] = Duplicate['engine_id']
+    PrimaryValues['vacancy_id'] = Duplicate['vacancy_id']
+
+    VacancyUpdate['vacancy_state'] = 'Dropped' 
+    SQLcommand = Db.GenSQLupdate(VacancyTable,VacancyUpdate,VacancyFields,PrimaryValues)
+    
+    # DEBUG #
+    print(SQLcommand)
+    # DEBUG #
+    
+    #SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
+    #Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+    #if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
            
-            # Add entry in table 'history' to reflect the change in state of the vacancy.
-            Fieldnames = ['engine_id','vacancy_id','vacancy_state']
-            Fieldvalues = [Engine_Id,Vacancy_Id,'Dropped']
-            SQLcommand =  Db.GenSQLinsert(HistoryTable,Fieldnames,HistoryFields,Fieldvalues)
-            SQLresponse = ( Db.SQLload(DbObject,DbCursor,SQLcommand,failure) )
-            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
-            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
+    # Add entry in table 'history' to reflect the change in state of the vacancy.
+    Fieldnames = ['engine_id','vacancy_id','vacancy_state']
+    Fieldvalues = [Duplicate['engine_id'],Duplicate['vacancy_id'],'Dropped']
+    SQLcommand =  Db.GenSQLinsert(HistoryTable,Fieldnames,HistoryFields,Fieldvalues)
+    
+    # DEBUG #
+    print(SQLcommand)
+    # DEBUG #
+    
+    #SQLresponse = ( Db.SQLload(DbObject,DbCursor,SQLcommand,failure) )
+    #Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+    #if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
        
-            Errormessage = 'Vacancy ID %s Vacancy URL %s has been \'Dropped\'' % (Vacancy_Id,Vacancy_Url)
-            File.Logerror(ErrorfileObject,module,Errormessage,info)
-                         
+    #Errormessage = 'Vacancy ID %s Vacancy URL %s has been \'Dropped\'' % (Vacancy_Id,Vacancy_Url)
+    #File.Logerror(ErrorfileObject,module,Errormessage,info)
+    
+    
 # Progress update
 File.Logerror(ErrorfileObject,module,'Removed duplicate vacancies',info)
 
