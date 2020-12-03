@@ -163,7 +163,14 @@ for Vacancy in SQLresponse :
             Errormessage = 'Vacancy %s for LinkedIn has expired' % JobID
             File.Logerror(ErrorfileObject,module,Errormessage,info)
             
-    if ( EngineID == 3 ) : VacancyUpdate = Web.ScrapeReed(Joburl)
+    if ( EngineID == 3 ) : 
+        VacancyUpdate = Web.ScrapeReed(Joburl)
+        # Job alerts can contain expired vacancies
+        if not 'title' in VacancyUpdate : 
+            Display = False
+            Errormessage = 'Vacancy %s for Reed has expired' % JobID
+            File.Logerror(ErrorfileObject,module,Errormessage,info)
+            
     if ( EngineID == 4 ) : VacancyUpdate = Web.ScrapeIndeed(Joburl)
     if ( EngineID == 5 ) : 
         VacancyUpdate = Web.ScrapeTotalJobs(Joburl)
@@ -173,8 +180,14 @@ for Vacancy in SQLresponse :
             Errormessage = 'Vacancy %s for TotalJobs has expired' % JobID
             File.Logerror(ErrorfileObject,module,Errormessage,info)
             
-    if ( EngineID == 6 ) : VacancyUpdate = Web.ScrapeFindAJob(Joburl)
-    
+    if ( EngineID == 6 ) : 
+        VacancyUpdate = Web.ScrapeFindAJob(Joburl)
+        # Job alerts can contain expired vacancies
+        if not 'title' in VacancyUpdate : 
+            Display = False
+            Errormessage = 'Vacancy %s for FindAJob has expired' % JobID
+            File.Logerror(ErrorfileObject,module,Errormessage,info)
+            
     HistoryUpdate = {}
     
     if ( Display ) :
@@ -338,12 +351,65 @@ for Vacancy in SQLresponse :
             
             VacancyNumber += 1
             continue
+    
+    # It may be that the Reed vacancy has expired.    
+    if ( EngineID == 3 ) : 
+        VacancyUpdate = Web.ScrapeReed(Joburl)
+        if not 'title' in VacancyUpdate : 
+            Errormessage = 'Vacancy %s for Reed has expired and will be Dropped' % JobID
+            File.Logerror(ErrorfileObject,module,Errormessage,info)
+            
+            VacancyUpdate['vacancy_state'] = 'Dropped'
+            
+            # Create and execute database updates        
+            SQLcommand = Db.GenSQLupdate(VacancyTable,VacancyUpdate,Vacanyfields,Primary)
+            SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
+            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
+        
+            # Create and execute database inserts
+            Fieldnames = ['engine_id','vacancy_id','vacancy_state']
+            Fieldvalues = [str(EngineID),JobID,VacancyUpdate['vacancy_state']]
+            SQLcommand =  Db.GenSQLinsert(HistoryTable,Fieldnames,Historyfields,Fieldvalues)
+            SQLresponse = ( Db.SQLload(DbObject,DbCursor,SQLcommand,failure) )
+            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
+            
+            VacancyNumber += 1
+            continue
+        
            
     # It may be that the TotalJobs vacancy has expired.
     if ( EngineID == 5 ) : 
         VacancyUpdate = Web.ScrapeTotalJobs(Joburl)
         if not 'title' in VacancyUpdate : 
             Errormessage = 'Vacancy %s for Totaljobs has expired and will be Dropped' % JobID
+            File.Logerror(ErrorfileObject,module,Errormessage,info)
+            
+            VacancyUpdate['vacancy_state'] = 'Dropped'
+            
+            # Create and execute database updates        
+            SQLcommand = Db.GenSQLupdate(VacancyTable,VacancyUpdate,Vacanyfields,Primary)
+            SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
+            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
+        
+            # Create and execute database inserts
+            Fieldnames = ['engine_id','vacancy_id','vacancy_state']
+            Fieldvalues = [str(EngineID),JobID,VacancyUpdate['vacancy_state']]
+            SQLcommand =  Db.GenSQLinsert(HistoryTable,Fieldnames,Historyfields,Fieldvalues)
+            SQLresponse = ( Db.SQLload(DbObject,DbCursor,SQLcommand,failure) )
+            Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+            if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
+            
+            VacancyNumber += 1
+            continue
+    
+    # It may be that the FindAJob vacancy has expired.
+    if ( EngineID == 6 ) : 
+        VacancyUpdate = Web.ScrapeFindAJob(Joburl)
+        if not 'title' in VacancyUpdate : 
+            Errormessage = 'Vacancy %s for FindAJob has expired and will be Dropped' % JobID
             File.Logerror(ErrorfileObject,module,Errormessage,info)
             
             VacancyUpdate['vacancy_state'] = 'Dropped'

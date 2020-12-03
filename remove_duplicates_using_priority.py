@@ -216,9 +216,10 @@ for VacancyRow in SQLresponse :
     # General protection against scraping failure
     # !!!! NOTE !!!! Needs a better solution.    
     if (len(VacancyUpdate) == 0 ) :     
-        if ( Engine_Id != 2 ) : continue
-        else :
+        if ( Engine_Id == 2 ) or ( Engine_Id == 3 ) or ( Engine_Id == 5 ) or ( Engine_Id == 6 ): 
             VacancyUpdate['vacancy_state'] = 'Dropped'
+        else :
+           continue 
     
     # Populate primary field values dictionary
     PrimaryValues = {}
@@ -309,7 +310,7 @@ for VacancyRow in SQLresponse :
     if ( len(DuplicatesList) > 1 ) : DuplicateLists.append(DuplicatesList)
 
 # Progress update
-File.Logerror(ErrorfileObject,module,'Detected duplicate vacancies',info)
+if ( len(DuplicateLists) > 0 ) : File.Logerror(ErrorfileObject,module,'Detected duplicate vacancies',info)
 
 # Iterate through sets of duplicates logging duplicate information and creating an
 # ActionLists structure with latest vacancy status information.
@@ -335,6 +336,7 @@ for DuplicateList in DuplicateLists :
         LatestState = LatestStatusData[1] 
         
         # Log duplicate information
+        
         Errormessage = 'Vacancy ID %s Vacancy URL %s changed to state %s on %s ' % (Duplicate[1],Duplicate[2],LatestState,str(LatestTimeStamp))
         File.Logerror(ErrorfileObject,module,Errormessage,info)
         
@@ -394,12 +396,10 @@ for ActionList in ActionLists :
                 RemoveList.append(RemoveDuplicate)
             
 # Remove duplicates
+DuplicateCount  = 0
+
 for Duplicate in RemoveList : 
 
-    # DEBUG #
-    print(Duplicate)
-    # DEBUG #   
-    
     # Change state of duplicate vacancy to 'Dropped'
     PrimaryValues = {}
     VacancyUpdate = {}
@@ -408,34 +408,28 @@ for Duplicate in RemoveList :
 
     VacancyUpdate['vacancy_state'] = 'Dropped' 
     SQLcommand = Db.GenSQLupdate(VacancyTable,VacancyUpdate,VacancyFields,PrimaryValues)
+    SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
+    Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+    if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)  
     
-    # DEBUG #
-    print(SQLcommand)
-    # DEBUG #
-    
-    #SQLresponse = Db.SQLload(DbObject,DbCursor,SQLcommand,failure)
-    #Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
-    #if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,error)
-           
     # Add entry in table 'history' to reflect the change in state of the vacancy.
     Fieldnames = ['engine_id','vacancy_id','vacancy_state']
     Fieldvalues = [Duplicate['engine_id'],Duplicate['vacancy_id'],'Dropped']
     SQLcommand =  Db.GenSQLinsert(HistoryTable,Fieldnames,HistoryFields,Fieldvalues)
-    
-    # DEBUG #
-    print(SQLcommand)
-    # DEBUG #
-    
-    #SQLresponse = ( Db.SQLload(DbObject,DbCursor,SQLcommand,failure) )
-    #Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
-    #if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
+    SQLresponse = ( Db.SQLload(DbObject,DbCursor,SQLcommand,failure) )
+    Errormessage = 'SQLresponse error for SQL command ' + '\"' + SQLcommand + '\"'
+    if ( (SQLresponse) == failure ): File.Logerror(ErrorfileObject,module,Errormessage,warning)
        
-    #Errormessage = 'Vacancy ID %s Vacancy URL %s has been \'Dropped\'' % (Vacancy_Id,Vacancy_Url)
-    #File.Logerror(ErrorfileObject,module,Errormessage,info)
+    Errormessage = 'Vacancy ID %s Vacancy URL %s has been \'Dropped\'' % (Duplicate['vacancy_id'],Duplicate['vacancy_url'])
+    File.Logerror(ErrorfileObject,module,Errormessage,info)
+    
+    DuplicateCount += 1
     
     
 # Progress update
-File.Logerror(ErrorfileObject,module,'Removed duplicate vacancies',info)
+if ( len(RemoveList) > 0 ) :
+    Errormessage = 'Removed %d duplicate vacancies' % DuplicateCount
+    File.Logerror(ErrorfileObject,module,Errormessage,info)
 
 # Disconnect from database.
 Errormessage = 'Could not disconnect from database'

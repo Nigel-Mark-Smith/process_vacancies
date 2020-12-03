@@ -187,9 +187,10 @@ for VacancyRow in SQLresponse :
     # General protection against scraping failure
     # !!!! NOTE !!!! Needs a better solution.    
     if (len(VacancyUpdate) == 0 ) :     
-        if ( Engine_Id != 2 ) : continue
-        else :
+        if ( Engine_Id == 2 ) or ( Engine_Id == 3 ) or ( Engine_Id == 5 ) or ( Engine_Id == 6 ): 
             VacancyUpdate['vacancy_state'] = 'Dropped'
+        else :
+           continue
     
     # Populate primary field values dictionary
     PrimaryValues = {}
@@ -249,7 +250,7 @@ for VacancyRow in SQLresponse :
     if ( len(DuplicatesList) > 1 ) : DuplicateLists.append(DuplicatesList)
 
 # Progress update
-File.Logerror(ErrorfileObject,module,'Detected duplicate vacancies',info)
+if ( len(DuplicateLists) > 0 ) : File.Logerror(ErrorfileObject,module,'Detected duplicate vacancies',info)
 
 # Iterate through sets of duplicates logging duplicate information and creating an
 # ActionLists structure with latest vacancy status information.
@@ -289,6 +290,8 @@ for DuplicateList in DuplicateLists :
 
 # Iterate through ActionLists structure creating duplicate (counter) entries and removing
 # duplicate vacancies.
+DuplicateCount  = 0
+
 for ActionList in ActionLists :
 
     # Add a duplicate counter value
@@ -328,9 +331,13 @@ for ActionList in ActionLists :
        
         Errormessage = 'Vacancy ID %s Vacancy URL %s has been \'Dropped\'' % (Vacancy_Id,Vacancy_Url)
         File.Logerror(ErrorfileObject,module,Errormessage,info)
+        
+        DuplicateCount += 1
   
 # Progress update
-File.Logerror(ErrorfileObject,module,'Removed duplicate vacancies',info)
+if ( DuplicateCount > 0 ) :
+    Errormessage = 'Removed %d duplicate vacancies' % DuplicateCount
+    File.Logerror(ErrorfileObject,module,Errormessage,info)
 
 # Disconnect from database.
 Errormessage = 'Could not disconnect from database'

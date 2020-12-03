@@ -196,6 +196,7 @@ File.Logerror(ErrorfileObject,module,'Built mail folder list',info)
 
 # Iterate through mail folders for each CV engine.
 EngineIndex = 0
+Totalurlcount = 0
 
 while ( EngineIndex < len(MailfolderList) ) :
     EngineName = EngineNameList[EngineIndex]
@@ -319,6 +320,7 @@ while ( EngineIndex < len(MailfolderList) ) :
         if ( Db.GetSQLrowcount(SQLresponse) == 1 ) : continue
         
         urlcount += 1 
+        Totalurlcount += 1
         
         # Add entry in table 'vacancy'.
         Fieldnames = ['engine_id','vacancy_id','vacancy_url','vacancy_state']
@@ -354,6 +356,10 @@ while ( EngineIndex < len(MailfolderList) ) :
         File.Logerror(ErrorfileObject,module,Errormessage,warning)
           
     EngineIndex += 1
+    
+# Display total number of new vacancies
+Errormessage = str(Totalurlcount) + ' new job urls found in total'
+File.Logerror(ErrorfileObject,module,Errormessage,info)
 
 # Progress update
 File.Logerror(ErrorfileObject,module,'Displayed mail folder information',info)

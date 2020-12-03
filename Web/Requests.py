@@ -188,7 +188,10 @@ def ScrapeFindAJob (url) :
     
     # Extract web data. Note job details are provided encoded in JSON format
     Httpmatch = re.search('<script type=\"application\/ld\+json\">(.*?)</script>',Httpcontent)
-    if Httpmatch : JobData = json.loads(Httpmatch.group(1))
+    if Httpmatch : 
+        JobData = json.loads(Httpmatch.group(1))
+    else :
+        return StandardData
          
     # Populate standard data dictionary
     StandardData['company'] = JobData['hiringOrganization']
@@ -280,6 +283,7 @@ def ScrapeReed (url) :
     companyre = '<span itemprop=\"name\">(.*?)<'
     keyre = '<span\s*data-qa=\"(.*?)MobileLbl\"\s*>'
     valuere = '<span\s*data-qa=\"(.*?)MobileLbl\"\s*>(.*?)<'
+    expiredre = 'The following job is no longer available'
 
     # Retrieve web text
     Httpresponse = requests.get(url)
@@ -289,6 +293,8 @@ def ScrapeReed (url) :
     EngineJobData = {}
     Attributekeys = []
     Attributevalues = []
+    ProcessedJobData = {}
+    JobExpired = False
 
     for Httpline in Httplines : 
         Httpmatch = re.search(titlere,Httpline)
@@ -299,6 +305,11 @@ def ScrapeReed (url) :
         if Httpmatch: Attributekeys.append(Httpmatch.group(1))
         Httpmatch = re.search(valuere,Httpline)
         if Httpmatch: Attributevalues.append(Httpmatch.group(2))
+        Httpmatch = re.search(expiredre,Httpline)
+        if Httpmatch: JobExpired = True
+        
+    # Return with no data if job is expired
+    if ( JobExpired ) : return ProcessedJobData
     
     # Create a distionary of job atributes
     Attributeindex = 0
@@ -307,8 +318,7 @@ def ScrapeReed (url) :
         EngineJobData[Attributekeys[Attributeindex]] = Attributevalues[Attributeindex]
         Attributeindex += 1
     
-    # Convert raw job data to standard job data
-    ProcessedJobData = {}
+    # Convert raw job data to standard job data  
     for StandardDataKey in ConversionDict : 
         StandardDataValue = ''
         for EngineDataKey in ConversionDict[StandardDataKey] : 
@@ -355,6 +365,9 @@ def ScrapeTotalJobs (url) :
         if Httpmatch: 
             WebData[WebFieldRe] = Httpmatch.group(1).strip()
             Httpcontent = Httpcontent[Httpmatch.end(1):]
+            
+    # Return an empty dictionary of data if the job has expired. 
+    if ( WebData['expiry'] == 'Expired' ) : return StandardData
     
     # Populate standard data dictionary
     StandardData['company'] = WebData['company']
@@ -380,8 +393,5 @@ def ScrapeTotalJobs (url) :
     SalaryValues = Interface.Extractsalarydata(WebData['salary'])
     StandardData['salary_min'] = int(SalaryValues[0])
     StandardData['salary_max'] = int(SalaryValues[1])
-    
-    # Return an empty dictionary of data if the job has expired. 
-    if ( WebData['expiry'] == 'Expired' ) : StandardData ={}
-    
+   
     return StandardData
