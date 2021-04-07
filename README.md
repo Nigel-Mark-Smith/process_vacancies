@@ -10,7 +10,7 @@ of any vacancy can be displayed using a unique vacancy url.
 These scripts together streamline the processes of reviewing job alert e-mails received and allow the user to track the progress of 
 a particular application by changing the state of the associated 'vacancy' stored in the 'vacancies' database. The scripts will
 reduce effort by ensuring that details of any vacancy advertised are only processed by the user once. The implementation of the 
-'vacancies' database also allows the following reports and metrics to be produced by script generate_reports.py.
+'vacancies' database also allows the following reports and metrics to be produced by script 'generate_reports.py'.
 
 - Vacancy history ( for vacancies applied for ).
 - Report on proportion of vacancies dropped or pursued.
