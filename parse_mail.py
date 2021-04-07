@@ -265,15 +265,17 @@ while ( EngineIndex < len(MailfolderList) ) :
     
     while ( Mailnumber >= 0 ) :
         Message = OutlookFolder.Items[Mailnumber]
+        
+
+        
         if ( Email.Isrecent(str(Message.ReceivedTime),limit,failure) != failure ) :
             MessageLines = Message.Body.split('\n')
             for messageLine in MessageLines :
-                
                 if ( ExclusionsApply ) : 
                     if ( Email.ExcludeLine(messageLine,Exclusions) ) : continue
                 if ( InclusionsApply ) : 
                     if not ( Email.IncludeLine(messageLine,Inclusions) ) : continue 
-                    
+                             
                 MatchObj = re.search(JobUrlRe, messageLine)
                 if MatchObj : 
                     if ( len(MatchObj.group()) > Urllen ) : 
@@ -283,24 +285,25 @@ while ( EngineIndex < len(MailfolderList) ) :
                             else: 
                                 JoburlList.append(MatchObj.group())
                         else:
-                        
-                            # For Reed information must be scraped from vacancy
-                            JobUrlRe = 'https://www.reed.co.uk/jobs/(.*?)/(\d+)'
-                            Reedurl = Web.FindReedID((MatchObj.group()[0:Urllen]),JobUrlRe)
-                            JoburlList.append(Reedurl)
-                            Urllen = 27
-                            IDlen = 8    
+                            # For Reed information must be scraped from vacancy 
+                            ReedWebJobUrlRe = 'https://www.reed.co.uk/jobs/(.*?)/(\d+)' 
+                            Reedurl = Web.FindReedID((MatchObj.group().replace('>','')),ReedWebJobUrlRe)
+                            JoburlList.append(Reedurl)  
       
         # Move the parsed e-mail to deleted items folder.
         Message.delete()
         Mailnumber -= 1
+        
+        
+    # Reed urls are scraped from web content and require special handling    
+    if ( ReedEngine ) :  Urllen = 27  
     
     # Remove duplicate items from the list.    
     JoburlSet = set(JoburlList)
     JoburlList = list(JoburlSet)
     JoburlLists[EngineName] = JoburlList
     
-    # Output job urls to csv file.
+    # Update 'vacancies' database tables.
     urlcount = 0
         
     for Joburl in JoburlList : 

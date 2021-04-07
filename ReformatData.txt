@@ -1,0 +1,11 @@
+Sub ReformatData()
+'
+' ReformatData Macro
+' Reformats covid csv data
+'
+' Keyboard Shortcut: Ctrl+r
+'
+    Cells.Select
+    Selection.Columns.AutoFit
+    Selection.AutoFilter
+End Sub

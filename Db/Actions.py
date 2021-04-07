@@ -69,7 +69,7 @@ def SQLload (db,cursor,command,failure):
     "Execute an SQL command and return response"
 
     try:
-        cursor.execute(command)
+        cursor.execute(command)      
         try:
             output = cursor.fetchall()
             db.commit()

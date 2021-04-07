@@ -9,14 +9,13 @@ import json
 def FindReedID (url,urlre) :
 
     "Finds the Job ID and url for Reed engine vacancies"
-       
+    
     # Retrieve javascript text
     Httpresponse = requests.get(url)
     Httplines = Httpresponse.text.split('\n')
 
     # Search for joburl in javascript
     for Httpline in Httplines :
-    
         Httpmatch = re.search(urlre,Httpline)
         if Httpmatch : break
       
@@ -131,9 +130,20 @@ def ScrapeCVLibrary (url) :
 
     # set regular expressions
     attributesre = 'dataLayer\.push\(\{(.*?)\}\)'
+    
+    # Set expiration flag
+    JobExpired = False
+    
+    # Initialize job data
+    ProcessedJobData = {}
 
     # Retrieve web text
     Httpresponse = requests.get(url)
+    
+    # Return no data if job has expires
+    Httpheaders = Httpresponse.headers
+    if ( not 'Vary' in Httpheaders) : return ProcessedJobData
+    
     Httplines = Httpresponse.text.split('\n')
 
     # Search for required job data
@@ -156,7 +166,6 @@ def ScrapeCVLibrary (url) :
             EngineJobData[AttributePair[0]] = AttributePair[1]
     
     # Convert raw job data to standard job data
-    ProcessedJobData = {}
     for StandardDataKey in ConversionDict : 
         StandardDataValue = ''
         for EngineDataKey in ConversionDict[StandardDataKey] : 
@@ -222,6 +231,7 @@ def ScrapeIndeed (url) :
 
     # set regular expressions
     titlere = 'jobsearch-JobInfoHeader-title\">(.*?)<'
+    expiredre = 'icl-Alert-headline\">(.*?)</'
     valuere = '\"jobsearch-JobMetadataHeader-iconLabel\">(.*?)<'   
     # valuere ='icl-u-xs-m[rt]--xs\">(.*?)<'
     # The above may work on some Indeed job adverts however
@@ -236,9 +246,12 @@ def ScrapeIndeed (url) :
     EngineJobData = {}
     Attributekeys = []
     Attributevalues = []
+    ProcessedJobData = {}
 
     for Httpline in Httplines : 
-        # if 'title' in Httpline : print(Httpline)
+        Httpmatch = re.search(expiredre,Httpline)
+        if Httpmatch: 
+            if ( Httpmatch.group(1) == 'This job has expired on Indeed' ) : return ProcessedJobData
         Httpmatch = re.search(titlere,Httpline)
         if Httpmatch: EngineJobData['title'] =  Httpmatch.group(1)
         Httpmatch = re.findall(keyre,Httpline)
@@ -254,7 +267,6 @@ def ScrapeIndeed (url) :
         Attributeindex += 1
 
     # Convert raw job data to standard job data
-    ProcessedJobData = {}
     for StandardDataKey in ConversionDict : 
         StandardDataValue = ''
         for EngineDataKey in ConversionDict[StandardDataKey] : 
@@ -343,13 +355,14 @@ def ScrapeTotalJobs (url) :
         
     # Populate dictionary holding regular expressions used to extract job data from web.
     WebFieldRes = {}
+    WebFieldRes['removed'] = 'expiry-message\">.*?<p>(.*?)</p>'
     WebFieldRes['title'] = '<h1 class=\"brand-font\">(.*?)</h1>'
     WebFieldRes['location'] = '<li class=\"location icon\">(.*?)</li>'
     WebFieldRes['commute'] = 'locationText\">.*?<ul>.*?<li>(.*?)</li'
     WebFieldRes['salary'] = '<li class=\"salary icon\">.*?<div>(.*?)</div>'
     WebFieldRes['company'] = '<li class="company icon">.*?\"View jobs\">(.*?)</a>.*?</li>'
     WebFieldRes['job_type'] = '<li class=\"job-type icon\">.*?<div>(.*?)</div>'
-    WebFieldRes['expiry'] = '<li class=\"date-posted icon\">.*?<span>(.*?)</span>'
+    WebFieldRes['expiry'] = '<li class=\"date-posted icon\">.*?<span>(.*?)</span>'  
     
     # Request http content and convert to character stream 
     Httpresponse = requests.get(url)
@@ -365,9 +378,11 @@ def ScrapeTotalJobs (url) :
         if Httpmatch: 
             WebData[WebFieldRe] = Httpmatch.group(1).strip()
             Httpcontent = Httpcontent[Httpmatch.end(1):]
-            
+ 
     # Return an empty dictionary of data if the job has expired. 
+    if ( WebData['removed'] == 'The job you are looking for is no longer available.') : return StandardData
     if ( WebData['expiry'] == 'Expired' ) : return StandardData
+    if ( WebData['expiry'] == 'Recently' ) : return StandardData
     
     # Populate standard data dictionary
     StandardData['company'] = WebData['company']
@@ -378,6 +393,8 @@ def ScrapeTotalJobs (url) :
     
     if ( len(WebData['location']) != 0 ) :   
         LocationParts = re.findall('class=\"engagement-metric\">(.*?)<',WebData['location'])
+        if not LocationParts :
+            LocationParts = re.findall('<div>(.*?)<',WebData['location'])
     else: 
         LocationParts = re.findall('class=\"engagement-metric\">(.*?)<',WebData['commute'])
         if not LocationParts :

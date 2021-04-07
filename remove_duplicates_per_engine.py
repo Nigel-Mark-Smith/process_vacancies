@@ -187,7 +187,7 @@ for VacancyRow in SQLresponse :
     # General protection against scraping failure
     # !!!! NOTE !!!! Needs a better solution.    
     if (len(VacancyUpdate) == 0 ) :     
-        if ( Engine_Id == 2 ) or ( Engine_Id == 3 ) or ( Engine_Id == 5 ) or ( Engine_Id == 6 ): 
+        if ( Engine_Id != 4 ) : 
             VacancyUpdate['vacancy_state'] = 'Dropped'
         else :
            continue

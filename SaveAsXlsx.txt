@@ -1,0 +1,12 @@
+Sub SaveAsXlsx()
+'
+' SaveAsXlsx Macro
+' Save xlsx version of file
+'
+' Keyboard Shortcut: Ctrl+s
+'
+    ChDir ActiveWorkbook.Path
+    ActiveWorkbook.SaveAs FileFormat:=xlOpenXMLWorkbook
+    ActiveWorkbook.Close
+   
+End Sub

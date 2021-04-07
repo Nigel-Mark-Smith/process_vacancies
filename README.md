@@ -10,7 +10,7 @@ of any vacancy can be displayed using a unique vacancy url.
 These scripts together streamline the processes of reviewing job alert e-mails received and allow the user to track the progress of 
 a particular application by changing the state of the associated 'vacancy' stored in the 'vacancies' database. The scripts will
 reduce effort by ensuring that details of any vacancy advertised are only processed by the user once. The implementation of the 
-'vacancies' database also allows the following reports and metrics to be produced using SQL queries.
+'vacancies' database also allows the following reports and metrics to be produced by script generate_reports.py.
 
 - Vacancy history ( for vacancies applied for ).
 - Report on proportion of vacancies dropped or pursued.
@@ -41,7 +41,7 @@ remove_duplicates_per_engine.py | Detects any duplicate vacancies in state 'New'
 remove_duplicates_using_priority.py | Detects any duplicate vacancies in state 'New' or 'Enhanced'and removes all but one based on age and engine priority.
 update_vacancies.py | Interacts with the user allowing them to change details ( including the state ) of individual vacancies. 
 load_companies.py | Provides bulk loading of comapny data from companies.csv file.
-generate_report.py | Generates a report containg the history of all vacancies applied for
+generate_reports.py | Generates reports containing the history of all vacancies applied for or other vacancy metrics
 companies.data | An extract of Companies House data containing known recruitment agencies.
 connect.data | Information required to connect to local MySQL instance
 definition.sql | All SQL statements required to define the 'vacancies' database and associated tables.
@@ -49,6 +49,8 @@ engines.data | CV engine specific data including location of Outlook mail folder
 queries.sql | Generates export files containing metrics data.
 test_mail.py | Test utility which allows users to determine the per engine data that requires to be specified in file ..\Data\engines.csv
 test_scraping.py | Test utility which tests scraping functionality  provided in the 'Web' module
+process_vacancies.bat | Runs all utilities required on a day-to-day basis when applying for job vacancies. 
+convert_workbook.vbs | Converts a csv file containing application history into an Excel spreadsheet.  
 
 As well as the above scripts and data files the following supporting documentation is also provided:
 
@@ -57,6 +59,9 @@ Document File | File Contents
 process_vacancies_installation.txt | Installation instructions
 process_vacancies_usage.txt | Script usage information
 process_vacancies_testing.txt | Script testing information
+ReformatData.txt | Source of Excel macro required by convert_workbook.vbs
+SaveAsXlsx.txt | Source of Excel macro required by convert_workbook.vbs
+
 
 Future Developments
 -------------------
