@@ -17,8 +17,9 @@ The utility scripts delivered in 'process_vacancies' require the following
 a. ActivePython ( version Python 3.7.4 or above )
 b. MySQL Community server ( version 8.0.19 or above  )
 c. Google Chrome ( Version 80.0.3987.163 (Official Build) (64-bit) )
+d. Microsoft Excel
 
-This software can be donwloaded from the links below:
+Software a. -> c. can be donwloaded from the links below:
 
 Software          | Link 
 ------------------+---------------------------------------------------------
@@ -30,24 +31,84 @@ MySQL             | https://dev.mysql.com/downloads/mysql/
 Google Chrome     | https://www.google.com/chrome/
 ------------------+---------------------------------------------------------
 
-Please note the following:
+1.1 Installing python
+---------------------
+Download and install the software from the link above.
+To install ActivePython you must set up an ActiveState login.
 
-- To install ActivePython you must set up an ActiveState login.
-- When installing MySQL ensure that you make a note of the 'root' 
-  user password which is set as part of the installation procedure.
-- You may wish to change the export directory for MySQL by
-  changing the value assigned to 'secure_file_priv' in file 
-  C:\ProgramData\MySQL\MySQL Server 8.0\my.ini
+1.2. Install MySQL
+------------------
+Download and install the software from the link above. When 
+installing MySQL ensure that you make a note of the 'root' 
+user password which is set as part of the installation procedure.
+You may wish to change the export directory for MySQL by
+changing the value assigned to 'secure_file_priv' in file 
+C:\ProgramData\MySQL\MySQL Server 8.0\my.ini
 
-  e.g secure_file_priv="C:\JOBSEARCH\2019\Co-Ordination"
+e.g secure_file_priv="C:\JOBSEARCH\2019\Co-Ordination\reports"
 
-  Once you have made the change ensure that the files encoding
-  type is ANSI ( Notepad++ will allow you to do this ).
-  The MySQL service will need to be restarted following this
-  change. You can check the change has been taken up by entering
-  the following MySQL query:
+Once you have made the change ensure that the files encoding
+type is ANSI ( Notepad++ will allow you to do this ).
+The MySQL service will need to be restarted following this
+change. You can check the change has been taken up by entering
+the following MySQL query:
 
-  show variables like 'secure_file_priv';
+show variables like 'secure_file_priv';
+
+1.3 Installing Chrome
+---------------------
+Download and install the software from the link above
+
+1.4 Installing Microsoft Excel
+-------------------------------
+Microsoft Excel can be downloaded for the relevant Microsoft web site for
+a fee. Once installed the following additional steps must be performed.
+
+a. Store the ReformatData macro ( in Excel )
+
+Open any spreadsheet
+Select tab 'View'
+Click 'Unhide'
+Click 'OK' to 'Unhide workbook:' 'PERSONAL.XLSB'
+Select tab 'View' in PESONAL.XLSB workbook
+Select 'View macros' from 'Macros' drop down.
+Enter 'ReformatData' in 'Macro name:' field
+Click 'Create'  ( Which will start up Virtual BAsic )
+Clear all text in 'Module <n>' window
+Copy and paste text in file 'ReformatData.txt' into  'Module <n>' window
+Ctrl + S
+Alt + Q
+Select tab 'View' in PESONAL.XLSB workbook
+Click 'hide'
+In remaining spreadsheet window Click 'File' then 'Save'
+
+b. Store the SaveAsXlsx macro ( in Excel )
+
+Open any spreadsheet
+Select tab 'View'
+Click 'Unhide'
+Click 'OK' to 'Unhide workbook:' 'PERSONAL.XLSB'
+Select tab 'View' in PESONAL.XLSB workbook
+Select 'View macros' from 'Macros' drop down.
+Enter 'SaveAsXlsx' in 'Macro name:' field
+Click 'Create'  ( Which will start up Virtual BAsic )
+Clear all text in 'Module <n>' window
+Copy and paste text in file 'ReformatData.txt' into  'Module <n>' window
+Ctrl + S
+Alt + Q
+Select tab 'View' in PESONAL.XLSB workbook
+Click 'hide'
+In remaining spreadsheet window Click 'File' then 'Save'
+
+c. In admin cmd session create c:\temp
+
+mkdir c:\temp
+
+d. Copy PERSONAL.XLSB as follows:
+
+cd C:\Users\nigel\Documents
+erase /f /s PERSONAL.XLSB
+copy C:\Users\nigel\AppData\Roaming\Microsoft\Excel\XLSTART\PERSONAL.XLSB
 
 2. Installation of 'process_vacancies' contents from GitHub
 -----------------------------------------------------------
