@@ -61,7 +61,7 @@ Download and install the software from the link above
 
 1.4 Installing Microsoft Excel
 -------------------------------
-Microsoft Excel can be downloaded for the relevant Microsoft web site for
+Microsoft Excel can be downloaded from the relevant Microsoft web site for
 a fee. Once installed the following additional steps must be performed.
 
 a. Store the ReformatData macro ( in Excel )
