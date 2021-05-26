@@ -1,0 +1,107 @@
+Change to Totaljob web security
+===============================
+
+Summary
+-------
+
+A change to web security made sometime after:
+
+Wed Apr 21 09:51:15 2021 INFO: remove_duplicates_using_priority.py: Updated 'New' vacancies with data scraped from vacancy urls 
+
+means that the urls used for Totaljob vacancies need to include information relating to the security domain if the web scraping 
+of vacancy data is to succeed. This issue menas that the following scripts are hanging when handling Totaljob vacancies.
+
+update_vacancies.py
+remove_duplicates_per_engine.py
+remove_duplicates_using_priority.py
+
+https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92870677&GUID=adc0e0ad9b034ca29f3d130f8662993d&
+
+Needs to change to:
+
+https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92870677&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job3_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329
+
+The consequence of this change has been that the web scraping for Totaljobs vacancies hangs. The issue can be simulated by using the following curl commands:
+
+curl -vL "https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92870677&GUID=adc0e0ad9b034ca29f3d130f8662993d&" 
+
+Will HANG
+
+curl -vL "https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92870677&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job3_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329"
+
+Will SUCCEED
+
+The following remedial action has been preformed:
+
+Remedial Action
+---------------
+
+a. Remove all new Totaljobs vacancies from 'vacancy' and 'history' tables;
+
+   select vacancy_id,vacancy_url from vacancy where engine_id = 5 and vacancy_state = 'New' order by vacancy_id desc;
+   ...
+   ...
+   | 92527361   | https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92527361&GUID=adc0e0ad9b034ca29f3d130f8662993d& |
+   +------------+----------------------------------------------------------------------------------------------------------+
+   99 rows in set (0.00 sec)
+
+   select count(*) from vacancy where engine_id = 5 and vacancy_state = 'New';
+   delete from vacancy where engine_id = 5 and vacancy_state = 'New';
+   commit;
+   select count(*) from vacancy where engine_id = 5 and vacancy_state = 'New';
+
+
+   select time_stamp,vacancy_id from history where vacancy_id >= 92527361 and vacancy_state = 'New' and engine_id = 5 order by time_stamp desc;
+   ...
+   ...
+   | 2021-05-24 09:55:37 | 92831825   |
+   +---------------------+------------+
+   99 rows in set, 2 warnings (0.01 sec)
+
+   select count(*) from history where time_stamp >= '2021-05-24 09:55:37' and engine_id = 5;
+   delete from history where time_stamp >= '2021-05-24 09:55:37' and engine_id = 5;
+   commit;
+   select count(*) from history where time_stamp >= '2021-05-24 09:55:00' and engine_id = 5;   
+
+b. Increase the size of 'vacancy_url' in table 'vacancy' to varchar(300)
+
+   describe vacancy;
+   alter table vacancy modify vacancy_url varchar(300);
+   commit;
+   describe vacancy;
+
+
+c. Change url specification in 'engine' table to.
+
+   5,Totaljobs,nigel-m-smith@ntlworld.com:Inbox/JobSearch/Totaljobs,https://www.totaljobs.com/JobSearch/EmailLink.aspx\?JobID=(.*?)&GUID=(.*?)>,280,20,4,,
+
+
+   select id,name,joburlre from engine where id = 5;   
+   update engine set joburlre = 'https://www.totaljobs.com/JobSearch/EmailLink.aspx\\?JobID=(.*?)&GUID=(.*?)>' where id = 5;
+   update engine set url_len = 280 where id = 5;
+   commit;
+   select id,name,joburlre from engine where id = 5;
+   
+
+d. Change storage of url in 'vacancy' table in 'parse_mail.py' to:
+
+    for Joburl in JoburlList : 
+             
+        if not ( TotalEngine ) :
+            Jobid = Joburl[len(Joburl)-IDlen:]
+        else :
+            MatchObj = re.search(JobUrlRe,Joburl) 
+            Jobid = MatchObj.group(1)
+    ->	    Joburl = Joburl.rstrip('>')
+
+e. Copy 'Totaljob' e-mails from trash to the 'Totaljobs' inbox and run the following scripts:
+
+   parse_mail.py
+
+
+
+
+   
+
+
+

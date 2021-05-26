@@ -264,10 +264,8 @@ while ( EngineIndex < len(MailfolderList) ) :
     Mailnumber = len(OutlookFolder.Items) - 1
     
     while ( Mailnumber >= 0 ) :
+    
         Message = OutlookFolder.Items[Mailnumber]
-        
-
-        
         if ( Email.Isrecent(str(Message.ReceivedTime),limit,failure) != failure ) :
             MessageLines = Message.Body.split('\n')
             for messageLine in MessageLines :
@@ -275,14 +273,14 @@ while ( EngineIndex < len(MailfolderList) ) :
                     if ( Email.ExcludeLine(messageLine,Exclusions) ) : continue
                 if ( InclusionsApply ) : 
                     if not ( Email.IncludeLine(messageLine,Inclusions) ) : continue 
-                             
+
                 MatchObj = re.search(JobUrlRe, messageLine)
-                if MatchObj : 
+                if MatchObj :                   
                     if ( len(MatchObj.group()) > Urllen ) : 
                         if not ( ReedEngine ) : 
                             if not ( TotalEngine ) :
                                 JoburlList.append(MatchObj.group()[0:Urllen])
-                            else: 
+                            else:        
                                 JoburlList.append(MatchObj.group())
                         else:
                             # For Reed information must be scraped from vacancy 
@@ -307,12 +305,14 @@ while ( EngineIndex < len(MailfolderList) ) :
     urlcount = 0
         
     for Joburl in JoburlList : 
-             
+            
+        # Totaljobs has a variable 
         if not ( TotalEngine ) :
             Jobid = Joburl[len(Joburl)-IDlen:]
         else :
             MatchObj = re.search(JobUrlRe,Joburl) 
             Jobid = MatchObj.group(1)
+            Joburl = Joburl.rstrip('>')
         
         # Determine if there is already an entry in table 'vacancy' for this job url.
         SelectCriteria = 'engine_id = %s and vacancy_id = \'%s\'' % (str(EngineIDList[EngineIndex]),Jobid)

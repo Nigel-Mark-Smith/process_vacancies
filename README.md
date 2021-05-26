@@ -62,6 +62,8 @@ process_vacancies_testing.txt | Script testing information
 ReformatData.txt | Source of Excel macro required by convert_workbook.vbs
 SaveAsXlsx.txt | Source of Excel macro required by convert_workbook.vbs
 
+And sub-directory Changes has been introduced which will contained detailed descriptions of 
+significant changes made after 25/05/202.
 
 Future Developments
 -------------------

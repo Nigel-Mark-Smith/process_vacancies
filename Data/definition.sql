@@ -24,7 +24,7 @@ primary key (id)
 create table vacancy (
 engine_id int,
 vacancy_id varchar(160),
-vacancy_url varchar(160),
+vacancy_url varchar(300),
 vacancy_state enum ('New','Enhanced','Applied','Dropped','First','Second','Third','Offer','Rejected'),
 company varchar(160),
 title varchar(200),

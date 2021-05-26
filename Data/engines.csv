@@ -2,5 +2,5 @@
 2,LinkedInAlerts,nigel-m-smith@ntlworld.com:Inbox/JobSearch/LinkedInAlerts,https://www.linkedin.com/comm/jobs/view/(.*?)\?,50,10,0,,
 3,Reed,nigel-m-smith@ntlworld.com:Inbox/JobSearch/Reed,https://clicks.reed.co.uk/f/a/(.*?)>,360,8,1,Sign in :Contact preferences :View more jobs,
 4,Indeed,nigel-m-smith@ntlworld.com:Inbox/JobSearch/Indeed,https://uk.indeed.com/rc/clk/dl\?jk=(.*?)&,51,16,2,,
-5,Totaljobs,nigel-m-smith@ntlworld.com:Inbox/JobSearch/Totaljobs,https://www.totaljobs.com/JobSearch/EmailLink.aspx\?JobID=(.*?)&GUID=(.*?)&,103,20,4,,
+5,Totaljobs,nigel-m-smith@ntlworld.com:Inbox/JobSearch/Totaljobs,https://www.totaljobs.com/JobSearch/EmailLink.aspx\?JobID=(.*?)&GUID=(.*?)>,280,20,4,,
 6,FindAJob,nigel-m-smith@ntlworld.com:Inbox/JobSearch/FindAJob,https://findajob.dwp.gov.uk/details/(.*)\?,43,7,3,,

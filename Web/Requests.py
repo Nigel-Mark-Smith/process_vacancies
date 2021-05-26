@@ -365,7 +365,8 @@ def ScrapeTotalJobs (url) :
     WebFieldRes['expiry'] = '<li class=\"date-posted icon\">.*?<span>(.*?)</span>'  
     
     # Request http content and convert to character stream 
-    Httpresponse = requests.get(url)
+    #Httpresponse = requests.get(url,auth=('nigel-m-smith@ntlworld.com','l142rpn'),timeout = (2,5))
+    Httpresponse = requests.get(url,timeout = (2,5))
     Httpcontent = Httpresponse.text.replace('\n','')
     
     # Dictionary to hold web job data

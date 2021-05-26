@@ -1,0 +1,449 @@
+Tue May 25 15:10:01 2021 INFO: parse_mail: Started
+Tue May 25 15:10:01 2021 INFO: parse_mail: Read database connection data
+Tue May 25 15:10:01 2021 INFO: parse_mail: Connected to database
+Tue May 25 15:10:09 2021 INFO: parse_mail: Killed any existing instance of OUTLOOK.EXE
+Tue May 25 15:10:10 2021 INFO: parse_mail: Connected to Outlook
+Tue May 25 15:10:10 2021 INFO: parse_mail: Read vacancy table field definitions
+Tue May 25 15:10:10 2021 INFO: parse_mail: Read history table field definitions
+Tue May 25 15:10:10 2021 INFO: parse_mail: Read Counter table field definitions
+Tue May 25 15:10:10 2021 INFO: parse_mail: Read Outlook mail folder detail
+Tue May 25 15:10:10 2021 INFO: parse_mail: Built mail folder list
+Tue May 25 15:10:10 2021 INFO: parse_mail: Processing sub-folder CV-Library
+Tue May 25 15:10:12 2021 INFO: parse_mail: 5 job urls found in CV-Library
+Tue May 25 15:10:12 2021 INFO: parse_mail: Processing sub-folder LinkedInAlerts
+Tue May 25 15:10:12 2021 INFO: parse_mail: 4 job urls found in LinkedInAlerts
+Tue May 25 15:10:12 2021 INFO: parse_mail: Processing sub-folder Reed
+Tue May 25 15:10:12 2021 INFO: parse_mail: Exclusions will apply for mail in Reed
+Tue May 25 15:10:12 2021 WARNING: parse_mail: No job urls found in Reed
+Tue May 25 15:10:12 2021 INFO: parse_mail: Processing sub-folder Indeed
+Tue May 25 15:10:13 2021 INFO: parse_mail: 1 job urls found in Indeed
+Tue May 25 15:10:13 2021 INFO: parse_mail: Processing sub-folder Totaljobs
+Hi Nigel, We have new jobs for you, including this 	
+ <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+<http://pubads.g.doubleclick.net/gampad/jump?iu=53560144/TJ-JBE&sz=300x50&t=TJ-Sector%3dITInternet&c=637575407217066183> 
+ <http://pubads.g.doubleclick.net/gampad/ad?iu=53560144/TJ-JBE&sz=300x50&t=TJ-Sector%3dITInternet&c=637575407217066183> 
+ <http://pubads.g.doubleclick.net/gampad/jump?iu=53560144/TJ-JBE&sz=600x60&t=TJ-Sector%3dITInternet&c=637575407217066183> 
+Hi Nigel, 	
+Here are the latest jobs we’ve selected just for you. If you’re interested, apply now! 	
+15 jobs found 	
+DevOps Systems Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92884971&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job1_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Totaljobs Group	 
+Havant, Hampshire	 
+Competitive salary with generous benefits	 
+Azure DevOps Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92922478&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job2_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+SSE PLC	 
+Cosham, Portsmouth (PO6)	 
+£51,946 - £68,603 + a range of other benefits to support your family, 	
+AWS DevOps Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92885008&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job3_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Totaljobs Group	 
+Havant, Hampshire	 
+Competitive salary with generous benefits	 
+Digital Full Stack Developer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92922472&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job4_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+SSE PLC	 
+Cosham, Portsmouth (PO6)	 
+£51,946 - £68,603 + a range of other benefits to support your family, 	
+BEST PAY 
+Azure DevOps Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92862276&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job5_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Career Legal Ltd	 
+Reigate, Surrey	 
+From £75,000 to £85,000 per annum	 
+Java Software Developer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92881968&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job6_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Three People	 
+Worthing (BN11)	 
+£40000 - £45000 per annum + doe + benefits	 
+Product Owner <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92880412&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job7_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Spectrum IT Recruitment (South) Ltd	 
+Guildford, Surrey	 
+£55000 - £65000 per annum	 
+Software Architect - Transition From Senior Dev / Tech Lead <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92920242&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job8_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Spectrum IT Recruitment (South) Ltd	 
+Guildford, Surrey	 
+£50000 - £55000 per annum	 
+Software Architect - Fully Remote <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92920237&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job9_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Spectrum IT Recruitment (South) Ltd	 
+Guildford, Surrey	 
+£50000 - £55000 per annum	 
+Backend Engineer - Node <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92919921&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job10_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Spectrum IT Recruitment (South) Ltd	 
+Waterlooville, Hampshire	 
+£35000 - £65000 per annum	 
+Technical Lead / Senior Electrical - Systems Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92886516&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job11_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+JAM Recruitment Ltd	 
+Fivensgreen, Horsham (RH12)	 
+competitive	 
+Technical Infrastructure Architect <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92881465&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job12_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Fruition IT	 
+Crawley, West Sussex	 
+£50000 - £60000 per annum	 
+Senior Systems Engineer - Market leader <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92887798&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job13_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+JAM Recruitment Ltd	 
+Fivensgreen, Horsham (RH12)	 
+competitive	 
+Senior Systems Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92865601&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job14_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Advanced Resource Managers Limited	 
+Farnham, Surrey	 
+£35000 - £55000 Per Year	 
+Linux / Windows Systems Administrator <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92875261&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job15_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Ignite Digital Search Ltd	 
+Guildford, Surrey	 
+£25000 - £33000 per annum + bonus, pension, life insurance, etc	 
+See more on totaljobs <https://www.totaljobs.com/JobSearch/EmailLink.aspx?GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&Search=2&DCMP=R_EM_JBE_TJ_CB-TJ-ALL_MAN_JBE2_250521&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+We have found some jobs for you on our partner sites. 	
+5 jobs found on CWJobs 	
+DevOps Engineer <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92895932&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job16_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+ARC IT Recruitment Ltd	 
+Brighton, East Sussex	 
+Salary unspecified	 
+Azure DevOps Engineer <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92885139&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job17_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Spencer Scott	 
+Underhill Park, Reigate (RH2)	 
+From £60,000 to £80,000 per annum + 20% Bonus	 
+AWS DevOps Engineer <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92885077&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job18_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Totaljobs Group	 
+Havant, Hampshire	 
+Competitive salary and generous benefits	 
+Site Reliability Engineer <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92895899&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job19_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+ARC IT Recruitment Ltd	 
+Brighton, East Sussex	 
+£50000 - £70000 per annum + Benefits	 
+Principal Systems Architect <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92895835&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job20_250521&SEARCH=2&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+ARC IT Recruitment Ltd	 
+Gatwick, West Sussex	 
+£Competitive + Bonus + Benefits	 
+See more on CWJobs <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&Search=2&DCMP=R_EM_JBE_TJ_CB-TJ-ALL_MAN_JBE2_250521&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> 	
+Criteria: Keywords: DevOps; Salary: Starting Annual Salary of £30,000.00; Location: BN14, Worthing + 30 miles 
+
+Change criteria for jobs by email <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fJobsByEmail%2fJobsByEmailSetup.aspx%3fseqNo%3d2%26DCMP%3dR_EM_JBE_TJ_MAN_JBE2_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae>  	
+Are you recruiting? Click here to advertise on totaljobs <https://recruiters.totaljobs.com?DCMP=R_EM_JBE_TJ_MAN_JBE2_250521> 	
+Find your dream job with the totaljobs mobile job app
+
+
+ <https://itunes.apple.com/gb/app/totaljobs-job-search/id924927935> 		 <https://play.google.com/store/apps/details?id=com.stepstone.totaljobs&amp;hl=en_GB> 	
+ <https://twitter.com/totaljobsUK> 		 <https://www.facebook.com/Totaljobs> 		 <https://plus.google.com/+totaljobs/posts> 		 <https://www.youtube.com/user/Totaljobs> 	
+Please do not reply to this email
+
+Login to your account <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fAuthenticated%2fLogin.aspx%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae>  
+
+Unsubscribe from emails <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fAccount%2fEmail%2fUnsubscribe%2fadc0e0ad9b034ca29f3d130f8662993d%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae>  
+
+Contact us <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fContact-Us%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae>  
+
+This email was sent to nigel-m-smith@ntlworld.com <mailto:nigel-m-smith@ntlworld.com> as you agreed to receive relevant jobs from www.totaljobs.com <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae> . It is linked to your personal jobseeker account and meant specifically for you so please do not share. Read our privacy policy here <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fabout%2fprivacy-policy%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae>  
+
+Totaljobs Group, Blue Fin, 110 Southwark Street, London SE1 0TA
+Registered in England & Wales under company number 04269861 
+ <https://www.totaljobs.com/threesixty/pxl.gif?DCMP=R_EM_JBE_TJ_MAN_JBE2_250521&GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&domain=ntlworld.com&umid=20210525115841-76877f33-1f26-4f8d-839c-f4ad03588eae&testframework=&typeofalert=JBE&siteid=4&batchinstanceid=a95a7e44-9c71-4e56-bbac-de486ff496ed> 
+ <https://www.totaljobs.com/email-assets/pxl.gif?DCMP=R_EM_JBE_TJ_MAN_JBE2_250521&datecreated=20210525115841&memberid=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&emaildomain=ntlworld.com> 
+Hi Nigel, We have new jobs for you, including this 	
+ <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE1_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+<http://pubads.g.doubleclick.net/gampad/jump?iu=53560144/TJ-JBE&sz=300x50&t=TJ-Sector%3dITInternet&c=637575244982978740> 
+ <http://pubads.g.doubleclick.net/gampad/ad?iu=53560144/TJ-JBE&sz=300x50&t=TJ-Sector%3dITInternet&c=637575244982978740> 
+ <http://pubads.g.doubleclick.net/gampad/jump?iu=53560144/TJ-JBE&sz=600x60&t=TJ-Sector%3dITInternet&c=637575244982978740> 
+Hi Nigel, 	
+Here are the latest jobs we’ve selected just for you. If you’re interested, apply now! 	
+9 jobs found 	
+DevOps Systems Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92884971&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE1_Job1_250521&SEARCH=1&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+Totaljobs Group	 
+Havant, Hampshire	 
+Competitive salary with generous benefits	 
+AWS DevOps Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92885008&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE1_Job2_250521&SEARCH=1&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+Totaljobs Group	 
+Havant, Hampshire	 
+Competitive salary with generous benefits	 
+Senior Support Specialist <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92903536&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE1_Job3_250521&SEARCH=1&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+Stott & May Professional Search Limited	 
+Guildford, Surrey	 
+£35000.00 - £40000.00 per annum	 
+Application Support Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92903554&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE1_Job4_250521&SEARCH=1&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+Stott & May Professional Search Limited	 
+Guildford, Surrey	 
+£35000 - £40000 per annum	 
+BEST PAY 
+Azure DevOps Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92862276&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE1_Job5_250521&SEARCH=1&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+Career Legal Ltd	 
+Reigate, Surrey	 
+From £75,000 to £85,000 per annum	 
+Java Software Developer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92881968&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE1_Job6_250521&SEARCH=1&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+Three People	 
+Worthing (BN11)	 
+£40000 - £45000 per annum + doe + benefits	 
+Software Developer - Moodle/E-Learning - Fully Remote <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92874389&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE1_Job7_250521&SEARCH=1&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+ISL UK	 
+Brighton (BN1)	 
+£40000 - £55000 per annum + Remote, Unlimited Holiday, Flexible hours	 
+Junior Mobile Developer - React Native <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92872608&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE1_Job8_250521&SEARCH=1&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+ISL UK	 
+Brighton (BN1)	 
+£30000 - £40000 per annum + Remote, Flexible Hours, Flexible holiday	 
+Linux / Windows Systems Administrator <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92875261&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE1_Job9_250521&SEARCH=1&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+Ignite Digital Search Ltd	 
+Guildford, Surrey	 
+£25000 - £33000 per annum + bonus, pension, life insurance, etc	 
+See more on totaljobs <https://www.totaljobs.com/JobSearch/EmailLink.aspx?GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&Search=1&DCMP=R_EM_JBE_TJ_MAN_JBE1_250521&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> 	
+Criteria: Keywords: Linux; Salary: Starting Annual Salary of £30,000.00; Location: BN14, Worthing + 30 miles 
+
+Change criteria for jobs by email <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fJobsByEmail%2fJobsByEmailSetup.aspx%3fseqNo%3d1%26DCMP%3dR_EM_JBE_TJ_MAN_JBE1_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a>  	
+Are you recruiting? Click here to advertise on totaljobs <https://recruiters.totaljobs.com?DCMP=R_EM_JBE_TJ_MAN_JBE1_250521> 	
+Find your dream job with the totaljobs mobile job app
+
+
+ <https://itunes.apple.com/gb/app/totaljobs-job-search/id924927935> 		 <https://play.google.com/store/apps/details?id=com.stepstone.totaljobs&amp;hl=en_GB> 	
+ <https://twitter.com/totaljobsUK> 		 <https://www.facebook.com/Totaljobs> 		 <https://plus.google.com/+totaljobs/posts> 		 <https://www.youtube.com/user/Totaljobs> 	
+Please do not reply to this email
+
+Login to your account <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fAuthenticated%2fLogin.aspx%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE1_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a>  
+
+Unsubscribe from emails <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fAccount%2fEmail%2fUnsubscribe%2fadc0e0ad9b034ca29f3d130f8662993d%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE1_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a>  
+
+Contact us <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fContact-Us%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE1_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a>  
+
+This email was sent to nigel-m-smith@ntlworld.com <mailto:nigel-m-smith@ntlworld.com> as you agreed to receive relevant jobs from www.totaljobs.com <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE1_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a> . It is linked to your personal jobseeker account and meant specifically for you so please do not share. Read our privacy policy here <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fabout%2fprivacy-policy%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE1_250521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a>  
+
+Totaljobs Group, Blue Fin, 110 Southwark Street, London SE1 0TA
+Registered in England & Wales under company number 04269861 
+ <https://www.totaljobs.com/threesixty/pxl.gif?DCMP=R_EM_JBE_TJ_MAN_JBE1_250521&GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&domain=ntlworld.com&umid=20210525072818-dc95bbe6-9c73-4ada-b1d7-663f211fb97a&testframework=&typeofalert=JBE&siteid=4&batchinstanceid=ff0d94ef-4f91-4e62-b6bd-9fe87891a8a7> 
+ <https://www.totaljobs.com/email-assets/pxl.gif?DCMP=R_EM_JBE_TJ_MAN_JBE1_250521&datecreated=20210525072818&memberid=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&emaildomain=ntlworld.com> 
+Hi Nigel, We have new jobs for you, including this 	
+ <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE3_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+<http://pubads.g.doubleclick.net/gampad/jump?iu=53560144/TJ-JBE&sz=300x50&t=TJ-Sector%3dITInternet&c=637574713309777948> 
+ <http://pubads.g.doubleclick.net/gampad/ad?iu=53560144/TJ-JBE&sz=300x50&t=TJ-Sector%3dITInternet&c=637574713309777948> 
+ <http://pubads.g.doubleclick.net/gampad/jump?iu=53560144/TJ-JBE&sz=600x60&t=TJ-Sector%3dITInternet&c=637574713309777948> 
+Hi Nigel, 	
+Here are the latest jobs we’ve selected just for you. If you’re interested, apply now! 	
+17 jobs found 	
+Application Support Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92903554&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job1_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Stott & May Professional Search Limited	 
+Guildford, Surrey	 
+£35000 - £40000 per annum	 
+Application Support Analyst C# SQL <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92875308&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job2_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Client Server Regional Team	 
+Surrey Research Park, Guildford (GU2)	 
+£50000 - £65000 per annum + benefits	 
+Senior Application Support Specialist <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92870677&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job3_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+International Business Solutions Consult	 
+Guildford (GU1)	 
+Salary unspecified	 
+IT Application Support Team Leader <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92868618&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job4_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Spectrum IT Recruitment (South) Ltd	 
+Uckfield, East Sussex	 
+£30000 - £35000 per annum + remote working + benefits	 
+Business Systems Technical Support Analyst <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92855011&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job5_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+First Technical Recruitment Limited	 
+Shoreham-By-Sea, West Sussex	 
+£40k - 44k per year + Stability + Benefits	 
+1st Line Support Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92715179&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job6_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Eurofins Biomnis UK Ltd	 
+Guildford (GU2)	 
+Competitive	 
+Research and Development Director <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92840779&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job7_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Lloyd Recruitment - East Grinstead	 
+Crawley (RH10)	 
+£60000 - £80000 per annum	 
+Product Designer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92831825&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job8_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Information Grid Ltd	 
+South East	 
+From £50,000 to £60,000 per annum + stock options 	
+BEST PAY 
+Senior Software Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92831652&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job9_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Information Grid Ltd	 
+UK	 
+From £65,000 to £85,000 per annum + stock options 	
+Talent Partner <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92831798&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job10_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Information Grid Ltd	 
+South East	 
+From £30,000 to £40,000 per annum + stock options 	
+Business Applications Analyst & Project Manager 12M FTC Contract £55k <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92773118&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job11_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Rbw Consulting Limited	 
+Gatwick, West Sussex	 
+£55,000 per annum + Benefits	 
+Infrastructure Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92849273&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job12_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Unum 	
+Westcott, Dorking (RH4)	 
+Competitive	 
+BMS Energy Management Centre Specialist <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92860164&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job13_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+SSE PLC	 
+UK	 
+£32,900 - £49,300 depending on experience + a range of other benefits 	
+Senior Research and Development Scientist <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92527361&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job14_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+HWR Executive	 
+Lewes (BN7)	 
+From £35,000 to £45,000 per annum Excellent Package	 
+Software Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92831556&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job15_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Information Grid Ltd	 
+UK	 
+From £50,000 to £70,000 per annum + stock options 	
+Front End Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92831511&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job16_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Information Grid Ltd	 
+UK	 
+From £50,000 to £70,000 per annum + stock options 	
+BEST PAY 
+Senior Front End Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92831600&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_MAN_JBE3_Job17_240521&SEARCH=3&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Information Grid Ltd	 
+UK	 
+From £65,000 to £85,000 per annum + stock options 	
+See more on totaljobs <https://www.totaljobs.com/JobSearch/EmailLink.aspx?GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&Search=3&DCMP=R_EM_JBE_TJ_MAN_JBE3_240521&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> 	
+Criteria: Keywords: "Application Support"; Salary: Starting Annual Salary of £30,000.00; Location: BN14, Worthing + 30 miles 
+
+Change criteria for jobs by email <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fJobsByEmail%2fJobsByEmailSetup.aspx%3fseqNo%3d3%26DCMP%3dR_EM_JBE_TJ_MAN_JBE3_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329>  	
+Are you recruiting? Click here to advertise on totaljobs <https://recruiters.totaljobs.com?DCMP=R_EM_JBE_TJ_MAN_JBE3_240521> 	
+Find your dream job with the totaljobs mobile job app
+
+
+ <https://itunes.apple.com/gb/app/totaljobs-job-search/id924927935> 		 <https://play.google.com/store/apps/details?id=com.stepstone.totaljobs&amp;hl=en_GB> 	
+ <https://twitter.com/totaljobsUK> 		 <https://www.facebook.com/Totaljobs> 		 <https://plus.google.com/+totaljobs/posts> 		 <https://www.youtube.com/user/Totaljobs> 	
+Please do not reply to this email
+
+Login to your account <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fAuthenticated%2fLogin.aspx%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE3_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329>  
+
+Unsubscribe from emails <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fAccount%2fEmail%2fUnsubscribe%2fadc0e0ad9b034ca29f3d130f8662993d%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE3_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329>  
+
+Contact us <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fContact-Us%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE3_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329>  
+
+This email was sent to nigel-m-smith@ntlworld.com <mailto:nigel-m-smith@ntlworld.com> as you agreed to receive relevant jobs from www.totaljobs.com <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE3_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329> . It is linked to your personal jobseeker account and meant specifically for you so please do not share. Read our privacy policy here <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fabout%2fprivacy-policy%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE3_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329>  
+
+Totaljobs Group, Blue Fin, 110 Southwark Street, London SE1 0TA
+Registered in England & Wales under company number 04269861 
+ <https://www.totaljobs.com/threesixty/pxl.gif?DCMP=R_EM_JBE_TJ_MAN_JBE3_240521&GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&domain=ntlworld.com&umid=20210524164210-56786146-9bab-485b-a0a1-68600b04c329&testframework=&typeofalert=JBE&siteid=4&batchinstanceid=69d9303d-d9dd-490f-bec7-c0f90cd54663> 
+ <https://www.totaljobs.com/email-assets/pxl.gif?DCMP=R_EM_JBE_TJ_MAN_JBE3_240521&datecreated=20210524164210&memberid=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&emaildomain=ntlworld.com> 
+Hi Nigel, We have new jobs for you, including this 	
+ <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+<http://pubads.g.doubleclick.net/gampad/jump?iu=53560144/TJ-JBE&sz=300x50&t=TJ-Sector%3dITInternet&c=637574541628448315> 
+ <http://pubads.g.doubleclick.net/gampad/ad?iu=53560144/TJ-JBE&sz=300x50&t=TJ-Sector%3dITInternet&c=637574541628448315> 
+ <http://pubads.g.doubleclick.net/gampad/jump?iu=53560144/TJ-JBE&sz=600x60&t=TJ-Sector%3dITInternet&c=637574541628448315> 
+Hi Nigel, 	
+Here are the latest jobs we’ve selected just for you. If you’re interested, apply now! 	
+20 jobs found 	
+DevOps Systems Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92884971&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job1_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Totaljobs Group	 
+Havant, Hampshire	 
+Competitive salary with generous benefits	 
+DevOps Engineer - Data and Analytics <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92758266&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job2_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+SSE PLC	 
+Cosham, Portsmouth (PO6)	 
+£46,319 - £61,175, depending on skills and experience	 
+AWS DevOps Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92885008&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job3_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Totaljobs Group	 
+Havant, Hampshire	 
+Competitive salary with generous benefits	 
+DevOps Engineer Azure CI/CD <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92822757&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job4_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Client Server Regional Team	 
+Underhill Park, Reigate (RH2)	 
+£65000 - £80000 per annum + benefits	 
+DevOps Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92597382&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job5_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Totaljobs Group	 
+Havant, Hampshire	 
+Competitive salary with generous benefits	 
+Azure DevOps Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92862276&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job6_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Career Legal Ltd	 
+Reigate, Surrey	 
+From £75,000 to £85,000 per annum	 
+BEST PAY 
+DevOps/Cloud Infrastructure Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92573446&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job7_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+J & C Associates Ltd	 
+Worthing (BN11)	 
+£540 per day Outside of IR35	 
+Lead DevOps Engineer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92589062&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job8_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Technos Recruitment	 
+South East	 
+£75,000 per annum + Benefits (Private health care, life assurance)	 
+AWS Cloud Engineer 100% Fully Remote Kubernetes <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92859624&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job9_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Avanti Recruitment Ltd	 
+Brighton (BN1)	 
+From £40,000 to £45,000 per annum Bonus + benefits + share options	 
+Cloud Data Architect <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92770355&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job10_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Allianz Insurance Plc	 
+Guildford (GU1)	 
+Salary unspecified	 
+.NET Developer - <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92838603&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job11_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+IQ TECH NORTH	 
+East Grinstead, West Sussex	 
+£48k - 50k per year + Great benefits	 
+Java Software Developer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92881968&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job12_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Three People	 
+Worthing (BN11)	 
+£40000 - £45000 per annum + doe + benefits	 
+.Net Developer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92848572&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job13_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Bridge Recruitment UK Limited	 
+Imberhorne, East Grinstead (RH19)	 
+Negotiable	 
+Java / Scala Developer <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92857569&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job14_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Deerfoot I.T. Resources Limited	 
+Worthing, West Sussex	 
+£80000 - £100000 per annum + Benefits Package	 
+Security Operations Engineer Azure SaaS <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92826305&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job15_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Client Server Regional Team	 
+Underhill Park, Reigate (RH2)	 
+£85000 - £100000 per annum + bonus + benefits	 
+Senior Software Developer - .Net Core / React (Remote) <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92840315&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job16_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Spectrum IT Recruitment (South) Ltd	 
+Havant, Hampshire	 
+£45000 - £65000 per annum + Excellent Benefits	 
+Talent Partner <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92831798&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job17_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Information Grid Ltd	 
+South East	 
+From £30,000 to £40,000 per annum + stock options 	
+SharePoint Consultant <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92855643&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job18_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Triad Resourcing	 
+Godalming, Surrey	 
+From £60,000 to £65,000 per annum + Company Benefits	 
+Data Architect <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92833347&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job19_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Synergize Consulting Limited	 
+St. Mary's, Portsmouth (PO1)	 
+From £70,000 to £75,000 per annum	 
+Software Engineer (Cobol, DB2) <https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92856476&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job20_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Trust In Soda Ltd	 
+Worthing, West Sussex	 
+£460 - £465 per day	 
+See more on totaljobs <https://www.totaljobs.com/JobSearch/EmailLink.aspx?GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&Search=2&DCMP=R_EM_JBE_TJ_CB-TJ-ALL_MAN_JBE2_240521&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+We have found some jobs for you on our partner sites. 	
+5 jobs found on CWJobs 	
+Cyber Security Engineer / DevOps <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92629366&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job21_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Client Server	 
+Underhill Park, Reigate (RH2)	 
+£85000 - £100000 per annum + bonus + benefits	 
+DevOps Engineer <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92895932&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job22_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+ARC IT Recruitment Ltd	 
+Brighton, East Sussex	 
+Salary unspecified	 
+DevOps Engineer Azure CI/CD <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92822756&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job23_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Client Server	 
+Underhill Park, Reigate (RH2)	 
+£65000 - £80000 per annum + benefits	 
+DevOps Engineer Lead - Security Operations SecOps <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92458878&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job24_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Client Server	 
+Underhill Park, Reigate (RH2)	 
+£85000 - £100000 per annum + bonus + benefits	 
+Azure DevOps Engineer <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?JobID=92885139&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job25_240521&SEARCH=2&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Spencer Scott	 
+Underhill Park, Reigate (RH2)	 
+From £60,000 to £80,000 per annum + 20% Bonus	 
+See more on CWJobs <https://www.cwjobs.co.uk/JobSearch/EmailLink.aspx?GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&Search=2&DCMP=R_EM_JBE_TJ_CB-TJ-ALL_MAN_JBE2_240521&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> 	
+Criteria: Keywords: DevOps; Salary: Starting Annual Salary of £30,000.00; Location: BN14, Worthing + 30 miles 
+
+Change criteria for jobs by email <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fJobsByEmail%2fJobsByEmailSetup.aspx%3fseqNo%3d2%26DCMP%3dR_EM_JBE_TJ_MAN_JBE2_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a>  	
+Are you recruiting? Click here to advertise on totaljobs <https://recruiters.totaljobs.com?DCMP=R_EM_JBE_TJ_MAN_JBE2_240521> 	
+Find your dream job with the totaljobs mobile job app
+
+
+ <https://itunes.apple.com/gb/app/totaljobs-job-search/id924927935> 		 <https://play.google.com/store/apps/details?id=com.stepstone.totaljobs&amp;hl=en_GB> 	
+ <https://twitter.com/totaljobsUK> 		 <https://www.facebook.com/Totaljobs> 		 <https://plus.google.com/+totaljobs/posts> 		 <https://www.youtube.com/user/Totaljobs> 	
+Please do not reply to this email
+
+Login to your account <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fAuthenticated%2fLogin.aspx%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a>  
+
+Unsubscribe from emails <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fAccount%2fEmail%2fUnsubscribe%2fadc0e0ad9b034ca29f3d130f8662993d%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a>  
+
+Contact us <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fContact-Us%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a>  
+
+This email was sent to nigel-m-smith@ntlworld.com <mailto:nigel-m-smith@ntlworld.com> as you agreed to receive relevant jobs from www.totaljobs.com <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a> . It is linked to your personal jobseeker account and meant specifically for you so please do not share. Read our privacy policy here <https://www.totaljobs.com/JobSearch/EmailLink.aspx?ReturnUrl=https%3a%2f%2fwww.totaljobs.com%2fabout%2fprivacy-policy%3fDCMP%3dR_EM_JBE_TJ_MAN_JBE2_240521&GUID=adc0e0ad9b034ca29f3d130f8662993d&domain=ntlworld.com&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a>  
+
+Totaljobs Group, Blue Fin, 110 Southwark Street, London SE1 0TA
+Registered in England & Wales under company number 04269861 
+ <https://www.totaljobs.com/threesixty/pxl.gif?DCMP=R_EM_JBE_TJ_MAN_JBE2_240521&GUID=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&domain=ntlworld.com&umid=20210524115602-fc312c97-8993-48dc-9177-9a79e983449a&testframework=&typeofalert=JBE&siteid=4&batchinstanceid=adf28b1c-7118-4c0e-bf21-ea73831869ca> 
+ <https://www.totaljobs.com/email-assets/pxl.gif?DCMP=R_EM_JBE_TJ_MAN_JBE2_240521&datecreated=20210524115602&memberid=adc0e0ad-9b03-4ca2-9f3d-130f8662993d&emaildomain=ntlworld.com> 
+Tue May 25 15:10:14 2021 INFO: parse_mail: 7 job urls found in Totaljobs
+Tue May 25 15:10:14 2021 INFO: parse_mail: Processing sub-folder FindAJob
+Tue May 25 15:10:14 2021 WARNING: parse_mail: No job urls found in FindAJob
+Tue May 25 15:10:14 2021 INFO: parse_mail: 17 new job urls found in total
+Tue May 25 15:10:14 2021 INFO: parse_mail: Displayed mail folder information
+Tue May 25 15:10:14 2021 INFO: parse_mail: Completed
