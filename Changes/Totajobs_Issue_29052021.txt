@@ -15,6 +15,8 @@ update_vacancies.py
 remove_duplicates_per_engine.py
 remove_duplicates_using_priority.py
 
+This means that (say)
+
 https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=92870677&GUID=adc0e0ad9b034ca29f3d130f8662993d&
 
 Needs to change to:
