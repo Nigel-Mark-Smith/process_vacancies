@@ -46,7 +46,7 @@ mysql -u root -p
 <Enter password>
 
 use vacancies;
-source X:/GitHub/process_vacancies/Data/queries.sql;
+source H:/projects/process_vacancies/Data/queries.sql;
 
 The following files shoud be removd from the export directory prior to running this command.
 

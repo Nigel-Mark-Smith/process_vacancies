@@ -31,6 +31,18 @@ MySQL             | https://dev.mysql.com/downloads/mysql/
 Google Chrome     | https://www.google.com/chrome/
 ------------------+---------------------------------------------------------
 
+In addition the GitHub desktop client should installed in order to clone the
+the GitHub repository onto the target pc. The GitHub desktop client can be downloaded
+from:
+
+Software          | Link 
+------------------+---------------------------------------------------------
+ GitHub desktop   | https://desktop.github.com/
+ client           |
+------------------+---------------------------------------------------------
+
+https://desktop.github.com/
+
 1.1 Installing python
 ---------------------
 Download and install the software from the link above.
@@ -43,9 +55,10 @@ installing MySQL ensure that you make a note of the 'root'
 user password which is set as part of the installation procedure.
 You may wish to change the export directory for MySQL by
 changing the value assigned to 'secure_file_priv' in file 
-C:\ProgramData\MySQL\MySQL Server 8.0\my.ini
+C:\ProgramData\MySQL\MySQL Server 8.0\my.ini. Note that the ProgramData 
+subdirectory is hidden by default.
 
-e.g secure_file_priv="C:\JOBSEARCH\2019\Co-Ordination\reports"
+e.g secure-file-priv="H:\administration\jobsearch\2019\Co-Ordination\reports"
 
 Once you have made the change ensure that the files encoding
 type is ANSI ( Notepad++ will allow you to do this ).
@@ -55,9 +68,42 @@ the following MySQL query:
 
 show variables like 'secure_file_priv';
 
+The location of the mysql.exe binary should also be added to system
+PATH environment variables as follows:
+
+a.	Right Click on Windows icon ( Bottom left of screen )
+b.	Click on 'Run'
+c.	Enter 'SystemPropertiesAdvanced' in 'Open' field.
+d.	Click on 'Environment Variables' on 'System Properties' pop-up window.
+e.	Click 'New' situated under 'System Variables' pane
+f.	Click 'New' on 'Edit environment variable' pop-up window
+g.	Enter 'C:\Program Files\MySQL\MySQL Server 8.0\bin' 
+h.	Click 'OK' on 'Edit environment variable' pop-up windowon pop-up window
+i.	Click 'OK' on 'Environment Variables' pop-up window
+j.	Click 'Apply' on 'System Properties' pop-up window.
+k.	Click 'OK' on 'System Properties' pop-up window.
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin
+
 1.3 Installing Chrome
 ---------------------
 Download and install the software from the link above
+
+The location of the chrome.exe binary should also be added to system
+PATH environment variables as follows:
+
+a.	Right Click on Windows icon ( Bottom left of screen )
+b.	Click on 'Run'
+c.	Enter 'SystemPropertiesAdvanced' in 'Open' field.
+d.	Click on 'Environment Variables' on 'System Properties' pop-up window.
+e.	Click 'New' situated under 'System Variables' pane
+f.	Click 'New' on 'Edit environment variable' pop-up window
+g.	Enter 'C:\Program Files\Google\Chrome\Application' 
+h.	Click 'OK' on 'Edit environment variable' pop-up windowon pop-up window
+i.	Click 'OK' on 'Environment Variables' pop-up window
+j.	Click 'Apply' on 'System Properties' pop-up window.
+k.	Click 'OK' on 'System Properties' pop-up window.
+
 
 1.4 Installing Microsoft Excel
 -------------------------------
@@ -112,6 +158,9 @@ copy C:\Users\nigel\AppData\Roaming\Microsoft\Excel\XLSTART\PERSONAL.XLSB
 
 2. Installation of 'process_vacancies' contents from GitHub
 -----------------------------------------------------------
+The 'process_vacancies' repository should be cloned to a convenient diretory
+using the GitHub desktop client. GitHub will create this directory as part of 
+the cloning so it must not exist prior to cloning.
 
 3. Addition of 'PYTHONPATH' environment variable.
 -------------------------------------------------

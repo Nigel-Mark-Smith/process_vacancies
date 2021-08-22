@@ -1,0 +1,13 @@
+
+Data/log.txt
+Db/__pycache__/__init__.cpython-38.pyc
+Db/__pycache__/Actions.cpython-38.pyc
+Email/__pycache__/__init__.cpython-38.pyc
+Email/__pycache__/Analyze.cpython-38.pyc
+File/__pycache__/__init__.cpython-38.pyc
+File/__pycache__/Operations.cpython-38.pyc
+Interface/__pycache__/__init__.cpython-38.pyc
+Interface/__pycache__/Prompts.cpython-38.pyc
+Interface/__pycache__/Utils.cpython-38.pyc
+Web/__pycache__/__init__.cpython-38.pyc
+Web/__pycache__/Requests.cpython-38.pyc

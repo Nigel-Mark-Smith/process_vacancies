@@ -239,9 +239,12 @@ def GenSQLupdate (table,fieldvalues,fielddefinitions,primaryfieldvalues):
     
     for fieldname in fieldvalues :
         
+        #print(fielddefinitions[fieldname])
+        #print(fieldvalues[fieldname] )
+        
         value = fieldvalues[fieldname]  
         # Enclose value in quotation marks if the field is not an integer
-        if ( fielddefinitions[fieldname].find('int(') == -1 ) : 
+        if ( fielddefinitions[fieldname].find('int') == -1 ) : 
             value = '\"' + value + '\"' 
             
             # The following string manipulation is required to cope
@@ -265,7 +268,7 @@ def GenSQLupdate (table,fieldvalues,fielddefinitions,primaryfieldvalues):
    
         value =  primaryfieldvalues[primaryfieldname]
         # Enclose value in quotation marks if the field is not an integer
-        if ( fielddefinitions[primaryfieldname].find('int(') == -1 ) : 
+        if ( fielddefinitions[primaryfieldname].find('int') == -1 ) : 
             value = '\'' + value + '\'' 
         else :
             value = str(value)
@@ -304,7 +307,7 @@ def GenWhereList (fieldlist,fieldvalues,fielddefinitions) :
        
     for field in fieldlist : 
         fieldvalue = str(fieldvalues[field])
-        if ( fielddefinitions[field].find('int(') == -1 ) :  
+        if ( fielddefinitions[field].find('int') == -1 ) :  
             fieldvalue = '\"' + fieldvalue + '\"'
             
             # The following string manipulation is required to cope
