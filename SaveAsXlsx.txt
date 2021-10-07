@@ -1,12 +1,13 @@
 Sub SaveAsXlsx()
 '
 ' SaveAsXlsx Macro
-' Save xlsx version of file
+' Save xlsx version of csv file
 '
 ' Keyboard Shortcut: Ctrl+s
 '
-    ChDir ActiveWorkbook.Path
-    ActiveWorkbook.SaveAs FileFormat:=xlOpenXMLWorkbook
+    Dim XlsxFileName
+    XlsxFileName=Replace(ActiveWorkbook.FullName,".csv",".xslx")
+    ActiveWorkbook.SaveAs FileName:=XlsxFileName, FileFormat:=xlOpenXMLWorkbook
     ActiveWorkbook.Close
    
 End Sub

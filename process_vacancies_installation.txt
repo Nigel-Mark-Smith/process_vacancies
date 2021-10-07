@@ -31,7 +31,7 @@ MySQL             | https://dev.mysql.com/downloads/mysql/
 Google Chrome     | https://www.google.com/chrome/
 ------------------+---------------------------------------------------------
 
-In addition the GitHub desktop client should installed in order to clone the
+In addition the GitHub desktop client should be installed in order to clone the
 the GitHub repository onto the target pc. The GitHub desktop client can be downloaded
 from:
 
@@ -58,7 +58,7 @@ changing the value assigned to 'secure_file_priv' in file
 C:\ProgramData\MySQL\MySQL Server 8.0\my.ini. Note that the ProgramData 
 subdirectory is hidden by default.
 
-e.g secure-file-priv="H:\administration\jobsearch\2019\Co-Ordination\reports"
+e.g secure-file-priv="H:/administration/jobsearch/2019/Co-Ordination/reports"
 
 Once you have made the change ensure that the files encoding
 type is ANSI ( Notepad++ will allow you to do this ).
@@ -110,52 +110,70 @@ k.	Click 'OK' on 'System Properties' pop-up window.
 Microsoft Excel can be downloaded from the relevant Microsoft web site for
 a fee. Once installed the following additional steps must be performed.
 
-a. Store the ReformatData macro ( in Excel )
+a. Create a personal macro file by following the Microsoft support instructions.
 
-Open any spreadsheet
-Select tab 'View'
-Click 'Unhide'
-Click 'OK' to 'Unhide workbook:' 'PERSONAL.XLSB'
-Select tab 'View' in PESONAL.XLSB workbook
-Select 'View macros' from 'Macros' drop down.
-Enter 'ReformatData' in 'Macro name:' field
-Click 'Create'  ( Which will start up Virtual BAsic )
-Clear all text in 'Module <n>' window
-Copy and paste text in file 'ReformatData.txt' into  'Module <n>' window
-Ctrl + S
-Alt + Q
-Select tab 'View' in PESONAL.XLSB workbook
-Click 'hide'
-In remaining spreadsheet window Click 'File' then 'Save'
+   'Show the Developer tab'
+   
+   https://support.microsoft.com/en-us/topic/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45?ui=en-us&rs=en-us&ad=us
+   
+   'Copy your macros to a Personal Macro Workbook'
+   
+   https://support.microsoft.com/en-us/office/copy-your-macros-to-a-personal-macro-workbook-aa439b90-f836-4381-97f0-6e4c3f5ee566
+  
+   The macro you create when 
 
-b. Store the SaveAsXlsx macro ( in Excel )
+b. Enable macros by following the Microsoft support instructions
 
-Open any spreadsheet
-Select tab 'View'
-Click 'Unhide'
-Click 'OK' to 'Unhide workbook:' 'PERSONAL.XLSB'
-Select tab 'View' in PESONAL.XLSB workbook
-Select 'View macros' from 'Macros' drop down.
-Enter 'SaveAsXlsx' in 'Macro name:' field
-Click 'Create'  ( Which will start up Virtual BAsic )
-Clear all text in 'Module <n>' window
-Copy and paste text in file 'ReformatData.txt' into  'Module <n>' window
-Ctrl + S
-Alt + Q
-Select tab 'View' in PESONAL.XLSB workbook
-Click 'hide'
-In remaining spreadsheet window Click 'File' then 'Save'
+   'Enable or disable macros in Office files'
 
-c. In admin cmd session create c:\temp
+   https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6?ns=excel&version=90&syslcid=1033&uilcid=1033&appver=zxl900&helpid=62817&ui=en-us&rs=en-us&ad=us
 
-mkdir c:\temp
+c. Store the ReformatData macro ( in Excel )
 
-d. Copy PERSONAL.XLSB as follows:
+   Open any spreadsheet
+   Select tab 'View'
+   Click 'Unhide'
+   Click 'OK' to 'Unhide workbook:' 'PERSONAL.XLSB'
+   Select tab 'View' in PESONAL.XLSB workbook
+   Select 'View macros' from 'Macros' drop down.
+   Enter 'ReformatData' in 'Macro name:' field
+   Click 'Create'  ( Which will start up Virtual BAsic )
+   Clear all text in 'Module <n>' window
+   Copy and paste text in file 'ReformatData.txt' into  'Module <n>' window
+   Ctrl + S
+   Alt + Q
+   Select tab 'View' in PESONAL.XLSB workbook
+   Click 'hide'
+   In remaining spreadsheet window Click 'File' then 'Save'
 
-cd C:\Users\nigel\Documents
-erase /f /s PERSONAL.XLSB
-copy C:\Users\nigel\AppData\Roaming\Microsoft\Excel\XLSTART\PERSONAL.XLSB
+d. Store the SaveAsXlsx macro ( in Excel )
 
+   Open any spreadsheet
+   Select tab 'View'
+   Click 'Unhide'
+   Click 'OK' to 'Unhide workbook:' 'PERSONAL.XLSB'
+   Select tab 'View' in PESONAL.XLSB workbook
+   Select 'View macros' from 'Macros' drop down.
+   Enter 'SaveAsXlsx' in 'Macro name:' field
+   Click 'Create'  ( Which will start up Virtual BAsic )
+   Clear all text in 'Module <n>' window
+   Copy and paste text in file 'ReformatData.txt' into  'Module <n>' window
+   Ctrl + S
+   Alt + Q
+   Select tab 'View' in PESONAL.XLSB workbook
+   Click 'hide'
+   In remaining spreadsheet window Click 'File' then 'Save'
+
+e. In admin cmd session create c:\temp
+
+   mkdir c:\temp
+   
+f. Copy PERSONAL.XLSB as follows:
+
+   cd C:\Users\nigel\Documents
+   erase /f /s PERSONAL.XLSB
+   copy C:\Users\nigel\AppData\Roaming\Microsoft\Excel\XLSTART\PERSONAL.XLSB
+   
 2. Installation of 'process_vacancies' contents from GitHub
 -----------------------------------------------------------
 The 'process_vacancies' repository should be cloned to a convenient diretory
