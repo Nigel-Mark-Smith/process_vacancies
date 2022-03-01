@@ -63,7 +63,7 @@ ReformatData.txt | Source of Excel macro required by convert_workbook.vbs
 SaveAsXlsx.txt | Source of Excel macro required by convert_workbook.vbs
 
 And sub-directory Changes has been introduced which will contain detailed descriptions of 
-significant changes made after 25/05/202.
+significant changes made after 25/05/2021.
 
 Future Developments
 -------------------
