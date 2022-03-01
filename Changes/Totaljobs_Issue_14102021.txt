@@ -1,0 +1,21 @@
+Counter displayed when accessing Totaljob vacancy
+=================================================
+
+Summary
+-------
+A counter is displayed prior to the full details of Totaljob vacancy 94999655.
+
+Enter url below in browser.
+
+https://www.totaljobs.com/JobSearch/EmailLink.aspx?JobID=94999655&GUID=adc0e0ad9b034ca29f3d130f8662993d&DCMP=R_EM_JBE_TJ_CB-TJ_MAN_JBE2_Job7_131021&SEARCH=2&domain=ntlworld.com&batchinstanceid=5089c4ca-72d4-4ba4-b4ae-611fff623d6f&umid=20211013114518-e75fbeda-7dda-4b6d-874e-a73839c23c68
+
+
+Remedial Actions
+----------------
+This vacancy seemed to be the only one where are counter was displayed prior to the full vacancy details so it was therefore sufficient to simply drop further processing of this vacancy.
+
+a. Change the 'vacancy_state' of the entries for 'vacancy_id' '94999655' in the 'vacancy' and 'history' tables
+   to 'Dropped'
+
+   update vacancy set vacancy_state = 'Dropped' where vacancy_id = '94999655';
+   update history set vacancy_state = 'Dropped' where vacancy_id = '94999655';

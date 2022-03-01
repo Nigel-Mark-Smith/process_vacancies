@@ -143,7 +143,7 @@ for Vacancy in SQLresponse :
     EngineID = Vacancy[0]
     JobID = Vacancy[1]
     Joburl = Vacancy[2]
-    
+
     # Create the primary fields dictionary of values.
     Primary = {}
     Primary['vacancy_id'] = JobID

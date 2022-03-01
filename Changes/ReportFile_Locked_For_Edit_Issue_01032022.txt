@@ -1,0 +1,18 @@
+Report file locked for edit issue
+=================================
+
+Summary
+-------
+
+When the script 'generate_reports.py' is run excel will report that the following file is locked 
+for editting by another user:
+
+H:\administration\jobsearch\2019\Co-Ordination\reports\application_history.xlsx
+
+This can occur following the script 'process_vacancies.bat' failing.
+
+
+Remedial Action
+---------------
+
+The script 'process_vacancies.bat'  has be changed to remove the file above before 'generate_reports.py' is executed.
