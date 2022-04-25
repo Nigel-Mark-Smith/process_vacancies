@@ -161,7 +161,7 @@ overwrite = 'w'
 # Spreadsheet and script details
 Spreadsheet = 'excel.exe'
 ConversionScript = Currentdir + '\\convert_workbook.vbs'
-ConversionWait = 6
+ConversionWait = 10
 
 # Database and tables
 DbName = 'vacancies'
