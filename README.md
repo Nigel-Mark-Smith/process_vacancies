@@ -50,6 +50,7 @@ queries.sql | Generates export files containing metrics data.
 test_mail.py | Test utility which allows users to determine the per engine data that requires to be specified in file ..\Data\engines.csv
 test_scraping.py | Test utility which tests scraping functionality  provided in the 'Web' module
 process_vacancies.bat | Runs all utilities required on a day-to-day basis when applying for job vacancies. 
+process_vacancies_startup_actions.bat | Runs all utilities required to capture new vacancy information on PC startup
 convert_workbook.vbs | Converts a csv file containing application history into an Excel spreadsheet.  
 
 As well as the above scripts and data files the following supporting documentation is also provided:
